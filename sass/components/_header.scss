@@ -1,0 +1,33 @@
+.page-header {
+     background-color: $header-bckg-color;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 67px;
+   
+}
+.page-header__logo {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+}
+.page-header__list {
+    display: flex;
+    align-items: center;
+    margin-left: 266px;
+}
+.page-header__item :not(last-child){
+    margin-right: 40px;
+}
+.page-header__link {
+@include text
+&:hover,
+&:focus {
+    color: $accent-color;
+}
+}
+.page-header__button {
+    margin-left: auto;
+}

@@ -1,0 +1,36 @@
+.hero {
+    padding-top: 196px;
+    padding-bottom: 213px;
+    background-color: $header-bckg-color;
+    display: flex;
+}
+.hero__name {
+font-weight   : 500;
+font-size     : 14px;
+line-height   : 16px;
+letter-spacing: 0.1em;
+color: #0F0101; 
+}
+.hero__subname {
+font-family: Fredoka One;
+font-style : normal;
+font-weight: normal;
+font-size  : 57.33px;
+line-height: 120.5%;
+color: #0F0101;
+opacity: 0.9;
+}
+.hero__text {
+font-family: Hind Madurai;
+font-style : normal;
+font-weight: normal;
+font-size  : 18px;
+line-height: 27px;
+color: #0F0101;
+margin-bottom: 50px;
+
+opacity: 0.6;
+    // @include secondary-text (400, 18px, 1.5, #0F0101)
+    // ($fw:400,$fs:18px,$lx:1.5,$color:#0F0101);
+    width: 523px
+}
