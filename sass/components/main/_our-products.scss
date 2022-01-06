@@ -1,0 +1,17 @@
+.our-products {
+    padding-top: 137px;
+    padding-bottom: 149px;
+    background-color: #E5E5E5;
+}
+.our-products__name {
+font-family: Hind Madurai;
+font-style : normal;
+font-weight: 600;
+font-size  : 44.2px;
+line-height: 61px;
+color: $header-color;
+// text-align: center;
+}
+.our-products__list {
+    display: flex;
+}

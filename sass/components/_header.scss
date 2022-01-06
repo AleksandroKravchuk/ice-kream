@@ -1,13 +1,13 @@
 .page-header {
-     background-color: $header-bckg-color;
+    background-color: $header-bckg-color;
+    padding-top: 42px;
+    padding-bottom: 67px;
 }
 .header {
     display: flex;
     align-items: center;
-    padding-top: 42px;
-    padding-bottom: 67px;
-   
 }
+
 .page-header__logo {
     width: 15px;
     height: 15px;

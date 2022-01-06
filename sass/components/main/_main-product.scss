@@ -1,0 +1,26 @@
+.main-product {
+    padding-top: 141px;
+    padding-bottom: 146px;
+    background-color: $main-bckg-color;
+}
+.main-product__name {
+font-family: Hind Madurai;
+font-style : normal;
+font-weight: 600;
+font-size  : 44.2px;
+line-height: 49px;
+color: $header-color;
+width: 349px;
+margin-bottom: 16px;
+}
+.main-product__text {
+font-family: Roboto;
+font-style : normal;
+font-weight: normal;
+font-size  : 16px;
+line-height: 24px;
+color: $header-color;
+opacity: 0.6;
+width: 442px;
+margin-bottom: 35px;
+}

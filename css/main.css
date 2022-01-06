@@ -340,6 +340,8 @@ summary {
 
 .page-header {
   background-color: #F2CEDA;
+  padding-top: 42px;
+  padding-bottom: 67px;
 }
 
 .header {
@@ -349,8 +351,6 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 42px;
-  padding-bottom: 67px;
 }
 
 .page-header__logo {
@@ -408,6 +408,7 @@ summary {
   line-height: 16px;
   letter-spacing: 0.1em;
   color: #0F0101;
+  margin-bottom: 6px;
 }
 
 .hero__subname {
@@ -418,6 +419,7 @@ summary {
   line-height: 120.5%;
   color: #0F0101;
   opacity: 0.9;
+  margin-bottom: 35px;
 }
 
 .hero__text {
@@ -432,9 +434,81 @@ summary {
   width: 523px;
 }
 
+.advantages {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #E5E5E5;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantages__item:not(last-child) {
+  margin-right: 39px;
+}
+
+.advantages__grup {
+  width: 250px;
+  height: 200px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+  border-radius: 7px;
+  text-align: center;
+}
+
+.advantages__name {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 9px;
+  color: #000000;
+}
+
+.advantages__text {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.6;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
 .main-product {
   padding-top: 141px;
   padding-bottom: 146px;
   background-color: #F8EDF0;
+}
+
+.main-product__name {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 49px;
+  color: #150101;
+  width: 349px;
+  margin-bottom: 16px;
+}
+
+.main-product__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150101;
+  opacity: 0.6;
+  width: 442px;
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=main.css.map */

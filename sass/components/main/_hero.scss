@@ -10,6 +10,7 @@ font-size     : 14px;
 line-height   : 16px;
 letter-spacing: 0.1em;
 color: #0F0101; 
+margin-bottom: 6px;
 }
 .hero__subname {
 font-family: Fredoka One;
@@ -19,6 +20,7 @@ font-size  : 57.33px;
 line-height: 120.5%;
 color: #0F0101;
 opacity: 0.9;
+margin-bottom: 35px;
 }
 .hero__text {
 font-family: Hind Madurai;
@@ -28,9 +30,6 @@ font-size  : 18px;
 line-height: 27px;
 color: #0F0101;
 margin-bottom: 50px;
-
 opacity: 0.6;
-    // @include secondary-text (400, 18px, 1.5, #0F0101)
-    // ($fw:400,$fs:18px,$lx:1.5,$color:#0F0101);
-    width: 523px
+width: 523px
 }
