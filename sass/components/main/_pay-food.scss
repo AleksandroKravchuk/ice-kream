@@ -1,0 +1,39 @@
+.pay-food {
+padding-top: 90px;
+padding-bottom: 150px;
+background:$main-bckg-color;
+}
+.pay-food__name {
+font-family: Roboto;
+font-style : normal;
+font-weight: 500;
+font-size  : 44.2px;
+line-height: 1.2;
+color: $main-text-color;
+margin-bottom: 20px;
+}
+.pay-food__text {
+@include text ($fs: 18px, $lx: 1.16, $color: $hero-color )
+letter-spacing: 0.01em;
+width: 607px;
+margin-bottom: 31px;
+}
+.pay-food__list {
+    margin-bottom: 40px;
+}
+.pay-food__item:nth-child(-n+2) {
+    margin-bottom: 20px;
+}
+.pay-food__link {
+    @include text ($fs: 22px, $lx: 1.2, $opa: 1)
+    cursor: pointer;
+}
+.pay-food__buttons-list {
+    display: flex;
+}
+.pay-food__buttons-form {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+}

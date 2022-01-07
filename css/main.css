@@ -378,11 +378,10 @@ summary {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.16;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.7;
   text-decoration: none;
-  color: #150101;
-  cursor: pointer;
-  opacity: 0.6;
 }
 
 .page-header__link:hover, .page-header__link:focus {
@@ -553,18 +552,31 @@ summary {
   opacity: 0.6;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
 
 .our-products__link:hover, .our-products__link:focus {
   opacity: 1;
 }
 
+.our-products__link:hover::after, .our-products__link:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .our-products__link::after {
   content: "";
-  width: 91px;
+  width: 100%;
   height: 3px;
   display: block;
-  color: #D23166;
+  background-color: #D23166;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
 
 .card__name {
@@ -584,6 +596,7 @@ summary {
   font-size: 24px;
   line-height: 1.17;
   color: #000000;
+  margin-bottom: 50px;
 }
 
 .card__item {
@@ -602,5 +615,175 @@ summary {
   line-height: 1.5;
   color: #000000;
   opacity: 0.7;
+  text-decoration: none;
+  margin-bottom: 34px;
+}
+
+.card__text--autor {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.7;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.pay-food {
+  padding-top: 90px;
+  padding-bottom: 150px;
+  background: #F8EDF0;
+}
+
+.pay-food__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.pay-food__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #0F0101;
+  opacity: 0.7;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  width: 607px;
+  margin-bottom: 31px;
+}
+
+.pay-food__list {
+  margin-bottom: 40px;
+}
+
+.pay-food__item:nth-child(-n+2) {
+  margin-bottom: 20px;
+}
+
+.pay-food__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pay-food__buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pay-food__buttons-form {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: orangered;
+}
+
+.questions {
+  padding-top: 191px;
+  padding-bottom: 129px;
+  background-color: #FFFFFF;
+}
+
+.questions__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  width: 522px;
+  margin-bottom: 28px;
+}
+
+.questions__input {
+  width: 637px;
+  height: 74px;
+  background: #FAFAFA;
+  border: 5px #FAFAFA;
+  outline: 0;
+  padding: 29px;
+}
+
+.questions__input::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #0F0000;
+  opacity: 0.6;
+}
+
+.questions__input:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #0F0000;
+  opacity: 0.6;
+}
+
+.questions__input::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #0F0000;
+  opacity: 0.6;
+}
+
+.questions__input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #0F0000;
+  opacity: 0.6;
+}
+
+.questions__button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.12;
+  padding: 28px 31px 28px 36px;
+  color: #FFFFFF;
+  background: #D64374;
+  border-radius: 5px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

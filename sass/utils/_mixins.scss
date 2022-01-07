@@ -1,13 +1,12 @@
-@mixin text($fw: normal, $fs: 16px, $lx: 1.16, $color: $header-color, $opa: 0.6) {
+@mixin text($fw: normal, $fs: 16px, $lx: 1.5, $color: $main-text-color, $opa: 0.7) {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $fw;
   font-size: $fs;
   line-height: $lx;
-  text-decoration: none;
   color: $color;
-  cursor: pointer;
-  opacity: 0.6;
+  opacity: $opa;
+  text-decoration: none;
 }
 
 @mixin secondary-text($fw: 600, $fs: 44.2px, $lx: 1.4, $color: #150101) {
