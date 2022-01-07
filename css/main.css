@@ -434,6 +434,10 @@ summary {
   width: 523px;
 }
 
+.hero_roze {
+  color: #D23166;
+}
+
 .advantages {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -510,5 +514,93 @@ summary {
   opacity: 0.6;
   width: 442px;
   margin-bottom: 35px;
+}
+
+.our-products {
+  padding-top: 137px;
+  padding-bottom: 149px;
+  background-color: #E5E5E5;
+}
+
+.our-products__name {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 61px;
+  color: #150101;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.our-products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 109px;
+}
+
+.our-products__link {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.our-products__link:hover, .our-products__link:focus {
+  opacity: 1;
+}
+
+.our-products__link::after {
+  content: "";
+  width: 91px;
+  height: 3px;
+  display: block;
+  color: #D23166;
+}
+
+.card__name {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 11px;
+  color: #000000;
+}
+
+.card__autor {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000000;
+}
+
+.card__item {
+  width: 454px;
+}
+
+.card__item:last-child {
+  width: 322px;
+}
+
+.card__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */
