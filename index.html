@@ -15,9 +15,10 @@
 <body>
     <header class="page-header">
         <div class="container header">
-                <svg class="page-header__logo" width="79" height="79">
-                    <use href="./images/logo.webp"></use>
-                </svg>
+            <img src="./images//logo2.svg" alt="logo" width="79" height="79">
+                <!-- <svg class="page-header__logo" width="79" height="79">
+                    <use href="./images/logo3.png"></use>
+                </svg> -->
                 <nav>
                     <ul class="page-header__list">
                         <li class="page-header__item"><a class="page-header__link" href="">Home</a></li>
@@ -44,16 +45,32 @@
             <div class="container ">
                 <ul class="advantages__list">
                     <li class="advantages__item"> 
-                        <div class="advantages__grup"><h3 class="advantages__name">Free Shipping</h3>
+                            <svg class="advantagesr__icon" width="51" height="44">
+                                <use href="./images/symbol-defs.svg#icon-avto"></use>
+                            </svg>
+                    <div class="advantages__content">       
+                    <h3 class="advantages__name">Free Shipping</h3>
                     <p class="advantages__text">Last Chance! Free shipping on all orders ends today.</p></div></li>
                     <li class="advantages__item"> 
-                        <div class="advantages__grup"><h3 class="advantages__name">Quick Packaging</h3>
+                            <svg class="advantagesr__icon" width="51" height="44">
+                                <use href="./images/symbol-defs.svg#icon-avtto2"></use>
+                            </svg>
+                    <div class="advantages__content">       
+                    <h3 class="advantages__name">Quick Packaging</h3>
                     <p class="advantages__text">Last Chance! Free shipping on all orders ends today.</p></div></li>
                     <li class="advantages__item"> 
-                        <div class="advantages__grup"><h3 class="advantages__name">100% Money Back</h3>
+                            <svg class="advantagesr__icon" width="51" height="44">
+                                <use href="./images/symbol-defs.svg#icon-avtoo3"></use>
+                            </svg>
+                    <div class="advantages__content">      
+                    <h3 class="advantages__name">100% Money Back</h3>
                     <p class="advantages__text">Last Chance! Free shipping on all orders ends today.</p></div></li>
                     <li class="advantages__item"> 
-                        <div class="advantages__grup"><h3 class="advantages__name">Fast Delivery</h3>
+                            <svg class="advantagesr__icon" width="51" height="44">
+                                <use href="./images/symbol-defs.svg#icon-avto4"></use>
+                            </svg>
+                    <div class="advantages__content">        
+                    <h3 class="advantages__name">Fast Delivery</h3>
                     <p class="advantages__text">Last Chance! Free shipping on all orders ends today.</p></div></li>
                 </ul>
             </div>
@@ -143,34 +160,42 @@
     </main>
     <footer class="page-footer">
         <div class="container"> 
-             <div class="logo-footer"></div>
-             <p>Some food has looked so awful that it's looked like something that the dog's brought home.</p>
-             <h5>Fllow Us</h5>
-             <ul>
-                 <li><a href=""></a></li>
-                 <li><a href=""></a></li>
-                 <li><a href=""></a></li>
-                 <li><a href=""></a></li>
+             <div class="about-us">
+             <p class="about-us__text">Some food has looked so awful that it's looked like something that the dog's brought home.</p>
+             <h5 class="about-us__name">Fllow Us</h5>
+             <ul class="about-us__list">
+                 <li class="about-us__item"><a href="">
+                    <img src="./images/facebook.png" alt="facebook" srcset="" width="15" height="15">
+                    </a></li>
+                 <li class="about-us__item"><a href="">
+                    <img src="./images/twitter.png" alt="twitter" srcset="" width="15" height="15">
+                 </a></li>
+                 <li class="about-us__item"><a href="">
+                    <img src="./images/instagram.png" alt="instagram" srcset="" width="15" height="15">
+                 </a></li>
+                 <li class="about-us__item"><a href="">
+                    <img src="./images/linkedin.png" alt="linkedin" srcset="" width="15" height="15">
+                 </a></li>
+             </ul></div>
+             <ul class="home">
+                 <li class="home__item"><a class="home__link" href="">Home</a></li>
+                 <li class="home__item"><a class="home__link" href="">Product</a></li>
+                 <li class="home__item"><a class="home__link" href="">Blog</a></li>
+                 <li class="home__item"><a class="home__link" href="">Pricing</a></li>
+                 <li class="home__item"><a class="home__link" href="">Testimonials</a></li>
+                 <li class="home__item"><a class="home__link" href="">Contact Us</a></li>
              </ul>
-             <ul>
-                 <li><a href=""></a>Home</li>
-                 <li><a href=""></a>Product</li>
-                 <li><a href=""></a>Blog</li>
-                 <li><a href=""></a>Pricing</li>
-                 <li><a href=""></a>Testimonials</li>
-                 <li><a href=""></a>Contact Us</li>
-             </ul>
-            <ul>
-                <li><a href=""></a>Delivery Information</li>
-                <li><a href=""></a>Privacy Policy</li>
-                <li><a href=""></a>Terms & Condition</li>
-                <li><a href=""></a>Search Terms</li>
-                <li><a href=""></a>Order & Return</li>
+            <ul class="partners">
+                <li class="partners__item"> Delivery Information</li>
+                <li class="partners__item"> Privacy Policy</li>
+                <li class="partners__item"> Terms & Condition</li>
+                <li class="partners__item"> Search Terms</li>
+                <li class="partners__item"> Order & Return</li>
             </ul>
-            <form action="">
-                <label for="">Newsletter</label>
-                <input type="text">
-                <button type="submit"></button>
+            <form class="form">
+                <label class="form__name" for="email">Newsletter</label>
+                <input class="form__input" type="text" id="email" name="email" placeholder="Your Email">
+                <button class="form__button" type="submit">Subscribe</button>
             </form>
         </div>
     </footer>

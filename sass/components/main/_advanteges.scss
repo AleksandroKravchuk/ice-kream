@@ -7,16 +7,25 @@
     display: flex;
     justify-content: space-around;
 }
-.advantages__item:not(last-child){
+.advantages__item:nth-child(-n+3){
     margin-right: 39px;
 }
-.advantages__grup {
+.advantages__item {
 width: 250px;
-height: 200px;
 background: #FFFFFF;
 box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
 border-radius: 7px;
 text-align: center;
+}
+.advantagesr__icon {
+    margin-top: 33px;
+    
+}
+.advantages__content {
+padding-top: 25px;
+padding-left: 26px;
+padding-right: 26px;
+padding-bottom: 27px;  
 }
 .advantages__name {
 font-family: Hind Madurai;
@@ -34,6 +43,5 @@ font-weight: normal;
 font-size  : 14px;
 line-height: 1.4;
 opacity: 0.6;
-padding-left: 26px;
-padding-right: 26px;
+
 }

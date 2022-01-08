@@ -1,0 +1,126 @@
+.page-footer {
+    padding-top: 70px;
+    padding-bottom: 104px;
+    background-color: #0A0808;;
+   
+}
+.page-footer .container {
+    display: flex;
+}
+.about-us__text {
+font-family   : Roboto;
+font-style    : normal;
+font-weight   : normal;
+font-size     : 12px;
+line-height   : 17px;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+opacity: 0.7;
+width: 207px;
+margin-bottom: 25px;
+}
+.about-us__name {
+font-family: Roboto;
+font-style : normal;
+font-weight: 500;
+font-size  : 12px;
+line-height: 14px;
+color: #FFFFFF;
+margin-bottom: 8px;
+}
+.about-us__list {
+    display: flex;
+}
+.about-us__item:nth-child(-n+3){
+margin-right: 10px;
+}
+.home {
+    margin-left: 37px;
+    &__item:nth-child(-n+5){
+        margin-bottom: 10px;
+    }
+}
+.home__link {
+font-family: Roboto;
+font-style : normal;
+font-weight: normal;
+font-size  : 12px;
+line-height: 1.2;
+color: #FFFFFF;
+opacity: 0.7; 
+text-decoration: none;
+cursor: pointer;
+transition: opacity 300ms linear;
+&:hover,
+&:focus {
+    opacity: 1;
+}
+}
+.partners {
+    margin-left: 132px;
+    &__item{
+font-family: Roboto;
+font-style : normal;
+font-weight: normal;
+font-size  : 12px;
+line-height: 14px;
+color: #FFFFFF;
+opacity: 0.8;
+    }
+
+    &__item:nth-child(-n+4) {
+        margin-bottom: 10px;
+    }
+}
+.form {
+  position: relative;  
+  display: block;
+  margin-left: auto;
+}
+.form__name {
+    
+font-family: Roboto;
+font-style : normal;
+font-weight: 500;
+font-size  : 16px;
+line-height: 19px;
+color: #FFFFFF;
+display: inline-block;
+}
+.form__input {
+display: inline-block;
+width: 388px;
+padding: 20px 32px;
+border    : 2px solid #D64374;
+box-sizing: border-box;
+border-radius: 5px;
+background: #0A0808;
+outline: none;
+color: #FFFFFF;
+opacity: 0.6;
+&::placeholder {
+font-family: Roboto;
+font-style : normal;
+font-weight: normal;
+font-size  : 14px;
+line-height: 16px;
+color: #FFFFFF;
+opacity: 0.6; 
+}
+}
+.form__button {
+position: absolute;
+right: 0;
+background: #D23166;
+border-radius: 5px;
+padding: 19px 18px;
+font-family: Roboto;
+font-style : normal;
+font-weight: 500;
+font-size  : 20px;
+line-height: 23px;
+color: #FFFFFF;
+outline: none;
+border: none;
+cursor: pointer;
+}

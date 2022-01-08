@@ -445,18 +445,28 @@ summary {
       justify-content: space-around;
 }
 
-.advantages__item:not(last-child) {
+.advantages__item:nth-child(-n+3) {
   margin-right: 39px;
 }
 
-.advantages__grup {
+.advantages__item {
   width: 250px;
-  height: 200px;
   background: #FFFFFF;
   -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
   border-radius: 7px;
   text-align: center;
+}
+
+.advantagesr__icon {
+  margin-top: 33px;
+}
+
+.advantages__content {
+  padding-top: 25px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 27px;
 }
 
 .advantages__name {
@@ -476,8 +486,6 @@ summary {
   font-size: 14px;
   line-height: 1.4;
   opacity: 0.6;
-  padding-left: 26px;
-  padding-right: 26px;
 }
 
 .main-product {
@@ -778,6 +786,183 @@ summary {
   color: #FFFFFF;
   background: #D64374;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-footer {
+  padding-top: 70px;
+  padding-bottom: 104px;
+  background-color: #0A0808;
+}
+
+.page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.7;
+  width: 207px;
+  margin-bottom: 25px;
+}
+
+.about-us__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.about-us__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us__item:nth-child(-n+3) {
+  margin-right: 10px;
+}
+
+.home {
+  margin-left: 37px;
+}
+
+.home__item:nth-child(-n+5) {
+  margin-bottom: 10px;
+}
+
+.home__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.home__link:hover, .home__link:focus {
+  opacity: 1;
+}
+
+.partners {
+  margin-left: 132px;
+}
+
+.partners__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.partners__item:nth-child(-n+4) {
+  margin-bottom: 10px;
+}
+
+.form {
+  position: relative;
+  display: block;
+  margin-left: auto;
+}
+
+.form__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.form__input {
+  display: inline-block;
+  width: 388px;
+  padding: 20px 32px;
+  border: 2px solid #D64374;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background: #0A0808;
+  outline: none;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.form__input::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.form__input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.form__button {
+  position: absolute;
+  right: 0;
+  background: #D23166;
+  border-radius: 5px;
+  padding: 19px 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
