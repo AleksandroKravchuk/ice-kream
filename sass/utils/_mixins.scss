@@ -17,3 +17,31 @@
   line-height: $lx;
   color: $color;
 }
+@mixin pay ($img: url(../images/buy1.svg), $bz:14px 14px) {
+ content          : "";
+ display          : inline-block;
+ width            : 30px;
+ height           : 30px;
+ background       : #FFFFFF;
+ border-radius    : 3px;
+ background-size: $bz;
+ background-repeat: no-repeat;
+ margin-right     : 10px;
+ background-image: $img;
+ background-position:center;
+  margin-bottom: -8px;
+}
+
+@mixin button-pay ($bs: url(../images/app.svg)) {
+ position           : absolute;
+ display            : inline-block;
+ content            : "";
+ width              : 200px;
+ height             : 77px;
+ background-color   : #F8EDF0;
+ background-image   : $bs;
+ background-position: center;
+ background-repeat  : no-repeat;
+ background-size    : cover;
+ cursor             : pointer;
+}

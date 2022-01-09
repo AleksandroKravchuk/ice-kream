@@ -24,16 +24,59 @@ margin-bottom: 31px;
 .pay-food__item:nth-child(-n+2) {
     margin-bottom: 20px;
 }
-.pay-food__link {
-    @include text ($fs: 22px, $lx: 1.2, $opa: 1)
+.pay-food__link-1 {
+    @include text ($fs: 22px, $lx: 1.2, $opa: 1);
     cursor: pointer;
+    &::before {
+        
+    @include pay ($img: url(../images/buy1.svg),
+$bz:11px 17px);
+
+    }
+}
+.pay-food__link-2 {
+    @include text ($fs: 22px, $lx: 1.2, $opa: 1);
+    cursor: pointer;
+    &::before {
+        @include pay ($img: url(../images/buy2.svg));
+    }
+}
+.pay-food__link-3 {
+    @include text ($fs: 22px, $lx: 1.2, $opa: 1);
+    cursor: pointer;
+    &::before {
+    @include pay ($img: url(../images/buy3.svg),
+$bz:16px 13px);
+    }
 }
 .pay-food__buttons-list {
+    position: relative;
     display: flex;
+    align-items: center;
 }
-.pay-food__buttons-form {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: orangered;
+
+// .pay-food__buttons-item:nth-child(1){
+// display: inline-block;
+// margin-right: 7px;
+// width : 200px;
+// height : 77px;
+// }
+.pay-food__buttons-form1 {
+    margin-right: 7px;
+    &::after {
+    @include button-pay ($bs: url(../images/google.svg))
+    width : 200px;
+    height : 77px;
+    top : 0;
+    left : -15px;
+    }
+}
+.pay-food__buttons-form2 {
+    &::after {
+    @include button-pay ()
+    width : 173px;
+    height : 88px;
+    top : -5px;
+    left : 200px;
+    }
 }

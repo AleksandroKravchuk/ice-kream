@@ -376,6 +376,8 @@ summary {
   color: #000000;
   opacity: 0.7;
   text-decoration: none;
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
 }
 
 .page-header__link:hover, .page-header__link:focus {
@@ -633,6 +635,28 @@ summary {
   margin-bottom: 50px;
 }
 
+.card__price {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.4;
+  text-align: right;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card__price-not {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  opacity: 0.7;
+}
+
 .pay-food {
   padding-top: 90px;
   padding-bottom: 150px;
@@ -671,7 +695,7 @@ summary {
   margin-bottom: 20px;
 }
 
-.pay-food__link {
+.pay-food__link-1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -683,17 +707,123 @@ summary {
   cursor: pointer;
 }
 
+.pay-food__link-1::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  background-size: 11px 17px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-image: url(../images/buy1.svg);
+  background-position: center;
+  margin-bottom: -8px;
+}
+
+.pay-food__link-2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pay-food__link-2::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-image: url(../images/buy2.svg);
+  background-position: center;
+  margin-bottom: -8px;
+}
+
+.pay-food__link-3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pay-food__link-3::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  background-size: 16px 13px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-image: url(../images/buy3.svg);
+  background-position: center;
+  margin-bottom: -8px;
+}
+
 .pay-food__buttons-list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pay-food__buttons-form {
+.pay-food__buttons-form1 {
+  margin-right: 7px;
+}
+
+.pay-food__buttons-form1::after {
+  position: absolute;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: orangered;
+  content: "";
+  width: 200px;
+  height: 77px;
+  background-color: #F8EDF0;
+  background-image: url(../images/google.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 200px;
+  height: 77px;
+  top: 0;
+  left: -15px;
+}
+
+.pay-food__buttons-form2::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 200px;
+  height: 77px;
+  background-color: #F8EDF0;
+  background-image: url(../images/app.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 173px;
+  height: 88px;
+  top: -5px;
+  left: 200px;
 }
 
 .questions {
@@ -965,5 +1095,37 @@ summary {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.button, .page-header__button {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 15px 0px;
+  width: 165px;
+  color: #FAFAFA;
+  background: #D23166;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.button-card {
+  padding: 15px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #FAFAFA;
+  background: #D64374;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  width: 165px;
 }
 /*# sourceMappingURL=main.css.map */

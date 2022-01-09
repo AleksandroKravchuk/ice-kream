@@ -8,13 +8,6 @@
     align-items: center;
 }
 
-// .page-header__logo {
-//     display: inline-block;
-//     width: 79px;
-//     height: 79px;
-//    background-image: url(./images/logo1.svg);
-//     // background-color: red;
-// }
 .page-header__list {
     display: flex;
     align-items: center;
@@ -24,12 +17,14 @@
     margin-right: 40px;
 }
 .page-header__link {
-@include text
+@include text;
+transition: color 300ms linear;
 &:hover,
 &:focus {
     color: $accent-color;
 }
 }
 .page-header__button {
-    margin-left: auto;
+@extend .button;
+margin-left: auto;
 }
