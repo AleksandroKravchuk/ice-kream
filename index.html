@@ -97,34 +97,70 @@
                 </ul>
                 <ul class="card">
                     <li class="card__item">
-                        <img src="" alt="ice-cream">
+                        <picture class="card__img">
+                        <source srcset="
+                            ./images/card/card1webp.webp 580w, 
+                            ./images/card/card1x2webp.webp 1160w" type="image/webp" >
+                        <img srcset="
+                            ./images/card/card1.jpg 1x, 
+                            ./images/card/card1x2.jpg 2x" 
+                            src="./images/card/card1.jpg" alt="ice-cream" width="580" height="415">
+                        </picture>
+                        <div class="card__content">
                         <h4 class="card__name">Brown bread</h4>
                         <p class="card__text">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
                         Pain is a pioneer in the healthy fast food scene.</p>
                         <p class="card__price">$19.55 <span class="card__price-not">$22.55</span></p>
-                        <button class="button-card" type="button">Buy Now</button>
+                        <button class="button-card" type="button">Buy Now</button></div>
                     </li>
                     <li class="card__item">
-                        <img src="" alt="ice-cream">
+                        <picture>
+                            <source srcset="
+                                ./images/card/card2webp.webp 580w, 
+                                ./images/card/card2x2webp.webp 1160w" type="image/webp">
+                            <img srcset="
+                                ./images/card/card2.jpg 1x, 
+                                ./images/card/card2x2.jpg 2x" 
+                                src="./images/card/card2.jpg" alt="ice-cream" width="580" height="415">
+                        </picture>
+                        <div class="card__content">
                         <h4 class="card__name">Cayenne chocolate</h4>
                         <p class="card__text">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
                         Pain is a pioneer in the healthy fast food scene.</p>
                         <p class="card__price">$19.55 <span class="card__price-not">$22.55</span></p>
-                        <button class="button-card" type="button">Buy Now</button>
+                        <button class="button-card" type="button">Buy Now</button></div>
                     </li>
                     <li class="card__item">
-                        <img src="" alt="ice-cream">
+                        <picture>
+                            <source srcset="
+                                ./images/card/card3webp.webp 580w, 
+                                ./images/card/card3x2webp.webp 1160w" type="image/webp">
+                            <img srcset="
+                                ./images/card/card3.jpg 1x, 
+                                ./images/card/card3x2.jpg 2x" 
+                                src="./images/card/card3.jpg" alt="ice-cream" width="580" height="415">
+                        </picture>
+                        <div class="card__content">
                         <h4 class="card__name">Sweet corn</h4>
                         <p class="card__text">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
                         Pain is a pioneer in the healthy fast food scene.</p>
                         <p class="card__price">$19.55 <span class="card__price-not">$22.55</span></p>
-                        <button class="button-card" type="button">Buy Now</button>
+                        <button class="button-card" type="button">Buy Now</button></div>
                     </li>
                     <li class="card__item">
-                        <img src="" alt="ice-cream">
+                        <picture>
+                            <source srcset="
+                                ./images/card/card4webp.webp 580w, 
+                                ./images/card/card4x2webp.webp 1160w" type="image/webp">
+                            <img srcset="
+                                ./images/card/card4.jpg 1x, 
+                                ./images/card/card4x2.jpg 2x" 
+                                src="./images/card/card4.jpg" alt="ice-cream" width="580" height="415">
+                        </picture>
+                        <div class="card__content-autor">
                         <h5 class="card__autor">Adele A. McNeill</h5>
                         <p class="card__text--autor">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie
-                        Moments.</p>
+                        Moments.</p></div>
                     </li>
                 </ul>
             </div>
@@ -199,7 +235,25 @@
                 <div class="form__block">
                 <input class="form__input" type="text" id="email" name="email" placeholder="Your Email">
                 <button class="form__button" type="submit">Subscribe</button></div>
+                <ul class="pay-card">
+                    <li class="pay-card__item">
+                        <svg width="19" height="30">
+                            <use href="./images/symbol-defs.svg#icon-f1"></use>
+                        </svg>
+                    </li>
+                    <li class="pay-card__item">
+                        <svg width="34" height="45">
+                            <use href="./images/symbol-defs.svg#icon-f2"></use>
+                        </svg>
+                    </li>
+                    <li class="pay-card__item">
+                        <svg width="47" height="45">
+                            <use href="./images/symbol-defs.svg#icon-f3"></use>
+                        </svg>
+                    </li>
+                </ul>
             </form>
+    
         </div>
     </footer>
 </body>

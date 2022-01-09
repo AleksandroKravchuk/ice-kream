@@ -1,0 +1,67 @@
+.form {
+
+    margin-left: auto;
+
+}
+
+.form__name {
+    font-family: Roboto;
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 16px;
+    line-height: 19px;
+    color      : #FFFFFF;
+}
+
+.form__block {
+    position  : relative;
+    margin-top: 13px;
+}
+
+.form__input {
+    width        : 388px;
+    padding      : 20px 32px;
+    border       : 2px solid #D64374;
+    box-sizing   : border-box;
+    border-radius: 5px;
+    background   : #0A0808;
+    outline      : none;
+    color        : #FFFFFF;
+    opacity      : 0.6;
+
+    &::placeholder {
+        font-family: Roboto;
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 14px;
+        line-height: 16px;
+        color      : #FFFFFF;
+        opacity    : 0.6;
+    }
+}
+
+.form__button {
+    position     : absolute;
+    right        : 0;
+    background   : #D23166;
+    border-radius: 5px;
+    padding      : 19px 18px;
+    font-family  : Roboto;
+    font-style   : normal;
+    font-weight  : 500;
+    font-size    : 20px;
+    line-height  : 23px;
+    color        : #FFFFFF;
+
+    outline: none;
+    border : none;
+    cursor : pointer;
+}
+.pay-card {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.pay-card__item:nth-child(-n+2) {
+    margin-right: 10px;
+}
