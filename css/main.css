@@ -7,11 +7,6 @@ body {
   font-family: 'Fredoka One', cursive;
   font-family: 'Hind Madurai', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background-color: #E5E5E5;
-  max-width: 1600px;
-  max-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1,
@@ -498,7 +493,17 @@ summary {
 .main-product {
   padding-top: 141px;
   padding-bottom: 146px;
+  background-image: url(../images/main/main.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 80%;
   background-color: #F8EDF0;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), creen and (-webkit-min-device-pixel-ratio: 2), creen and (min-resolution: 2dppx) {
+  .main-product {
+    background-image: url(../images/main/main2x.jpg);
+  }
 }
 
 .main-product__name {
@@ -692,8 +697,25 @@ summary {
 
 .pay-food {
   padding-top: 90px;
-  padding-bottom: 150px;
+  padding-bottom: 240px;
   background: #F8EDF0;
+}
+
+.pay-food > .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pay-food__card {
+  position: absolute;
+  background: #D64374;
+  border-radius: 33px;
+}
+
+.pay-food__content {
+  margin-left: 415px;
 }
 
 .pay-food__name {

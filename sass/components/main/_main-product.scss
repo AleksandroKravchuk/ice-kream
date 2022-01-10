@@ -1,7 +1,19 @@
 .main-product {
     padding-top: 141px;
     padding-bottom: 146px;
+    background-image:   url(../images/main/main.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 40%;
+   background-position: 80%;
     background-color: $main-bckg-color;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    creen and (min-resolution: 2dppx) {
+    background-image: url(../images/main/main2x.jpg);
+}
+}
+.main-product__box {
+    
 }
 .main-product__name {
 font-family: Hind Madurai;

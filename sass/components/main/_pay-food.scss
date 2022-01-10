@@ -1,7 +1,20 @@
 .pay-food {
 padding-top: 90px;
-padding-bottom: 150px;
+padding-bottom: 240px;
 background:$main-bckg-color;
+}
+.pay-food>.container{
+position: relative;
+display: flex;
+}
+.pay-food__card{
+    position: absolute;
+    background: #D64374;
+border-radius: 33px;
+
+}
+.pay-food__content {
+    margin-left: 415px;
 }
 .pay-food__name {
 font-family: Roboto;
