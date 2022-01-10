@@ -1,7 +1,8 @@
 .advantages {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #E5E5E5;;
+    // background-color: #E5E5E5;
+    background-color: $footer-text-color;
 }
 .advantages__list {
     display: flex;

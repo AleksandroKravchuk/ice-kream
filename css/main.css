@@ -7,6 +7,11 @@ body {
   font-family: 'Fredoka One', cursive;
   font-family: 'Hind Madurai', sans-serif;
   font-family: 'Roboto', sans-serif;
+  background-color: #E5E5E5;
+  max-width: 1600px;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -436,7 +441,7 @@ summary {
 .advantages {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .advantages__list {
@@ -522,11 +527,7 @@ summary {
 .our-products {
   padding-top: 137px;
   padding-bottom: 149px;
-  background-color: #E5E5E5;
-}
-
-.card__img {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .our-products__name {
@@ -611,19 +612,36 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__item:nth-child(-n+3) {
   margin-bottom: 30px;
 }
 
+.card__item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .card__content {
-  margin-left: 85px;
   width: 454px;
+  text-align: start;
+  margin-left: 85px;
+}
+
+.card__content-odd {
+  width: 454px;
+  text-align: right;
+  margin-right: 85px;
 }
 
 .card__content-autor {
-  margin-left: 85px;
+  margin-right: 224px;
   width: 322px;
 }
 
@@ -657,7 +675,6 @@ summary {
   font-weight: 500;
   font-size: 26px;
   line-height: 1.4;
-  text-align: right;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -942,10 +959,11 @@ summary {
   background-color: #0A0808;
 }
 
-.page-footer .container {
+.page-footer__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 9px;
 }
 
 .about-us__text {
