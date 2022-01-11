@@ -342,6 +342,13 @@ summary {
   background-color: #F2CEDA;
   padding-top: 42px;
   padding-bottom: 67px;
+  width: 100vw;
+}
+
+.page-heade-fixed {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
 }
 
 .header {
