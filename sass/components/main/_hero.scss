@@ -1,8 +1,27 @@
 .hero {
     padding-top: 196px;
     padding-bottom: 213px;
+    background-image: 
+    url(../images/hero/hero.png), 
+    url(../images/hero/hero-main.png), 
+    url(../images/hero/kolo.png),
+    url(../images/hero/ellipse.png);
+    background-position-x:100%,95%,84%,80%;
+    background-position-y: 75%,0%,70%,120%;
+    //  transform:  rotate(4.79deg);
+    background-size: cover;
+    background-size: 55%,45%,25%,50%;
+    background-repeat: no-repeat;
     background-color: $header-bckg-color;
-    display: flex;
+    background-attachment: inherit;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero2x.png),
+url(../images/hero/hero-main2x.png),
+url(../images/hero/kolo2x.png),
+url(../images/hero/ellipse2x.png);
+    }
 }
 .hero__name {
 font-weight   : 500;

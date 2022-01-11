@@ -391,10 +391,20 @@ summary {
 .hero {
   padding-top: 196px;
   padding-bottom: 213px;
+  background-image: url(../images/hero/hero.png), url(../images/hero/hero-main.png), url(../images/hero/kolo.png), url(../images/hero/ellipse.png);
+  background-position-x: 100%,95%,84%,80%;
+  background-position-y: 75%,0%,70%,120%;
+  background-size: cover;
+  background-size: 55%,45%,25%,50%;
+  background-repeat: no-repeat;
   background-color: #F2CEDA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-attachment: inherit;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero2x.png), url(../images/hero/hero-main2x.png), url(../images/hero/kolo2x.png), url(../images/hero/ellipse2x.png);
+  }
 }
 
 .hero__name {
@@ -492,18 +502,24 @@ summary {
 
 .main-product {
   padding-top: 141px;
-  padding-bottom: 146px;
-  background-image: url(../images/main/main.jpg);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 80%;
+  padding-bottom: 133px;
   background-color: #F8EDF0;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), creen and (-webkit-min-device-pixel-ratio: 2), creen and (min-resolution: 2dppx) {
-  .main-product {
-    background-image: url(../images/main/main2x.jpg);
-  }
+.main-product > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-product__img {
+  position: absolute;
+  top: -213px;
+  right: 0;
 }
 
 .main-product__name {
@@ -775,6 +791,12 @@ summary {
   background-image: url(../images/buy1.svg);
   background-position: center;
   margin-bottom: -8px;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.pay-food__link-1:hover::before, .pay-food__link-1:focus::before {
+  background-color: #D23166;
 }
 
 .pay-food__link-2 {
@@ -802,6 +824,12 @@ summary {
   background-image: url(../images/buy2.svg);
   background-position: center;
   margin-bottom: -8px;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.pay-food__link-2:hover::before, .pay-food__link-2:focus::before {
+  background-color: #D23166;
 }
 
 .pay-food__link-3 {
@@ -829,6 +857,12 @@ summary {
   background-image: url(../images/buy3.svg);
   background-position: center;
   margin-bottom: -8px;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.pay-food__link-3:hover::before, .pay-food__link-3:focus::before {
+  background-color: #D23166;
 }
 
 .pay-food__buttons-list {
@@ -973,6 +1007,15 @@ summary {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
+.questions__button:hover, .questions__button:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .page-footer {
@@ -1151,6 +1194,15 @@ summary {
   outline: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
+.form__button:hover, .form__button:focus {
+  -webkit-box-shadow: 0 0 50px 10px rgba(255, 0, 255, 0.7);
+          box-shadow: 0 0 50px 10px rgba(255, 0, 255, 0.7);
 }
 
 .pay-card {
@@ -1181,6 +1233,15 @@ summary {
   cursor: pointer;
   border: none;
   text-align: center;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
+.button:hover, .page-header__button:hover, .button:focus, .page-header__button:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-card {
@@ -1197,5 +1258,14 @@ summary {
   border: none;
   text-align: center;
   width: 165px;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
+.button-card:hover, .button-card:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*# sourceMappingURL=main.css.map */

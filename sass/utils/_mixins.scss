@@ -45,3 +45,12 @@
  background-size    : cover;
  cursor             : pointer;
 }
+@mixin custom-bg($bg_url, $bg_size, $bg-color, $bg-repeat, $bg-position) {
+  // You can write own styles for background
+  background-image     : url($bg_url);
+  background-repeat    : $bg-repeat;
+  background-attachment: inherit;
+  background-size      : $bg_size;
+  background-color     : $bg-color;
+  background-position  : $bg-position;
+}

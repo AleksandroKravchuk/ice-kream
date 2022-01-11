@@ -41,17 +41,26 @@ margin-bottom: 31px;
     @include text ($fs: 22px, $lx: 1.2, $opa: 1);
     cursor: pointer;
     &::before {
-        
     @include pay ($img: url(../images/buy1.svg),
 $bz:11px 17px);
-
+    transition: background-color 250ms linear;
     }
+    &:hover::before,
+    &:focus::before {
+    background-color: $accent-color;
 }
+}
+
 .pay-food__link-2 {
     @include text ($fs: 22px, $lx: 1.2, $opa: 1);
     cursor: pointer;
     &::before {
-        @include pay ($img: url(../images/buy2.svg));
+    @include pay ($img: url(../images/buy2.svg));
+    transition: background-color 250ms linear;   
+    }
+    &:hover::before,
+    &:focus::before {
+    background-color: $accent-color;
     }
 }
 .pay-food__link-3 {
@@ -60,6 +69,12 @@ $bz:11px 17px);
     &::before {
     @include pay ($img: url(../images/buy3.svg),
 $bz:16px 13px);
+    transition: background-color 250ms linear;
+    }
+    
+    &:hover::before,
+    &:focus::before {
+    background-color: $accent-color;
     }
 }
 .pay-food__buttons-list {
