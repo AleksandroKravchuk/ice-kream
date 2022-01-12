@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./libs/slick/slick.scss">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/slick/slick.less">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.scss">
+    <link rel="stylesheet" href="./">
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -180,9 +183,9 @@
                         Moments.</p>
                         <div class="autor__slider">
                          <div class="multiple-items">
-                            <div><img src="./images/slider/slider1.jpg" alt="meneger"></div>
-                            <div><img src="./images/slider/slider.jpg" alt="director"></div>
-                            <div><img src="./images/slider/slider3.jpg" alt="lider"></div>
+                            <div class="autor__photo"><img src="./images/slider/slider1.jpg" alt="meneger"></div>
+                            <div class="autor__photo"><img src="./images/slider/slider.jpg" alt="director"></div>
+                            <div class="autor__photo"><img src="./images/slider/slider3.jpg" alt="lider"></div>
                          </div></div>
                         </div>
                     </li>
@@ -292,25 +295,20 @@
         </div>
         </div>
     </footer>
- <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
+ <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
     <!-- <script src="./js/main.js"></script>     -->
-<script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://kit.fontawesome.com/bfb0265f6e.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
-        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
-        crossorigin="anonymous" ></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./libs/jquery.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
 <script>
     $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
 </script>
-
    
 </body>
-</html>
+</html> 
