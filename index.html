@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -171,10 +172,17 @@
                                 ./images/card/card4x2.jpg 2x" 
                                 src="./images/card/card4.jpg" alt="ice-cream" width="580" height="415">
                         </picture>
-                        <div class="card__content-autor">
-                        <h5 class="card__autor">Adele A. McNeill</h5>
-                        <p class="card__text--autor">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie
-                        Moments.</p></div>
+                
+                        <div class="autor">
+                        <h5 class="autor__name">Adele A. McNeill</h5>
+                        <p class="autor__text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie
+                        Moments.</p>
+                         <div class="multiple-items">
+                            <div>your content</div>
+                            <div>your content</div>
+                            <div>your content</div>
+                         </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -282,6 +290,14 @@
         </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    </script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script> -->

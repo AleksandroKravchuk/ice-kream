@@ -61,7 +61,7 @@ margin-bottom: 11px;
 color: $main-text-color
 
 }
-.card__autor {
+.autor__name {
 font-family: Roboto;
 font-style : normal;
 font-weight: 500;
@@ -69,7 +69,30 @@ font-size  : 24px;
 line-height: 1.17;
 color: $main-text-color;
 margin-bottom: 50px;
-
+&::before {
+    display          : inline-block;
+    content          : "";
+    width            : 59px;
+    height           : 58px;
+    background-image : url(../images/autor/autor.jpg);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin-right     : 21px;
+    margin-bottom: -30px;
+}
+&::after {
+display          : block;
+content          : "AMIRICAN";
+font-family: Roboto;
+font-style : normal;
+font-weight: 500;
+font-size  : 12px;
+line-height: 14px;
+color      : $main-text-color;
+opacity    : 0.7;
+margin-top    : 5px;
+margin-left: 80px;
+}
 }
 .card__item {
     display: flex;
@@ -79,6 +102,10 @@ margin-bottom: 50px;
     &:nth-child(even){
     flex-direction: row-reverse;
     }
+}
+.autor {
+margin-bottom: 50px;
+margin-right: 224px;
 }
 .card__content {
 width: 454px; 
@@ -91,18 +118,38 @@ text-align: right;
 margin-right: 85px;
 }
 
-&-autor {
-margin-right: 224px;
-width: 322px;
-} 
 }
+
 .card__text {
 @include text
 margin-bottom: 34px;
 }
-.card__text--autor {
+.autor__text {
     @include text
     margin-bottom: 50px;
+    width: 322px;
+    &::before {
+        display: inline-block;
+        content: "";
+        background-image: url(../images/q.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 11px;
+        height: 10px;
+        margin-right: 12px;
+        margin-bottom: 3px;
+    }
+      &::after {
+      display          : inline-block;
+      content          : "";
+      background-image : url(../images/q3.svg);
+      background-repeat: no-repeat;
+      background-size  : cover;
+      width            : 11px;
+      height           : 10px;
+      margin-left     : 12px;
+      margin-bottom    : 3px;
+  }
 }
 .card__price{
 font-family: Hind Madurai;
