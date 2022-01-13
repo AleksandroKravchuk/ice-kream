@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +12,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Ice-cream</title>
+   
 </head>
 <body>
-    <header class="page-header" .page-heade-fixed>
+    <header class="page-header">
         <div class="container header">
             <img src="./images//logo2.svg" alt="logo" width="79" height="79">
-                <!-- <svg class="page-header__logo" width="79" height="79">
-                    <use href="./images/logo3.png"></use>
-                </svg> -->
+              
                 <nav>
                     <ul class="page-header__list">
                         <li class="page-header__item"><a class="page-header__link" href="">Home</a></li>
@@ -34,13 +34,11 @@
     <main>
         <section class="hero">
             <div class="container">
-                
                 <h1 class="hero__name">Sweet fun, full of milk.</h1>
-                <h2 class="hero__subname">Feel inside cold with <br> our delicious <span class="hero_roze">ice-cream.</span></h2>
+                <h2 class="hero__subname">Feel inside cold with <br> our delicious <span class="hero__roze">ice-cream.</span></h2>
                 <p class="hero__text">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've
                 been left eating my thoughts, my words.</p>
-                <button class="button" type="button">Buy Now</button></div>
-               
+                <button class="button" type="button">Buy Now</button>
             </div>
         </section>
         <section class="advantages">
@@ -88,7 +86,7 @@
                 <picture class="main-product__img">
                     <source srcset="
                         ./images/main/mainwebp.webp  655w , 
-                        ./images/main/main2xwebp.webp 1310w" type="image/webp">
+                        ./images/main/main2xwebp.webp 1310w" type="image/webp" sizes="655vw">
                     <img srcset="
                         ./images/main/main.jpg 1x, 
                         ./images/main/main2x.jpg 2x" 
@@ -114,7 +112,7 @@
                         <picture>
                         <source srcset="
                             ./images/card/card1webp.webp  580w , 
-                            ./images/card/card1x2webp.webp 1160w" type="image/webp" >
+                            ./images/card/card1x2webp.webp 1160w" type="image/webp" sizes="580vw">
                         <img srcset="
                             ./images/card/card1.jpg 1x, 
                             ./images/card/card1x2.jpg 2x" 
@@ -131,7 +129,7 @@
                         <picture>
                             <source srcset="
                                 ./images/card/card2webp.webp 580w, 
-                                ./images/card/card2x2webp.webp 1160w" type="image/webp">
+                                ./images/card/card2x2webp.webp 1160w" type="image/webp" sizes="580vw">
                             <img srcset="
                                 ./images/card/card2.jpg 1x, 
                                 ./images/card/card2x2.jpg 2x" 
@@ -148,7 +146,7 @@
                         <picture>
                             <source srcset="
                                 ./images/card/card3webp.webp 580w, 
-                                ./images/card/card3x2webp.webp 1160w" type="image/webp">
+                                ./images/card/card3x2webp.webp 1160w" type="image/webp" sizes="580vw">
                             <img srcset="
                                 ./images/card/card3.jpg 1x, 
                                 ./images/card/card3x2.jpg 2x" 
@@ -165,7 +163,7 @@
                         <picture>
                             <source srcset="
                                 ./images/card/card4webp.webp 580w, 
-                                ./images/card/card4x2webp.webp 1160w" type="image/webp">
+                                ./images/card/card4x2webp.webp 1160w" type="image/webp" sizes="580vw">
                             <img srcset="
                                 ./images/card/card4.jpg 1x, 
                                 ./images/card/card4x2.jpg 2x" 
@@ -173,11 +171,11 @@
                         </picture>
                 
                         <div class="autor">
-                        <h5 class="autor__name">Adele A. McNeill</h5>
+                        <h4 class="autor__name">Adele A. McNeill</h4>
                         <p class="autor__text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie
                         Moments.</p>
                         <div class="autor__slider">
-                         <div class="slider">
+                         <div class="multiple-items">
                             <div class="autor__photo"><img src="./images/slider/slider1.jpg" alt="meneger"></div>
                             <div class="autor__photo"><img src="./images/slider/slider.jpg" alt="director"></div>
                             <div class="autor__photo"><img src="./images/slider/slider3.jpg" alt="lider"></div>
@@ -192,14 +190,14 @@
                 <picture class="pay-food__card">
                     <source srcset="
                         ./images/pay/pay1webp.webp 305w, 
-                        ./images/pay/pay1x2webp.webp 610w" type="image/webp">
+                        ./images/pay/pay1x2webp.webp 610w" type="image/webp" sizes="305vw">
                     <img srcset="
                         ./images/pay/pay1.jpg 1x, 
                         ./images/pay/pay1x2.jpg 2x" 
-                        src="./images/pay/pay1.jpg" alt="pay-card" width="305" height=100%>
+                        src="./images/pay/pay1.jpg" alt="pay-card" width="305">
                 </picture>
                 <div class="pay-food__content">
-                <h4 class="pay-food__name">Simple Way To Order Your Food</h4>
+                <h5 class="pay-food__name">Simple Way To Order Your Food</h5>
                 <p class="pay-food__text">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've
                 been left eating my thoughts.</p>
                 <ul class="pay-food__list">
@@ -219,9 +217,9 @@
         <section class="questions">
             <div class="container">
             <form class="questions__form">
-               <label class="questions__name" for="questions">Have Question in Mind? Let us help you</label> 
+               <label class="questions__name" for="form">Have Question in Mind? Let us help you</label> 
                <div class="questions__fill">
-                 <input class="questions__input" type="text" id="questions" name="email"  autocomplete="on" placeholder="Enter your question">
+                 <input class="questions__input" type="text" id="form" name="email"  autocomplete="on" placeholder="Enter your question">
                  <button class="questions__button" type="submit">Send</button>
                </div>
             </form>
@@ -234,19 +232,19 @@
         <div class="page-footer__section"> 
              <div class="about-us">
              <p class="about-us__text">Some food has looked so awful that it's looked like something that the dog's brought home.</p>
-             <h5 class="about-us__name">Fllow Us</h5>
+             <p class="about-us__name">Fllow Us</p>
              <ul class="about-us__list">
                  <li class="about-us__item"><a class="about-us__link" href="">
-                    <img src="./images/facebook.png" alt="facebook" srcset="" width="15" height="15">
+                    <img src="./images/facebook.png" alt="facebook"  width="15" height="15">
                     </a></li>
                  <li class="about-us__item"><a class="about-us__link" href="">
-                    <img src="./images/twitter.png" alt="twitter" srcset="" width="15" height="15">
+                    <img src="./images/twitter.png" alt="twitter"  width="15" height="15">
                  </a></li>
                  <li class="about-us__item"><a class="about-us__link" href="">
-                    <img src="./images/instagram.png" alt="instagram" srcset="" width="15" height="15">
+                    <img src="./images/instagram.png" alt="instagram"  width="15" height="15">
                  </a></li>
                  <li class="about-us__item"><a class="about-us__link" href="">
-                    <img src="./images/linkedin.png" alt="linkedin" srcset="" width="15" height="15">
+                    <img src="./images/linkedin.png" alt="linkedin"  width="15" height="15">
                  </a></li>
              </ul></div>
              <ul class="home">
@@ -294,8 +292,9 @@
  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"></script>
 
-<script src="./js/slick.min.js"></script>
-  <script src="./js/script.js"></script>    
-   
+<script src="./js/slick/slick.min.js"></script>
+ <script src="./js/script.js"></script>  
+  
+
 </body>
 </html> 
