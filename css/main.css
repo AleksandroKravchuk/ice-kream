@@ -338,6 +338,12 @@ summary {
   overflow: hidden;
 }
 
+slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .page-header {
   background-color: #F2CEDA;
   padding-top: 42px;
@@ -767,6 +773,10 @@ summary {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   opacity: 0.7;
+}
+
+.autor__slider {
+  background-color: blueviolet;
 }
 
 .pay-food {
