@@ -775,8 +775,10 @@ slick-track {
   opacity: 0.7;
 }
 
-.autor__slider {
-  background-color: blueviolet;
+.block {
+  width: 300px;
+  height: 60px;
+  background-color: aqua;
 }
 
 .pay-food {
