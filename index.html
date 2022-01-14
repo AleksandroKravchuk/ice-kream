@@ -176,12 +176,12 @@
                         <h4 class="autor__name">Adele A. McNeill</h4>
                         <p class="autor__text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie
                         Moments.</p>
-                        <div class="block">
-                            <div class="your-class">
-                                <div class="autor__photo" style="background-image: url(/images/slider/slider1x2.jpg);"></div>
-                                <div class="autor__photo" style="background-image: url(/images/slider/slider3x2.jpg);"></div>
-                                <div class="autor__photo" style="background-image: url(/images/slider/slider1x2.jpg);"></div>
-                                <div class="autor__photo" style="background-image: url(/images/slider/slider3x2.jpg);"></div>
+                        <div class="autor__slider">
+                            <div class="autor__list">
+                                <div class="autor__item"><img src="images/autor/1png.png" alt="meneger"></div>
+                                <div class="autor__item"><img src="images/autor/2png.png" alt="director"></div>
+                                <div class="autor__item"><img src="images/autor/1png.png" alt="lider"></div>
+                                <div class="autor__item"><img src="images/autor/2png.png" alt="director"></div>
                             </div>
                         </div>
                         </div>
@@ -298,10 +298,12 @@
 <script type="text/javascript" src="/slick/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.your-class').slick({
-              infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1
+        $('.autor__list').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: true
         });
         $('.single-item-rtl').slick({
             rtl: true
