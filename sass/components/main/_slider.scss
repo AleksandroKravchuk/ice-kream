@@ -60,3 +60,16 @@
         border: 1px solid #D64374;
     }
 }
+.autor__item1 {
+    margin-left : 10px;
+margin-right : 10px;
+ transform : scale(0.7);
+ transition : opacity 300ms linear,
+ transform 300ms linear;
+ text-align : center;
+opacity    : 0.4;
+&.slick-center {
+transform: scale(1);
+ opacity  : 1;
+}
+}

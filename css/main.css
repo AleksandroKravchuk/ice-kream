@@ -847,6 +847,25 @@ slick-track {
   border: 1px solid #D64374;
 }
 
+.autor__item1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: opacity 300ms linear, -webkit-transform 300ms linear;
+  transition: opacity 300ms linear, -webkit-transform 300ms linear;
+  transition: opacity 300ms linear, transform 300ms linear;
+  transition: opacity 300ms linear, transform 300ms linear, -webkit-transform 300ms linear;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.autor__item1.slick-center {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
 .pay-food {
   padding-top: 90px;
   padding-bottom: 240px;
