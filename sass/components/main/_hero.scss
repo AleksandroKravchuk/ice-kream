@@ -6,11 +6,11 @@
     url(../images/hero/hero-main.png), 
     url(../images/hero/kolo.png),
     url(../images/hero/ellipse.png);
-    background-position-x:100%,95%,84%,80%;
-    background-position-y: 75%,0%,70%,120%;
+    background-position-x:100%,88%,80%,80%;
+    background-position-y: 85%,30%,80%,120%;
     //  transform:  rotate(4.79deg);
-    background-size: cover;
-    background-size: 55%,45%,25%,50%;
+   
+    background-size: 58%,40%,23%,50%;
     background-repeat: no-repeat;
     background-color: $header-bckg-color;
     background-attachment: inherit;
@@ -24,11 +24,8 @@ url(../images/hero/ellipse2x.png);
     }
 }
 .hero__name {
-font-weight   : 500;
-font-size     : 14px;
-line-height   : 16px;
+@include text ($fw:500,$fs:14px,$lx:1.14,$color:$hero-color,$opa:1)
 letter-spacing: 0.1em;
-color: #0F0101; 
 margin-bottom: 6px;
 }
 .hero__subname {
@@ -37,19 +34,13 @@ font-style : normal;
 font-weight: normal;
 font-size  : 57.33px;
 line-height: 120.5%;
-color: #0F0101;
+color: $hero-color;
 opacity: 0.9;
 margin-bottom: 35px;
 }
 .hero__text {
-font-family: Hind Madurai;
-font-style : normal;
-font-weight: normal;
-font-size  : 18px;
-line-height: 27px;
-color: #0F0101;
+@include secondary-text ($fw:400, $fs:18px,$lx:1.5,$color:$header-color,$opa:0.6)
 margin-bottom: 50px;
-opacity: 0.6;
 width: 523px
 }
 .hero__roze {

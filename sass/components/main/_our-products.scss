@@ -1,35 +1,26 @@
 .our-products {
     padding-top: 137px;
     padding-bottom: 149px;
-    // background-color: #E5E5E5;
     background-color: $footer-text-color;
+    
 }
 
 .our-products__name {
-font-family: Hind Madurai;
-font-style : normal;
-font-weight: 600;
-font-size  : 44.2px;
-line-height: 61px;
-color: $header-color;
+@include secondary-text ($lx:1.38,$color:$header-color)
 text-align: center;
 margin-bottom: 64px;
 }
 .our-products__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 109px;
+    .our-products__item:not(:last-child) {
+    margin-right: 40px;
+    }
 }
+
 .our-products__link {
-display: block;
-font-family: Roboto;
-font-style : normal;
-font-weight: 500;
-font-size  : 18px;
-line-height: 1.17;
-color: $main-text-color;
-opacity: 0.6;
-text-decoration: none;
+@include text ($fw:500,$fs:18px,$lx:1.17,$opa:0.6)
 cursor: pointer;
 transition: opacity 300ms linear;
 &:hover,
@@ -52,22 +43,11 @@ transition: opacity 300ms linear;
 }
 
 .card__name {
-font-family: Hind Madurai;
-font-style : normal;
-font-weight: bold;
-font-size  : 26px;
-line-height: 1.4;
+@include secondary-text ($fs:26px)
 margin-bottom: 11px;
-color: $main-text-color
-
 }
 .autor__name {
-font-family: Roboto;
-font-style : normal;
-font-weight: 500;
-font-size  : 24px;
-line-height: 1.17;
-color: $main-text-color;
+@include text ($fw:500,$fs:24px,$lx:1.17, $opa:1)
 margin-bottom: 50px;
 &::before {
     display          : inline-block;
@@ -83,13 +63,7 @@ margin-bottom: 50px;
 &::after {
 display          : block;
 content          : "AMIRICAN";
-font-family: Roboto;
-font-style : normal;
-font-weight: 500;
-font-size  : 12px;
-line-height: 14px;
-color      : $main-text-color;
-opacity    : 0.7;
+@include text ($fw:500,$fs:12px, $lx:1.17)
 margin-top    : 5px;
 margin-left: 80px;
 }
@@ -97,29 +71,24 @@ margin-left: 80px;
 .card__item {
     display: flex;
     align-items: center;
-    &:nth-child(-n+3){
+    justify-content: space-between;
+    &:nth-child(-n+2){
     margin-bottom: 30px;}
+    &:nth-child(3) {
+    margin-bottom: 112px;}
     &:nth-child(even){
     flex-direction: row-reverse;
     }
 }
-.autor {
-margin-bottom: 50px;
-margin-right: 224px;
-}
+
 .card__content {
 width: 454px; 
 text-align: start;
-margin-left: 85px;
-
 &-odd {
  width: 454px;
 text-align: right;
-margin-right: 85px;
 }
-
 }
-
 .card__text {
 @include text
 margin-bottom: 34px;
@@ -152,21 +121,10 @@ margin-bottom: 34px;
   }
 }
 .card__price{
-font-family: Hind Madurai;
-font-style : normal;
-font-weight: 500;
-font-size  : 26px;
-line-height: 1.4;
-color: $main-text-color;
+@include secondary-text ($fw:500,$fs:26px)
 margin-bottom: 10px;
-
 }
 .card__price-not {
-font-family         : Hind Madurai;
-font-style          : normal;
-font-weight         : 500;
-font-size           : 20px;
-line-height         : 1.4;
+@include secondary-text ($fw:500,$fs:20px,$opa:0.7)
 text-decoration-line: line-through;
-opacity: 0.7;
 }

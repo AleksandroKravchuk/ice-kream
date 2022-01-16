@@ -9,13 +9,14 @@
   text-decoration: none;
 }
 
-@mixin secondary-text($fw: 600, $fs: 44.2px, $lx: 1.4, $color: #150101) {
+@mixin secondary-text($fw: 600, $fs: 44.2px, $lx: 1.4, $color: $main-text-color, $opa:1) {
   font-family: Hind Madurai;
   font-style: normal;
-  font-weight: 600;
-  font-size: 44.2px;
+  font-weight: $fw;
+  font-size: $fs;
   line-height: $lx;
   color: $color;
+  opacity: $opa;
 }
 @mixin pay ($img: url(../images/buy1.svg), $bz:14px 14px) {
  content          : "";

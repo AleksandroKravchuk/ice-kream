@@ -15,23 +15,12 @@
     right: 0;
 }
 .main-product__name {
-font-family: Hind Madurai;
-font-style : normal;
-font-weight: 600;
-font-size  : 44.2px;
-line-height: 49px;
-color: $header-color;
+@include secondary-text ($lx:1.11,$color:$header-color)
 width: 349px;
 margin-bottom: 16px;
 }
 .main-product__text {
-font-family: Roboto;
-font-style : normal;
-font-weight: normal;
-font-size  : 16px;
-line-height: 24px;
-color: $header-color;
-opacity: 0.6;
+@include text ($color:$header-color,$opa:0.6)
 width: 442px;
 margin-bottom: 35px;
 }

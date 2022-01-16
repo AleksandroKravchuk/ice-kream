@@ -1,16 +1,9 @@
 .form {
-
     margin-left: auto;
-
 }
 
 .form__name {
-    font-family: Roboto;
-    font-style : normal;
-    font-weight: 500;
-    font-size  : 16px;
-    line-height: 19px;
-    color      : #FFFFFF;
+    @include text ($fw:500,$lx: 1.19,$color:$footer-text-color,$opa:1)
 }
 
 .form__block {
@@ -30,6 +23,7 @@
     opacity      : 0.6;
 
     &::placeholder {
+        @include text ($fs:14px,$lx: 1.14,$color:$footer-text-color,$opa:0.6)
         font-family: Roboto;
         font-style : normal;
         font-weight: normal;
@@ -47,15 +41,10 @@
     border-radius: 5px;
     padding      : 19px 18px;
     height: 100%;
-    font-family  : Roboto;
-    font-style   : normal;
-    font-weight  : 500;
-    font-size    : 20px;
-    line-height  : 1.15;
-    color        : #FFFFFF;
     outline: none;
     border : none;
     cursor : pointer;
+@include text ($fw:500,$fs:20px,$lx:1.15,$color:$footer-text-color, $opa:1)
     transition : box-shadow 250ms linear;
 &:hover,
 &:focus {

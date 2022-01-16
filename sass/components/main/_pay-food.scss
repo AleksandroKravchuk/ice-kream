@@ -6,30 +6,24 @@ background:$main-bckg-color;
 .pay-food>.container{
 position: relative;
 display: flex;
+justify-content: flex-end;
 }
 .pay-food__card{
-    position: absolute;
-    background: #D64374;
+position: absolute;
+top: 0;
+left: 0;
 border-radius: 33px;
+}
 
-}
-.pay-food__content {
-    margin-left: 415px;
-}
 .pay-food__name {
-font-family: Roboto;
-font-style : normal;
-font-weight: 500;
-font-size  : 44.2px;
-line-height: 1.2;
-color: $main-text-color;
+@include text ($fw:500,$fs:44.2px,$lx:1.2,$opa:1)
 margin-bottom: 20px;
 }
 .pay-food__text {
-@include text ($fs: 18px, $lx: 1.16, $color: $hero-color )
+@include text ($fs:18px,$lx:1.16,$color:$hero-color)
 letter-spacing: 0.01em;
-width: 607px;
 margin-bottom: 31px;
+width: 607px;
 }
 .pay-food__list {
     margin-bottom: 40px;
@@ -50,7 +44,6 @@ $bz:11px 17px);
     background-color: $accent-color;
 }
 }
-
 .pay-food__link-2 {
     @include text ($fs: 22px, $lx: 1.2, $opa: 1);
     cursor: pointer;
@@ -71,7 +64,6 @@ $bz:11px 17px);
 $bz:16px 13px);
     transition: background-color 250ms linear;
     }
-    
     &:hover::before,
     &:focus::before {
     background-color: $accent-color;
@@ -83,12 +75,6 @@ $bz:16px 13px);
     align-items: center;
 }
 
-// .pay-food__buttons-item:nth-child(1){
-// display: inline-block;
-// margin-right: 7px;
-// width : 200px;
-// height : 77px;
-// }
 .pay-food__buttons-form1 {
     margin-right: 7px;
     &::after {

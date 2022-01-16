@@ -1,12 +1,7 @@
 .page-header {
     background-color: $header-bckg-color;
-    padding-top: 42px;
-    padding-bottom: 67px;
-    width: 100vw;
-}
-.page-heade-fixed {
-    position: fixed;
-    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 0px;
     width: 100vw;
 }
 .header {
@@ -19,15 +14,18 @@
     align-items: center;
     margin-left: 266px;
 }
-.page-header__item :not(last-child){
+.page-header__item:not(:last-child){
     margin-right: 40px;
 }
 .page-header__link {
-@include text;
-transition: color 300ms linear;
+@include text ($fs:14px,$lx:1.14,$color:$header-color,$opa:0.6);
+transition:all 300ms linear;
 &:hover,
 &:focus {
-    color: $accent-color;
+color: $accent-color;
+font-weight: bold;
+font-size  : 15px;
+line-height: 1.2;
 }
 }
 .page-header__button {
