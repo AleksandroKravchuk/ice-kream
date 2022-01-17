@@ -33,18 +33,19 @@
   margin-bottom: -8px;
 }
 
-@mixin button-pay ($bs: url(../images/app.svg)) {
- position           : absolute;
+@mixin button-pay ($bs: url(../images/googleplay.png)) {
  display            : inline-block;
  content            : "";
- width              : 200px;
- height             : 77px;
- background-color   : #F8EDF0;
+ height             : 36px;
+ width              : 50px;
  background-image   : $bs;
  background-position: center;
  background-repeat  : no-repeat;
  background-size    : cover;
  cursor             : pointer;
+ margin-right: 3px;
+ margin-top: 7px;
+
 }
 @mixin custom-bg($bg_url, $bg_size, $bg-color, $bg-repeat, $bg-position) {
   // You can write own styles for background

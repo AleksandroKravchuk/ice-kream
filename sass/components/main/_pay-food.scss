@@ -1,6 +1,6 @@
 .pay-food {
 padding-top: 90px;
-padding-bottom: 240px;
+padding-bottom: 180px;
 background:$main-bckg-color;
 }
 .pay-food>.container{
@@ -70,27 +70,52 @@ $bz:16px 13px);
     }
 }
 .pay-food__buttons-list {
-    position: relative;
     display: flex;
     align-items: center;
 }
-
+.pay-food__buttons-item:nth-child(1){
+    margin-right: 20px;
+}
 .pay-food__buttons-form1 {
-    margin-right: 7px;
-    &::after {
-    @include button-pay ($bs: url(../images/google.svg))
-    width : 200px;
-    height : 77px;
-    top : 0;
-    left : -15px;
-    }
+    display: flex;
+    background-color: $main-text-color;
+    border-radius: 6px;
+    padding: 2px 8px;
+    transition: background-color 300ms linear;
+    @include text ($fs: 24px,$lx:1.1,$color: $footer-text-color,
+$opa: 1)
+ &::before {
+     @include button-pay ()
+ }
+ &:hover,
+ &:focus {
+     background-color: $accent-color;
+ }
 }
 .pay-food__buttons-form2 {
-    &::after {
-    @include button-pay ()
-    width : 173px;
-    height : 88px;
-    top : -5px;
-    left : 200px;
+    display         : flex;
+    align-items: center;
+    background-color: $main-text-color;
+    border-radius   : 6px;
+    padding         : 2px 23px 2px 8px;
+    transition: background-color 300ms linear;
+    @include text ($fs: 24px, $lx: 1.5, $color: $footer-text-color,
+        $opa: 1) 
+        &::before {
+        @include button-pay ($bs: url(../images/maclogo.png))
+    margin-bottom: 10px;   
+    }
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
     }
 }
+.pay-food__google {
+width: 130px;
+
+}
+.pay-food__google-name {
+    @include text ($fw: 400,$fs: 12px,$lx: 1.1,$color: $footer-text-color,
+$opa: 1)
+}
+

@@ -884,7 +884,7 @@ slick-track {
 
 .pay-food {
   padding-top: 90px;
-  padding-bottom: 240px;
+  padding-bottom: 180px;
   background: #F8EDF0;
 }
 
@@ -1039,7 +1039,6 @@ slick-track {
 }
 
 .pay-food__buttons-list {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,44 +1047,101 @@ slick-track {
           align-items: center;
 }
 
+.pay-food__buttons-item:nth-child(1) {
+  margin-right: 20px;
+}
+
 .pay-food__buttons-form1 {
-  margin-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 2px 8px;
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
 }
 
-.pay-food__buttons-form1::after {
-  position: absolute;
+.pay-food__buttons-form1::before {
   display: inline-block;
   content: "";
-  width: 200px;
-  height: 77px;
-  background-color: #F8EDF0;
-  background-image: url(../images/google.svg);
+  height: 36px;
+  width: 50px;
+  background-image: url(../images/googleplay.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  width: 200px;
-  height: 77px;
-  top: 0;
-  left: -15px;
+  margin-right: 3px;
+  margin-top: 7px;
 }
 
-.pay-food__buttons-form2::after {
-  position: absolute;
+.pay-food__buttons-form1:hover, .pay-food__buttons-form1:focus {
+  background-color: #D23166;
+}
+
+.pay-food__buttons-form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 2px 23px 2px 8px;
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.pay-food__buttons-form2::before {
   display: inline-block;
   content: "";
-  width: 200px;
-  height: 77px;
-  background-color: #F8EDF0;
-  background-image: url(../images/app.svg);
+  height: 36px;
+  width: 50px;
+  background-image: url(../images/maclogo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  width: 173px;
-  height: 88px;
-  top: -5px;
-  left: 200px;
+  margin-right: 3px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.pay-food__buttons-form2:hover, .pay-food__buttons-form2:focus {
+  background-color: #D23166;
+}
+
+.pay-food__google {
+  width: 130px;
+}
+
+.pay-food__google-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
 }
 
 .questions {
