@@ -70,7 +70,7 @@ left: 0;
     }
 }
 .autor__list .autor__item1 {
-    margin-left : 10px;
+margin-left : 10px;
 margin-right : 10px;
  transform : scale(0.7);
  transition : opacity 300ms linear,
@@ -82,14 +82,10 @@ transform: scale(1);
  opacity  : 1;
 }
 }
-.autor__list-main {
-    width: 80px;
+.autor__list-main .slick-list {
+    width: 60px;
 
 }
-// .slick-next {
-//     position: absolute;
-//     top: 280px;
-//     width: 100px;
-//     height: 100px;
-//     // background-color: aqua;
-// }
+.autor__list-main>.slick-arrow {
+    visibility: hidden;
+}

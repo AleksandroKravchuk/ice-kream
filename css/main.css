@@ -874,8 +874,12 @@ summary {
   opacity: 1;
 }
 
-.autor__list-main {
-  width: 80px;
+.autor__list-main .slick-list {
+  width: 60px;
+}
+
+.autor__list-main > .slick-arrow {
+  visibility: hidden;
 }
 
 .pay-food {
