@@ -48,24 +48,26 @@ margin-bottom: 11px;
 }
 .autor__name {
 @include text ($fw:500,$fs:24px,$lx:1.17, $opa:1)
+margin-top: 10px;
 margin-bottom: 50px;
-&::before {
-    display          : inline-block;
-    content          : "";
-    width            : 59px;
-    height           : 58px;
-    background-image : url(../images/autor/autor.jpg);
-    background-repeat: no-repeat;
-    background-size  : cover;
-    margin-right     : 21px;
-    margin-bottom: -30px;
-}
+margin-left: 85px;
+// &::before {
+//     display          : inline-block;
+//     content          : "";
+//     width            : 59px;
+//     height           : 58px;
+//     background-image : url(../images/autor/autor.jpg);
+//     background-repeat: no-repeat;
+//     background-size  : cover;
+//     margin-right     : 21px;
+//     margin-bottom: -30px;
+// }
 &::after {
 display          : block;
 content          : "AMIRICAN";
 @include text ($fw:500,$fs:12px, $lx:1.17)
 margin-top    : 5px;
-margin-left: 80px;
+// margin-left: 80px;
 }
 }
 .card__item {

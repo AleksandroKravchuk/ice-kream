@@ -1,16 +1,24 @@
+.autor {
+    position: relative;
+}
+.autor__list-main {
+position: absolute;
+top: 0;
+left: 0;
+}
 .autor__slider {
     width: 260px;
     height: 40px;
     margin-left: 20px;
 }
-.slick-prev,
-.slick-next {
+.autor__list .slick-prev,
+.autor__list .slick-next {
     width        : 14px;
     height       : 14px;
     border-radius: 50%;
 }
-.slick-prev::before,
-.slick-next::before {
+.autor__list .slick-prev::before,
+.autor__list .slick-next::before {
     content            : "";
     display            : block;
     background-size    : cover;
@@ -20,23 +28,22 @@
     height             : 14px;
     opacity            : 0.5;
 }
-.slick-prev::before {
+.autor__list .slick-prev::before {
     background-image: url(../images/left.svg);
 }
-.slick-next::before {
+.autor__list .slick-next::before {
     background-image: url(../images/right2.svg);
 }
-.slick-prev:hover::before {
+.autor__list .slick-prev:hover::before {
     opacity: 1;
 }
-.slick-next:hover::before {
+.autor__list .slick-next:hover::before {
     opacity: 1;
 }
 
 
 
-.autor__item {
-    position: relative;
+.autor__list .autor__item {
     margin-left  : 10px;
     margin-right : 10px;
     text-align   : center;
@@ -47,7 +54,7 @@
   
 }
 
-.autor__item.slick-center {
+.autor__list .autor__item.slick-center {
     transform: scale(1);
     opacity  : 1;
      &::before {
@@ -60,7 +67,7 @@
         border: 1px solid #D64374;
     }
 }
-.autor__item1 {
+.autor__list .autor__item1 {
     margin-left : 10px;
 margin-right : 10px;
  transform : scale(0.7);
@@ -72,4 +79,8 @@ opacity    : 0.4;
 transform: scale(1);
  opacity  : 1;
 }
+}
+.autor__list-main {
+    width: 80px;
+
 }
