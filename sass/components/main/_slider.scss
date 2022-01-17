@@ -30,9 +30,11 @@ left: 0;
 }
 .autor__list .slick-prev::before {
     background-image: url(../images/left.svg);
+
 }
 .autor__list .slick-next::before {
     background-image: url(../images/right2.svg);
+
 }
 .autor__list .slick-prev:hover::before {
     opacity: 1;
@@ -84,3 +86,10 @@ transform: scale(1);
     width: 80px;
 
 }
+// .slick-next {
+//     position: absolute;
+//     top: 280px;
+//     width: 100px;
+//     height: 100px;
+//     // background-color: aqua;
+// }
