@@ -776,6 +776,19 @@ summary {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../images/avto2.png);
+  margin-right: 10px;
+  margin-bottom: -8px;
+}
+
+.modal-form__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-form__select {
+  border: none;
+  outline: none;
 }
 
 .page-header {
