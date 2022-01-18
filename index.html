@@ -315,50 +315,53 @@
             </button>
             <form class="modal-form">
                 <h5 class="modal-form__title">Оформление заказа</h5>
-                <p class="modal-form__text">Контактная информация</p>
+                <p class="modal-form__information">Контактная информация</p>
                 <ul class="modal-form__clients">
                     <li class="modal-form__clients-item"><a class="modal-form__clients-link" href="#">Новый покупатель</a> </li>
                     <li class="modal-form__clients-item"><a class="modal-form__clients-link" href="#"> Постоянный клиент</a></li>
                 </ul>
                 <ul class="modal-form__list">
-                    <li class="modal-form__item"><label class="modal-form__name" for="name">Имя</label>
-                        <div class="modal-form__box">
-                            <input class="modal-form__text" type="text" id="name" name="name">
-                            <svg class="modal-form__icon" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon-person-black-18dp-1-1"></use>
-                            </svg>
-                        </div>
+                    <li class="modal-form__item">
+                        <label class="modal-form__name" for="name" id="nam">Имя</label><input class="modal-form__text" type="text" id="name" name="name" placeholder="Ваше имя">
+                       
+                            
                     </li>
-                    <li class="modal-form__item"><label class="modal-form__name" for="tel">Телефон</label>
-                        <div class="modal-form__box">
-                            <input class="modal-form__text" type="tel" id="tel" name="tel">
-                            <svg class="modal-form__icon" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
-                            </svg>
-                        </div>
+                    <li class="modal-form__item">
+                        <label class="modal-form__name" id="te" for="tel">Телефон</label>
+                            <input class="modal-form__text" type="tel" id="tel" name="tel" placeholder="Введите контактный номер">
+                            
+                        
                     </li>
-                    <li class="modal-form__item"><label class="modal-form__name" for="email">Почта</label>
-                        <div class="modal-form__box">
-                            <input class="modal-form__text" type="email" id="email" name="Email">
-                            <svg class="modal-form__icon" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
-                            </svg>
-                        </div>
+                    <li class="modal-form__item">
+                        <label class="modal-form__name" for="email">Почта</label>
+                            <input class="modal-form__text" type="email" id="email" name="email" placeholder="Введите e-mail">
+                           
+                       
                     </li>
-                    <li class="modal-form__item"><label class="modal-form__name" for="comments">Комментарий</label>
-                        <textarea class="modal-form__text-area" name="comments" id="comments" cols="30"
-                            placeholder="Введите текст"></textarea>
+                    <li class="modal-form__item"><label class="modal-form__name" for="city">Город</label>
+                        <input type="text" class="modal-form__text" name="comments" id="city" 
+                            placeholder="Введите город">
                     </li>
                 </ul>
-                <div class="modal-form__accord">
-                    <label class="modal-form__accord-text">
-                        <input class="modal-form__checkbox" type="checkbox" name="agree" value="agree">
-                        <span class="modal-form__icon-agree"></span>Соглашаюсь с рассылкой и принимаю &nbsp;
-                        <a class="modal-form__link-agree" href="">Условия договора</a></label>
-                    <button type="submit" class="button--form">Отправить</button>
-                </div>
+                    <button type="submit" class="button--form">Выбрать доставку и оплату</button>
             </form>
-    
+    <div class="selected">
+        <p class="selected__text">Корзина</p>
+        <div class="selected__product">
+            <picture>
+                <source srcset="./images/modalwebp.webp" type="images/webp" sizes="155">
+            <img src="./images/modal.jpg" alt="pay-card" width="155">
+            </picture>
+            <a class="selected__name" href="#">Brown bread</a> 
+            <div class="selected__price-block"><p class="selected__price">$19.55</p> <span class="selected__price-not">$22.55</span></div>
+        </div>
+        <div class="selected__end-price">
+            <p class="selected__text" >Цена:</p>
+            <p class="selected__text" >$19.55</p>
+
+        </div>
+        <p class="selected__delivery">Узнать детальнее про доставку</p>
+    </div>
         </div>
     </div>
 

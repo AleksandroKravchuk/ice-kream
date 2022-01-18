@@ -19,6 +19,9 @@
 }
 
 .modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
    position  :absolute;
    top      : 10%;
    left     : 50%;
@@ -105,7 +108,7 @@
             background-image: url(../images/ice-kream/buy.png);
         }
     }
-.modal-form__text {
+.modal-form__information {
     @include text ($opa:1)
     margin-bottom : 12px;
 }
@@ -118,7 +121,7 @@
     margin-right: 20px;
 }
 .modal-form__clients-link {
-    @include text ();
+    @include text ($color:$main-text-color);
     text-transform: uppercase;
     
       &::after {
@@ -127,169 +130,183 @@
       width           : 100%;
       height          : 2px;
       background-color: $accent-color;
-    //   transform: translateX(-100%);
-      opacity: 0;
-transition: color 250ms linear, opacity 250ms linear;    
-transition: transform 250ms linear,opacity 250ms linear;
+    margin-top:  10px;
+     transform: scale(0);
+     transform-origin: left;
+    transition: color 250ms linear, opacity 250ms linear;    
+    transition: transform 250ms linear,opacity 250ms linear;
   }
-    
     &:hover,
     &:focus,
     &:active,
     &:visited {
-        color: $accent-color;
         opacity: 1;
       &::after {
-      transform: translateX(0);
-     opacity: 1;
-       
+     transform: scale(1);
     }   
+     &:hover,
+     &:focus {
+     color: $accent-color;
+ }
     }
    
 }
-    // .modal-form__list {
-    //     margin-bottom: 20px;
-    // }
+    
 
     // .modal-form__item:not(:last-child) {
     //     margin-bottom: 10px;
     // }
-
-    // .modal-form__name {
-    //     font-size     : 12px;
-    //     line-height   : 14px;
-    //     letter-spacing: 0.01em;
-    //     color         : #757575;
-    //     margin-bottom : 4px;
-    // }
-
+    .modal-form__item {
+        margin-bottom: 10px;
+    }
+    .modal-form__name {
+     @include text ($fw: 500,$fs: 14px,$opa: 1);
+     margin-right: 50px;
+    }
+#nam {
+    margin-right: 65px;
+}
+#te {
+    margin-right: 30px;
+}
+.modal-form__text:nth-child(2) {
+    margin-right: 50px;
+}
     // .modal-form__box {
     //     position: relative;
-
     //     &:focus-within>.modal-form__icon,
     //     &:hover .modal-form__icon {
     //         fill: $accent-color;
     //     }
     // }
 
-    // .modal-form__text {
-    //     width        : 100%;
-    //     height       : 40px;
-    //     padding      : 12px 12px 12px 42px;
-    //     border       : 1px solid rgba(33, 33, 33, 0.2);
-    //     border-radius: 4px;
-    //     transition   : border $transition-time $function-transition;
-
-    //     &:hover,
-    //     &:focus {
-    //         border : 1px solid $accent-color;
-    //         outline: 0;
-    //     }
-    // }
-
-    // .modal-form__icon {
-    //     position  : absolute;
-    //     top       : 50%;
-    //     left      : 15px;
-    //     fill      : $main-text-color;
-    //     transform : translateY(-50%);
-    //     transition: fill $transition-time $function-transition;
-    // }
-
-
-    // .modal-form__text-area {
-    //     width        : 100%;
-    //     height       : 120px;
-    //     border       : 1px solid rgba(33, 33, 33, 0.2);
-    //     box-sizing   : border-box;
-    //     border-radius: 4px;
-    //     padding      : 12px 16px;
-    //     transition   : border-color $transition-time $function-transition;
-    //     resize       : none;
-
-    //     &::placeholder {
-    //         font-size     : 12px;
-    //         line-height   : 14px;
-    //         letter-spacing: 0.01em;
-    //         color         : rgba(117, 117, 117, 0.5);
-    //     }
-
-    //     &:hover,
-    //     &:focus {
-    //         border-color: $accent-color;
-    //         outline     : 0;
-    //     }
-    // }
-
-    // .modal-form__accord {
-    //     text-align: center;
-    // }
-
-    // .modal-form__accord-text {
-    //     display        : flex;
-    //     align-items    : center;
-    //     justify-content: center;
-    //     flex-wrap      : wrap;
-    //     font-size      : 12px;
-    //     line-height    : 1.17;
-    //     letter-spacing : 0.03em;
-    //     color          : $text-color;
-
-    //     @media screen and (min-width: 1200px) {
-    //         font-size  : 14px;
-    //         line-height: 1.7;
-    //     }
-    // }
-
-    // .modal-form__checkbox {
-    //     position: absolute;
-    //     clip    : rect(0 0 0 0);
-    //     width   : 1px;
-    //     height  : 1px;
-    //     margin  : -1px;
-    //     border  : 0;
-    //     padding : 0;
-    //     overflow: hidden;
-
-    //     &:checked+.modal-form__icon-agree {
-    //         background-image   : url(../images/iconcheck.svg);
-    //         background-size    : contain;
-    //         background-color   : $accent-color;
-    //         border-color       : transparent;
-    //         background-position: center;
-    //         background-origin  : border-box;
-    //     }
-
-    //     &:focus+.modal-form__icon-agree {
-    //         border-color: $accent-color;
-    //     }
-    // }
-
-    // .modal-form__icon-agree {
-    //     display      : inline-block;
-    //     width        : 16px;
-    //     height       : 15px;
-    //     border       : 2px solid $main-text-color;
-    //     border-radius: 4px;
-    //     margin-right : 7px;
-
-    //     @media screen and (min-width: 1200px) {
-    //         margin-right: 8px;
-    //     }
-    // }
-
-    // .modal-form__link-agree {
-    //     color: $accent-color;
-    // }
+    .modal-form__text {
+        width        : 60%;
+        height       : 30px;
+        padding      : 12px 12px 12px 12px;
+        border-bottom       : 1px solid $accent-color;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+       transform: translateX(-100%)
+        // transition   : transform 250ms linear;
+      
+        &:hover,
+        &:focus {
+           border: none; 
+           outline: none;
+            transform: translateX(0);
+        }
+        &::placeholder {
+            @include text($fs: 12px,$lx: 1.1)
+        }
+    }
 }
 
-// .button--form {
-//     @extend .button;
-//     margin-top      : 30px;
-//     padding         : 10px 55px;
-//     text-align      : center;
-//     letter-spacing  : 0.06em;
-//     color           : $header-fone-color;
-//     background-color: $accent-color;
-//     box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
-// }
+.button--form {
+    @include text ($color:$footer-text-color,$opa:1)
+    margin-top      : 30px;
+    padding         : 6px 10px;
+    text-align      : center;
+    letter-spacing  : 0.06em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: $accent-color;
+    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.selected {
+    position  : relative;
+    width     : 40%;
+    padding   : 1em;
+    margin    : 2em 10px 4em;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+&:before,
+&:after {
+    content : "";
+    position: absolute;
+    z-index : -2;
+}
+
+&:before {
+    top          : 10px;
+    bottom       : 10px;
+    left         : 0;
+    right        : 0;
+    box-shadow   : 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px / 100px;
+}
+
+&__text {
+    @include text ($fs: 20px,$opa:1)
+}
+&__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #DCDCDC;
+    
+}
+&__name {
+ @include text ($fw: normal,
+$fs: 16px,
+$lx: 1.2,
+$color:  $accent-color,
+$opa: 0.7);
+
+transition: opacity 250ms linear;
+&:hover {
+    opacity: 1;
+    
+}}
+&__price-block {
+    display: block;
+    width: 30px;
+}
+&__price {
+    @include secondary-text ($fw:400,$color: red,$fs:18px);
+     
+}
+
+&__price-not {
+    @include secondary-text ($fw:400, $fs:16px, $opa:0.7);
+     text-decoration-line: line-through;
+}
+}
+.selected__end-price {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+     border-bottom: 1px solid #DCDCDC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.selected__delivery {
+    @include text ($fw: normal,$fs:12px,$lx:1.5,$color:$accent-color,$opa: 0.7);
+cursor: pointer;
+&:hover,
+&:focus {
+    opacity: 1;
+}
+&::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/avto2.png);
+    
+}
+}
