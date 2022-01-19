@@ -19,16 +19,14 @@
 }
 
 .modal {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
    position  :absolute;
    top      : 10%;
    left     : 50%;
    transform: scale(1) translateX(-50%);
    width     :70%;
-   padding   :1em;
-   margin    :2em 10px 4em;
    background:#fff;
    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
    0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -123,7 +121,6 @@
 .modal-form__clients-link {
     @include text ($color:$main-text-color);
     text-transform: uppercase;
-    
       &::after {
       display         : block;
       content         : "";
@@ -147,31 +144,22 @@
      &:hover,
      &:focus {
      color: $accent-color;
- }
-    }
-   
+ }}
 }
     
-
-    // .modal-form__item:not(:last-child) {
-    //     margin-bottom: 10px;
-    // }
-    .modal-form__item {
+    .modal-form__item:not(:last-child) {
         margin-bottom: 10px;
     }
+     .modal-form__item {
+         display: flex;
+         align-items: center;
+     }
     .modal-form__name {
      @include text ($fw: 500,$fs: 14px,$opa: 1);
-     margin-right: 50px;
     }
-#nam {
-    margin-right: 65px;
-}
-#te {
-    margin-right: 30px;
-}
-.modal-form__text:nth-child(2) {
-    margin-right: 50px;
-}
+
+
+
     // .modal-form__box {
     //     position: relative;
     //     &:focus-within>.modal-form__icon,
@@ -181,21 +169,17 @@
     // }
 
     .modal-form__text {
-        width        : 60%;
+        width        : 70%;
         height       : 30px;
         padding      : 12px 12px 12px 12px;
         border-bottom       : 1px solid $accent-color;
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
-       transform: translateX(-100%)
-        // transition   : transform 250ms linear;
-      
+        margin-left: auto;
         &:hover,
         &:focus {
-           border: none; 
            outline: none;
-            transform: translateX(0);
         }
         &::placeholder {
             @include text($fs: 12px,$lx: 1.1)
@@ -235,7 +219,6 @@
     position: absolute;
     z-index : -2;
 }
-
 &:before {
     top          : 10px;
     bottom       : 10px;
@@ -254,29 +237,20 @@
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #DCDCDC;
-    
 }
 &__name {
- @include text ($fw: normal,
-$fs: 16px,
-$lx: 1.2,
-$color:  $accent-color,
-$opa: 0.7);
-
+ @include text ($fw: normal,$fs: 16px,$lx: 1.2,$color:  $accent-color,$opa: 0.7);
 transition: opacity 250ms linear;
 &:hover {
     opacity: 1;
-    
 }}
 &__price-block {
     display: block;
-    width: 30px;
+    width: 60px;
 }
 &__price {
-    @include secondary-text ($fw:400,$color: red,$fs:18px);
-     
+    @include secondary-text ($fw:400,$color: red,$fs:18px);   
 }
-
 &__price-not {
     @include secondary-text ($fw:400, $fs:16px, $opa:0.7);
      text-decoration-line: line-through;
@@ -292,7 +266,7 @@ transition: opacity 250ms linear;
     justify-content: space-between;
 }
 .selected__delivery {
-    @include text ($fw: normal,$fs:12px,$lx:1.5,$color:$accent-color,$opa: 0.7);
+@include text ($fw: normal,$fs:12px,$lx:1.5,$color:$accent-color,$opa: 0.7);
 cursor: pointer;
 &:hover,
 &:focus {
@@ -309,6 +283,5 @@ cursor: pointer;
     background-image: url(../images/avto2.png);
     margin-right: 10px;
     margin-bottom: -8px;
-    ;
 }
 }
