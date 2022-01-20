@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Ice-cream</title>
-   
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
 </head>
 <body>
     <header class="page-header">
@@ -413,12 +414,14 @@
                </li>
                <li class="form-produc__item">
                    <div class="chekcbox">
-                        <input id="agreement" type="checkbox" name="agreement" class="checkbox__input">
-                        <label class="chekcbox__label" for="agreement">Я даю свое согласие на обработку персональных данных в соответствии с <a href="#">Условием</a></label>
+                        <input id="agreement" type="checkbox" name="agreement" class="checkbox__input" checked>
+                        <label class="chekcbox__label" for="agreement"><span>Я даю свое согласие на обработку персональных данных в соответствии с &nbsp; <a class="chekcbox__link" href="#"> Условием*</a> </span> </label>
                     </div>
                </li>
            </ul>
+             <div class="form-produc__button-box">
             <button class="form-produc__button" type="submit">Отправить</button>
+            </div>
         </form>
         </div>
         </div>   
@@ -431,7 +434,25 @@
 <script  src="./js/script.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/main-modal.js"></script>
-    
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script>
+    $(function () {
+        $('select').select2();
+        
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".js-example-placeholder-single").select2({
+            placeholder: "Выберите штат в США",
+            allowClear: true
+        });
+
+        $(".js-example-placeholder-multiple").select2({
+            placeholder: "Выберите штат в США"
+        });
+    });
+</script>
 
 </body>
 </html> 
