@@ -788,16 +788,16 @@ summary {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   overflow-y: scroll;
-  -webkit-transition: opacity 200ms linear;
-  transition: opacity 200ms linear;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
 }
 
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 200ms linear, visibility 200ms linear;
-  transition: opacity 200ms linear, visibility 200ms linear;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .modal-main {
@@ -808,6 +808,10 @@ summary {
   border-radius: 6px;
   -webkit-transform: scale(1) translateX(-50%);
           transform: scale(1) translateX(-50%);
+  -webkit-transition: -webkit-transform 2000ms linear;
+  transition: -webkit-transform 2000ms linear;
+  transition: transform 2000ms linear;
+  transition: transform 2000ms linear, -webkit-transform 2000ms linear;
   background-color: #FFFFFF;
 }
 
@@ -824,7 +828,7 @@ summary {
 }
 
 .modal-main:before, .modal-main:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -2;
 }
@@ -939,7 +943,7 @@ summary {
 }
 
 .form-produc__input:hover, .form-produc__input:focus {
-  background-color: #FFC0CB;
+  background-color: #ffc0cb;
 }
 
 textarea.form-produc__input {
@@ -984,7 +988,7 @@ textarea.form-produc__input {
 }
 
 .form-produc__options-label::before {
-  content: "";
+  content: '';
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-box-flex: 0;
@@ -999,7 +1003,7 @@ textarea.form-produc__input {
 }
 
 .form-produc__options-label::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -1022,18 +1026,6 @@ textarea.form-produc__input {
   width: 100%;
   border-radius: 5px;
   padding: 2px 15px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #000000;
-  opacity: 1;
-  text-decoration: none;
-}
-
-.form-produc__select:hover, .form-produc__select:focus {
-  background-color: #FFC0CB;
 }
 
 .file {
@@ -1129,7 +1121,7 @@ textarea.form-produc__input {
 }
 
 .chekcbox__label::before {
-  content: "";
+  content: '';
   -webkit-box-flex: 0;
       -ms-flex: 0 0 15px;
           flex: 0 0 15px;
@@ -1142,7 +1134,7 @@ textarea.form-produc__input {
 }
 
 .chekcbox__label::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 11px;
   height: 11px;
