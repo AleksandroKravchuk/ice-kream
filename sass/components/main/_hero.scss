@@ -1,8 +1,16 @@
 .hero {
+   padding-top: 30px;
+   padding-bottom: 30px;   
+   background-color: $header-bckg-color;
+ @media screen and (min-width: 768px) {
+     padding-top   : 80px;
+     padding-bottom: 80px;
+ }
+ @media screen and (min-width: 1120px) {
     padding-top: 196px;
     padding-bottom: 213px;
-    background-color: $header-bckg-color;
-    
+ }
+ @media screen and (min-width: 1120px) {
     background-image: 
     url(../images/hero/hero.png), 
     url(../images/hero/hero-main.png), 
@@ -10,11 +18,8 @@
     url(../images/hero/ellipse.png);
     background-position-x:100%,88%,80%,80%;
     background-position-y: 85%,30%,80%,120%;
-    //  transform:  rotate(4.79deg);
-   
     background-size: 58%,40%,23%,50%;
     background-repeat: no-repeat;
-    
     background-attachment: inherit;
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -24,6 +29,8 @@ url(../images/hero/hero-main2x.png),
 url(../images/hero/kolo2x.png),
 url(../images/hero/ellipse2x.png);
     }
+}
+   
 }
 .hero__name {
 @include text ($fw:500,$fs:14px,$lx:1.14,$color:$hero-color,$opa:1)

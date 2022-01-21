@@ -32,6 +32,12 @@
                     </ul>
                 </nav>
                 <button class="page-header__button" type="button" data-modal-open>Buy Now</button>
+                <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-button__icon--cross" href="./images/symbol-defs.svg#menu1"></use>
+                        <use class="menu-button__icon--menu" href="./images/symbol-defs.svg#menu2"></use>
+                    </svg>
+                </button>
         </div>
     </header>
     <main>
@@ -42,6 +48,12 @@
                 <p class="hero__text">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've
                 been left eating my thoughts, my words.</p>
                 <button class="button" type="button" data-modal-open>Buy Now</button>
+                <picture class="hero__mob">
+                    
+                    <img srcset="
+                        ./images/herop.png 1x" src="./images/main/main.jpg" alt="ice-cream" width="655"
+                        height="500">
+                </picture>
             </div>
         </section>
         <section class="advantages">
@@ -434,6 +446,7 @@
 <script  src="./js/script.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/main-modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script>
     $(function () {

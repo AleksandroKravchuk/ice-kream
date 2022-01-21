@@ -1209,7 +1209,6 @@ textarea.form-produc__input {
 .page-header {
   background-color: #F2CEDA;
   padding-top: 10px;
-  padding-bottom: 0px;
   width: 100vw;
 }
 
@@ -1229,7 +1228,19 @@ textarea.form-produc__input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 266px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .page-header__list {
+    margin-left: 266px;
+  }
 }
 
 .page-header__item:not(:last-child) {
@@ -1260,19 +1271,73 @@ textarea.form-produc__input {
   margin-left: auto;
 }
 
-.hero {
-  padding-top: 196px;
-  padding-bottom: 213px;
-  background-color: #F2CEDA;
-  background-image: url(../images/hero/hero.png), url(../images/hero/hero-main.png), url(../images/hero/kolo.png), url(../images/hero/ellipse.png);
-  background-position-x: 100%,88%,80%,80%;
-  background-position-y: 85%,30%,80%,120%;
-  background-size: 58%,40%,23%,50%;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
+@media screen and (max-width: 1119px) {
+  .page-header__button {
+    display: none;
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+.menu-button {
+  fill: #000000;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  background-color: #F2CEDA;
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-button__icon--menu {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon--menu {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon--cross {
+  display: none;
+}
+
+.hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F2CEDA;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero {
+    padding-top: 196px;
+    padding-bottom: 213px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero {
+    background-image: url(../images/hero/hero.png), url(../images/hero/hero-main.png), url(../images/hero/kolo.png), url(../images/hero/ellipse.png);
+    background-position-x: 100%,88%,80%,80%;
+    background-position-y: 85%,30%,80%,120%;
+    background-size: 58%,40%,23%,50%;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+  }
+}
+
+@media screen and (min-width: 1120px) and (min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (min-resolution: 192dpi), screen and (min-width: 1120px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/hero/hero2x.png), url(../images/hero/hero-main2x.png), url(../images/hero/kolo2x.png), url(../images/hero/ellipse2x.png);
   }

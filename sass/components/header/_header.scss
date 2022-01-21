@@ -1,7 +1,6 @@
 .page-header {
     background-color: $header-bckg-color;
     padding-top: 10px;
-    padding-bottom: 0px;
     width: 100vw;
 }
 .header {
@@ -12,7 +11,13 @@
 .page-header__list {
     display: flex;
     align-items: center;
-    margin-left: 266px;
+    margin-left: 100px;
+    @media screen and (max-width: 767px) {
+    display: none;
+};
+    @media screen and (min-width: 1120px) {
+    margin-left: 266px}
+
 }
 .page-header__item:not(:last-child){
     margin-right: 40px;
@@ -31,4 +36,6 @@ line-height: 1.2;
 .page-header__button {
 @extend .button;
 margin-left: auto;
+@media screen and (max-width: 1119px) {
+    display: none;}
 }

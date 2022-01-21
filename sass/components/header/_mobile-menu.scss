@@ -1,0 +1,21 @@
+.menu-button {
+    fill            : $main-text-color;
+    margin-left     : auto;
+    padding         : 0;
+    border          : none;
+    z-index         : 2;
+    background-color: $header-bckg-color;
+    transition      : fill 250ms linear;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.menu-button .menu-button__icon--menu {
+    display: none;
+}
+.menu-button.is-open .menu-button__icon--menu {
+    display: block;
+}
+.menu-button.is-open .menu-button__icon--cross {
+    display: none;
+}
