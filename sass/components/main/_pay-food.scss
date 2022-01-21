@@ -1,14 +1,28 @@
 .pay-food {
-padding-top: 90px;
-padding-bottom: 180px;
+padding-top: 30px;
+padding-bottom: 30px;
 background:$main-bckg-color;
+@media screen and (min-width: 768px) {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+@media screen and (min-width: 1120px) {
+    padding-top   : 90px;
+    padding-bottom: 180px;
+}
 }
 .pay-food>.container{
 position: relative;
 display: flex;
-justify-content: flex-end;
+@media screen and (min-width: 1120px) {
+  justify-content: flex-end; 
+}
+
 }
 .pay-food__card{
+@media screen and (max-width: 1119px) {
+display: none;
+}   
 position: absolute;
 top: 0;
 left: 0;
@@ -16,14 +30,32 @@ border-radius: 33px;
 }
 
 .pay-food__name {
-@include text ($fw:500,$fs:44.2px,$lx:1.2,$opa:1)
+@include text ($fw:500,$fs:30.2px,$lx:1.2,$opa:1)
 margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+    @include text ($fw:500, $fs:38.2px, $lx:1.2, $opa:1)
+}
+@media screen and (min-width: 1200px) {
+    @include text ($fw:500, $fs:44.2px, $lx:1.2, $opa:1)
+}
 }
 .pay-food__text {
 @include text ($fs:18px,$lx:1.16,$color:$hero-color)
 letter-spacing: 0.01em;
+margin-bottom: 21px;
+width: 100%;
+@media screen and (min-width: 768px) {
+@include text ($fs:18px, $lx:1.16, $color:$hero-color) 
+letter-spacing: 0.01em;
+margin-bottom     : 21px;
+width             : 100%;
+}
+@media screen and (min-width: 768px) {
+@include text ($fs:18px,$lx:1.16,$color:$hero-color)
+letter-spacing: 0.01em;
 margin-bottom: 31px;
 width: 607px;
+}
 }
 .pay-food__list {
     margin-bottom: 40px;
@@ -72,6 +104,7 @@ $bz:16px 13px);
 .pay-food__buttons-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .pay-food__buttons-item:nth-child(1){
     margin-right: 20px;
@@ -80,10 +113,9 @@ $bz:16px 13px);
     display: flex;
     background-color: $main-text-color;
     border-radius: 6px;
-    padding: 2px 8px;
+    padding: 6px 2px;
     transition: background-color 300ms linear;
-    @include text ($fs: 24px,$lx:1.1,$color: $footer-text-color,
-$opa: 1)
+    @include text ($fs: 17px,$lx:1.1,$color: $footer-text-color,$opa: 1)
  &::before {
      @include button-pay ()
  }
@@ -91,16 +123,19 @@ $opa: 1)
  &:focus {
      background-color: $accent-color;
  }
+    @media screen and (min-width: 768px) {
+    @include text ($fs: 24px, $lx:1.1, $color: $footer-text-color, $opa: 1) 
+    padding: 2px 8px;
+    }
 }
 .pay-food__buttons-form2 {
     display         : flex;
     align-items: center;
     background-color: $main-text-color;
     border-radius   : 6px;
-    padding         : 2px 23px 2px 8px;
+    padding         : 0px 13px 2px 0px;
     transition: background-color 300ms linear;
-    @include text ($fs: 24px, $lx: 1.5, $color: $footer-text-color,
-        $opa: 1) 
+    @include text ($fs: 17px, $lx: 1.5, $color: $footer-text-color,$opa: 1) 
         &::before {
         @include button-pay ($bs: url(../images/maclogo.png))
     margin-bottom: 10px;   
@@ -109,13 +144,22 @@ $opa: 1)
     &:focus {
         background-color: $accent-color;
     }
+    @media screen and (min-width: 768px) {
+   @include text ($fs: 24px, $lx: 1.5, $color: $footer-text-color, $opa: 1)
+   padding         : 2px 23px 2px 8px;
+}
 }
 .pay-food__google {
-width: 130px;
+    width: 93px;
+   @media screen and (min-width: 768px) {
+    width: 130px;
+}
+
 
 }
 .pay-food__google-name {
     @include text ($fw: 400,$fs: 12px,$lx: 1.1,$color: $footer-text-color,
 $opa: 1)
+
 }
 

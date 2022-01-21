@@ -1,7 +1,15 @@
 .questions {
-    padding-top: 191px;
-    padding-bottom: 129px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $footer-text-color;
+    @media screen and (min-width: 768px) {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+@media screen and (min-width: 1120px) {
+    padding-top   : 191px;
+    padding-bottom: 129px;
+}
 }
 .questions__form {
     display: flex;
@@ -10,14 +18,34 @@
 }
 .questions__fill{
 position: relative;
+height: 40px;
+width : 320px;
+@media screen and (min-width: 768px) {
+height: 70px;
+width : 537px;
+}
+@media screen and (min-width: 1120px) {
 height: 74px;
 width : 637px;
 }
+
+}
 .questions__name {
-@include text ($fw:500,$fs:44px,$lx:1.18,$opa:1)
+@include text ($fw:500,$fs:24px,$lx:1.18,$opa:1)
 text-align: center;
-width: 522px;
+width: 100%;
+margin-bottom: 18px;
+@media screen and (min-width: 768px) {
+    @include text ($fw:500, $fs:34px, $lx:1.18, $opa:1)
+   width: 100%;
+margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1120px) {
+    @include text ($fw:500, $fs:44px, $lx:1.18, $opa:1)
+   width: 522px;
 margin-bottom: 28px;
+}
 }
 .questions__input {
 width : 100%;
@@ -25,28 +53,50 @@ height: 100%;
 background: #FAFAFA;
 border: 5px #FAFAFA;
 outline: 0;
-padding: 29px 130px 29px 29px;
+padding: 8px 90px 10px 8px;
 border-radius: 5px;
 resize: none;
 &::placeholder {
 @include text ($fs:14px,$lx:1.2,$opa:0.6)
+}
+@media screen and (min-width: 768px) {
+   padding: 19px 110px 29px 19px;
+   &::placeholder {
+    @include text ($fs:18px, $lx:1.2, $opa:0.6)
+}
+}
+
+@media screen and (min-width: 1120px) {
+  padding: 29px 130px 29px 29px;
+  &::placeholder {
+    @include text ($fs:14px, $lx:1.2, $opa:0.6)
+}
 }
 }
 .questions__button {
 position: absolute;
 height: 100%;
 right: 0;
-padding: 28px 31px 28px 36px;
+padding: 10px 15px 15px 15px;
 background: #D64374;
 border-radius: 5px;
 border: none;
 cursor: pointer;
-@include text ($fw:500,$fs:20px,$lx:1.12,$color:$footer-text-color,$opa:1)
+@include text ($fw:500,$fs:18px,$lx:1.12,$color:$footer-text-color,$opa:1)
 transition : box-shadow 250ms linear;
 &:hover,
 &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+   padding: 20px 20px 18px 30px;
+   @include text ($fw:500, $fs:20px, $lx:1.12, $color:$footer-text-color, $opa:1)
+}
+
+@media screen and (min-width: 1120px) {
+   padding: 28px 31px 28px 36px;
+   @include text ($fw:500, $fs:20px, $lx:1.12, $color:$footer-text-color, $opa:1)
 }
 }

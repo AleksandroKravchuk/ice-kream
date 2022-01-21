@@ -1,5 +1,10 @@
 .form {
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+    margin-left: 80px
+}
+     @media screen and (min-width: 1200px) {
+    margin-left: 160px
+    }
 }
 
 .form__name {
@@ -9,11 +14,12 @@
 .form__block {
     position  : relative;
     margin-top: 13px;
+    text-align: center;
 }
 
 .form__input {
-    width        : 388px;
-    padding      : 20px 32px;
+    width        : 100%;
+    padding      : 5px 10px;
     border       : 2px solid #D64374;
     box-sizing   : border-box;
     border-radius: 5px;
@@ -21,35 +27,44 @@
     outline      : none;
     color        : #FFFFFF;
     opacity      : 0.6;
-
     &::placeholder {
         @include text ($fs:14px,$lx: 1.14,$color:$footer-text-color,$opa:0.6)
-        font-family: Roboto;
-        font-style : normal;
-        font-weight: normal;
-        font-size  : 14px;
-        line-height: 16px;
-        color      : #FFFFFF;
-        opacity    : 0.6;
     }
+    @media screen and (min-width: 768px) {
+    width : 300px;
+    padding : 10px 15px;
+   }
+   @media screen and (min-width: 1200px) {
+    width : 388px;
+    padding : 20px 32px;
+   }
 }
 
 .form__button {
-    position     : absolute;
-    right        : 0;
+    position : absolute;
+    right : 0;
+    height: 100%;
     background   : #D23166;
     border-radius: 5px;
-    padding      : 19px 18px;
-    height: 100%;
+    padding      : 5px 8px;
     outline: none;
     border : none;
     cursor : pointer;
-@include text ($fw:500,$fs:20px,$lx:1.15,$color:$footer-text-color, $opa:1)
+@include text ($fw:500,$fs:14px,$lx:1.15,$color:$footer-text-color, $opa:1)
     transition : box-shadow 250ms linear;
 &:hover,
 &:focus {
     box-shadow: 0 0 50px 10px rgba(255, 0, 255, .7);
 }
+  @media screen and (min-width: 768px) {
+    
+    padding : 8px 10px;
+    @include text ($fw:500, $fs:14px, $lx:1.15, $color:$footer-text-color, $opa:1)
+  }
+  @media screen and (min-width: 1200px) {
+     padding : 19px 18px;
+     @include text ($fw:500, $fs:20px, $lx:1.15, $color:$footer-text-color, $opa:1)
+  }
 }
 .pay-card {
     display: flex;

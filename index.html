@@ -100,8 +100,8 @@
                 
                 <picture class="main-product__img">
                     <source srcset="
-                        ./images/main/mainwebp.webp  655w , 
-                        ./images/main/main2xwebp.webp 1310w" type="image/webp" sizes="655vw">
+                        ./images/main/mainwebp.webp  300w , 
+                        ./images/main/main2xwebp.webp 650w" type="image/webp" sizes="655vw">
                     <img srcset="
                         ./images/main/main.jpg 1x, 
                         ./images/main/main2x.jpg 2x" 
@@ -129,12 +129,13 @@
                     <li class="card__item">
                         <picture>
                         <source srcset="
-                            ./images/card/card1webp.webp  580w , 
-                            ./images/card/card1x2webp.webp 1160w" type="image/webp" sizes="580vw">
+                            ./images/card/card1webp.webp  300w , 
+                            ./images/card/card1x2webp.webp 600w" type="image/webp" sizes="580vw">
                         <img srcset="
                             ./images/card/card1.jpg 1x, 
                             ./images/card/card1x2.jpg 2x" 
-                            src="./images/card/card1.jpg" alt="ice-cream"  width="580" height="415">
+                            src="./images/card/card1.jpg" alt="ice-cream"  width="450"
+                            src="./images/card/card1.jpg" alt="ice-cream"  width="600">
                         </picture>
                         <div class="card__content">
                         <h4 class="card__name">Brown bread</h4>
@@ -151,7 +152,7 @@
                             <img srcset="
                                 ./images/card/card2.jpg 1x, 
                                 ./images/card/card2x2.jpg 2x" 
-                                src="./images/card/card2.jpg" alt="ice-cream" width="580" height="415">
+                                src="./images/card/card2.jpg" alt="ice-cream" width="450">
                         </picture>
                         <div class="card__content-odd">
                         <h4 class="card__name">Cayenne chocolate</h4>
@@ -168,7 +169,7 @@
                             <img srcset="
                                 ./images/card/card3.jpg 1x, 
                                 ./images/card/card3x2.jpg 2x" 
-                                src="./images/card/card3.jpg" alt="ice-cream" width="580" height="415">
+                                src="./images/card/card3.jpg" alt="ice-cream" width="450">
                         </picture>
                         <div class="card__content">
                         <h4 class="card__name">Sweet corn</h4>
@@ -185,7 +186,7 @@
                             <img srcset="
                                 ./images/card/card4.jpg 1x, 
                                 ./images/card/card4x2.jpg 2x" 
-                                src="./images/card/card4.jpg" alt="ice-cream" width="580" height="415">
+                                src="./images/card/card4.jpg" alt="ice-cream" width="650">
                         </picture>
                        
                         <div class="autor">
@@ -237,10 +238,10 @@
                 </ul>
                 <ul class="pay-food__buttons-list">
                     <li class="pay-food__buttons-item">
-                        <a class="pay-food__buttons-form1" href="">
+                        <a class="pay-food__buttons-form1" href="#">
                         <div class="pay-food__google"><span class="pay-food__google-name">GET IT ON</span>  Google Play </div> 
                    </a></li>
-                    <li class="pay-food__buttons-item"><a class="pay-food__buttons-form2" href="">
+                    <li class="pay-food__buttons-item"><a class="pay-food__buttons-form2" href="#">
                        App Store
                     </a></li>
                 </ul>
@@ -262,8 +263,11 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-        <img src="./images//logo2.svg" alt="logo" width="79" height="79">
+        <img class="page-footer__logo" src="./images//logo2.svg" alt="logo" width="79" height="79">
+        
+
         <div class="page-footer__section"> 
+        <div class="page-footer__box1">
              <div class="about-us">
              <p class="about-us__text">Some food has looked so awful that it's looked like something that the dog's brought home.</p>
              <p class="about-us__name">Fllow Us</p>
@@ -289,6 +293,8 @@
                  <li class="home__item"><a class="home__link" href="">Testimonials</a></li>
                  <li class="home__item"><a class="home__link" href="">Contact Us</a></li>
              </ul>
+</div>
+<div class="page-footer__box">
             <ul class="partners">
                 <li class="partners__item"> Delivery Information</li>
                 <li class="partners__item"> Privacy Policy</li>
@@ -319,6 +325,8 @@
                     </li>
                 </ul>
             </form>
+</div>
+
         </div>
         </div>
     </footer>
