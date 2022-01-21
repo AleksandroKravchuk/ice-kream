@@ -1131,6 +1131,7 @@ textarea.form-produc__input {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 10px;
+  margin-top: 5px;
 }
 
 .chekcbox__label::after {
@@ -1143,7 +1144,7 @@ textarea.form-produc__input {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 10px;
-  top: 2px;
+  top: 7px;
   left: 2px;
   border-radius: 4px;
   background-color: #D23166;
