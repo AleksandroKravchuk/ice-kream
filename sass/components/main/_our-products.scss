@@ -1,26 +1,48 @@
 .our-products {
-    padding-top: 137px;
-    padding-bottom: 149px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $footer-text-color;
-    
+    @media screen and (min-width: 768px) {
+    padding-top   : 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 1120px) {
+   padding-top: 137px;
+   padding-bottom: 149px;
+}
 }
 
 .our-products__name {
-@include secondary-text ($lx:1.38,$color:$header-color)
 text-align: center;
-margin-bottom: 64px;
+@include secondary-text ($lx:1.11, $fs: 30.2px, $color:$header-color) 
+margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+@include secondary-text ($lx:1.11, $fs: 34.2px, $color:$header-color) 
+margin-bottom               : 24px;
+}  
+@media screen and (min-width: 1120px) {
+@include secondary-text ($lx:1.38,$color:$header-color)
+margin-bottom: 64px; 
+}   
+
 }
 .our-products__list {
+    @media screen and (max-width: 767px) {
+    display: none;}
+    margin-bottom: 20px;
+    .our-products__item:not(:last-child) {
+    margin-right: 10px;}
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1120px) {
     margin-bottom: 109px;
     .our-products__item:not(:last-child) {
     margin-right: 40px;
-    }
-}
+    }}}
+    
 
 .our-products__link {
-@include text ($fw:500,$fs:18px,$lx:1.17,$opa:0.6)
+@include text ($fw:500,$fs:14px,$lx:1.17,$opa:0.6)
 cursor: pointer;
 transition: opacity 300ms linear;
 &:hover,
@@ -30,7 +52,6 @@ transition: opacity 300ms linear;
         transform: scaleX(1);
     }
 }
-
 &::after {
     content:"";
     width: 100%;
@@ -39,6 +60,12 @@ transition: opacity 300ms linear;
     background-color:  $accent-color;
     transform: scaleX(0);
     transition: transform 300ms linear;
+}
+@media screen and (min-width: 768px) {
+@include text ($fw:500, $fs:16px, $lx:1.17, $opa:0.6)
+}
+@media screen and (min-width: 1120px) {
+    @include text ($fw:500, $fs:18px, $lx:1.17, $opa:0.6)
 }
 }
 

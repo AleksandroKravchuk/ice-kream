@@ -2,10 +2,9 @@
 font-family: Hind Madurai;
 font-style : normal;
 font-weight: bold;
-font-size  : 16px;
+font-size  : 12px;
 line-height: 1.4;
-padding: 15px 0px;
-width: 165px;
+padding: 10px 30px;
 color:  #FAFAFA;
 background: #D23166;
 border-radius: 5px;
@@ -19,9 +18,17 @@ transition : box-shadow 250ms linear;
           0px 4px 4px rgba(0, 0, 0, 0.06),
           1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) {
+  font-size  : 14px;
+  padding    : 10px 30px;
+}
+@media screen and (min-width: 1120px) {
+font-size  : 16px;
+padding    : 15px 30px;
+}
 }
 .button-card {
-padding: 15px 0px;
+padding: 15px 30px;
 font-family: Roboto;
 font-style : normal;
 font-weight: 500;
@@ -33,12 +40,20 @@ border-radius: 5px;
 cursor: pointer;
 border: none;
 text-align: center;
-width: 165px;
 transition : box-shadow 250ms linear;
   &:hover,
   &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
           0px 4px 4px rgba(0, 0, 0, 0.06),
           1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding  : 10px 30px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    font-size: 16px;
+    padding  : 15px 30px;
   }
 }

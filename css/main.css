@@ -1307,15 +1307,15 @@ textarea.form-produc__input {
 }
 
 .hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 40px;
   background-color: #F2CEDA;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1343,6 +1343,45 @@ textarea.form-produc__input {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .hero .hero__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.hero .hero__box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .hero .hero__box {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero .hero__mob {
+    display: none;
+  }
+}
+
 .hero__name {
   font-family: Roboto;
   font-style: normal;
@@ -1360,23 +1399,67 @@ textarea.form-produc__input {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 57.33px;
-  line-height: 120.5%;
+  font-size: 27.33px;
+  line-height: 90.5%;
   color: #0F0101;
   opacity: 0.9;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__subname {
+    font-size: 37.33px;
+    margin-bottom: 25px;
+    line-height: 90.5%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__subname {
+    font-size: 57.33px;
+    margin-bottom: 35px;
+    line-height: 120.5%;
+  }
 }
 
 .hero__text {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #150101;
   opacity: 0.6;
-  margin-bottom: 50px;
-  width: 523px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #150101;
+    opacity: 0.6;
+    margin-bottom: 15px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__text {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #150101;
+    opacity: 0.6;
+    margin-bottom: 50px;
+    width: 523px;
+  }
 }
 
 .hero__roze {
@@ -1387,6 +1470,12 @@ textarea.form-produc__input {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1119px) {
+  .advantages {
+    display: none;
+  }
 }
 
 .advantages__list {
@@ -1444,37 +1533,106 @@ textarea.form-produc__input {
 }
 
 .main-product {
-  padding-top: 141px;
-  padding-bottom: 133px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #F8EDF0;
 }
 
+@media screen and (min-width: 768px) {
+  .main-product {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .main-product {
+    padding-top: 141px;
+    padding-bottom: 133px;
+  }
+}
+
 .main-product > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-product > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .main-product__img {
-  position: absolute;
-  top: -213px;
-  right: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .main-product__img {
+    display: block;
+    position: absolute;
+    top: -213px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main-product__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .main-product__name {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 600;
-  font-size: 44.2px;
+  font-size: 30.2px;
   line-height: 1.11;
   color: #150101;
   opacity: 1;
-  width: 349px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-product__name {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34.2px;
+    line-height: 1.11;
+    color: #150101;
+    opacity: 1;
+    width: 280px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .main-product__name {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 1.11;
+    color: #150101;
+    opacity: 1;
+    width: 280px;
+    width: 349px;
+    margin-bottom: 16px;
+  }
 }
 
 .main-product__text {
@@ -1486,47 +1644,121 @@ textarea.form-produc__input {
   color: #150101;
   opacity: 0.6;
   text-decoration: none;
-  width: 442px;
-  margin-bottom: 35px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-product__text {
+    width: 370px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .main-product__text {
+    width: 442px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .main-product__tablet {
+    display: none;
+  }
 }
 
 .our-products {
-  padding-top: 137px;
-  padding-bottom: 149px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .our-products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .our-products {
+    padding-top: 137px;
+    padding-bottom: 149px;
+  }
+}
+
 .our-products__name {
+  text-align: center;
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 600;
-  font-size: 44.2px;
-  line-height: 1.38;
+  font-size: 30.2px;
+  line-height: 1.11;
   color: #150101;
   opacity: 1;
-  text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-products__name {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34.2px;
+    line-height: 1.11;
+    color: #150101;
+    opacity: 1;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .our-products__name {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 1.38;
+    color: #150101;
+    opacity: 1;
+    margin-bottom: 64px;
+  }
 }
 
 .our-products__list {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 109px;
+}
+
+@media screen and (max-width: 767px) {
+  .our-products__list {
+    display: none;
+  }
 }
 
 .our-products__list .our-products__item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1120px) {
+  .our-products__list {
+    margin-bottom: 109px;
+  }
+  .our-products__list .our-products__item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .our-products__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.17;
   color: #000000;
   opacity: 0.6;
@@ -1557,6 +1789,32 @@ textarea.form-produc__input {
   transition: -webkit-transform 300ms linear;
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .our-products__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    color: #000000;
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .our-products__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #000000;
+    opacity: 0.6;
+    text-decoration: none;
+  }
 }
 
 .card__name {
@@ -2445,10 +2703,9 @@ textarea.form-produc__input {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.4;
-  padding: 15px 0px;
-  width: 165px;
+  padding: 10px 30px;
   color: #FAFAFA;
   background: #D23166;
   border-radius: 5px;
@@ -2466,8 +2723,22 @@ textarea.form-produc__input {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .button, .page-header__button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .button, .page-header__button {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}
+
 .button-card {
-  padding: 15px 0px;
+  padding: 15px 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -2479,7 +2750,6 @@ textarea.form-produc__input {
   cursor: pointer;
   border: none;
   text-align: center;
-  width: 165px;
   -webkit-transition: -webkit-box-shadow 250ms linear;
   transition: -webkit-box-shadow 250ms linear;
   transition: box-shadow 250ms linear;
@@ -2489,5 +2759,19 @@ textarea.form-produc__input {
 .button-card:hover, .button-card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .button-card {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .button-card {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

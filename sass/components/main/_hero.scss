@@ -1,10 +1,10 @@
 .hero {
-   padding-top: 30px;
-   padding-bottom: 30px;   
+   padding-top: 15px;
+   padding-bottom: 40px;   
    background-color: $header-bckg-color;
  @media screen and (min-width: 768px) {
-     padding-top   : 80px;
-     padding-bottom: 80px;
+     padding-top   : 50px;
+     padding-bottom: 50px;
  }
  @media screen and (min-width: 1120px) {
     padding-top: 196px;
@@ -30,7 +30,29 @@ url(../images/hero/kolo2x.png),
 url(../images/hero/ellipse2x.png);
     }
 }
+.hero__tablet {
+    @media screen and (min-width: 768px) and (max-width: 1119px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
    
+
+}
+
+.hero__box {
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1119px) {
+   width: 300px;
+}
+}
+.hero__mob {
+    @media screen and (min-width: 1120px) {
+    display: none;
+}
+}   
 }
 .hero__name {
 @include text ($fw:500,$fs:14px,$lx:1.14,$color:$hero-color,$opa:1)
@@ -41,16 +63,36 @@ margin-bottom: 6px;
 font-family: Fredoka One;
 font-style : normal;
 font-weight: normal;
-font-size  : 57.33px;
-line-height: 120.5%;
+font-size  : 27.33px;
+line-height: 90.5%;
 color: $hero-color;
 opacity: 0.9;
-margin-bottom: 35px;
+margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+    font-size    : 37.33px;
+    margin-bottom: 25px;
+    line-height: 90.5%;
+}
+@media screen and (min-width: 1120px) {
+    font-size : 57.33px;
+    margin-bottom: 35px;
+    line-height: 120.5%;
+}
 }
 .hero__text {
-@include secondary-text ($fw:400, $fs:18px,$lx:1.5,$color:$header-color,$opa:0.6)
-margin-bottom: 50px;
-width: 523px
+@include secondary-text ($fw:400, $fs:16px,$lx:1.5,$color:$header-color,$opa:0.6)
+margin-bottom: 10px;
+width: 100%;
+@media screen and (min-width: 768px) {
+   @include secondary-text ($fw:400, $fs:18px, $lx:1.5, $color:$header-color, $opa:0.6);
+margin-bottom: 15px;
+width  : 400px;
+}
+@media screen and (min-width: 1120px) {
+@include secondary-text ($fw:400, $fs:18px, $lx:1.5, $color:$header-color, $opa:0.6);
+margin-bottom  : 50px;
+width          : 523px;
+}
 }
 .hero__roze {
     color: $accent-color;
