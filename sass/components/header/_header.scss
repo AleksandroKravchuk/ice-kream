@@ -4,17 +4,31 @@
     width: 100vw;
 }
 .header {
+    position: relative;
     display: flex;
     align-items: center;
+    
 }
-
+.page-header__nav {
+        @media screen and (max-width: 767px) {
+    display: none;
+}
+}
+.page-header__nav.is-open{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background-color: $accent-color;
+ 
+}
 .page-header__list {
     display: flex;
     align-items: center;
     margin-left: 100px;
-    @media screen and (max-width: 767px) {
-    display: none;
-};
+
     @media screen and (min-width: 1120px) {
     margin-left: 266px}
 

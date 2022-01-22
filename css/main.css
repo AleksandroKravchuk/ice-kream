@@ -1213,12 +1213,29 @@ textarea.form-produc__input {
 }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__nav {
+    display: none;
+  }
+}
+
+.page-header__nav.is-open {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  background-color: #D23166;
 }
 
 .page-header__list {
@@ -1229,12 +1246,6 @@ textarea.form-produc__input {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 100px;
-}
-
-@media screen and (max-width: 767px) {
-  .page-header__list {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1120px) {
