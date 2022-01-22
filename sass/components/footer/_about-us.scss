@@ -26,8 +26,11 @@
 .about-us {  
     display: none;
   @media screen and (min-width: 330px) {
-      display: block;
-  }}
+      display: block;}
+         @media screen and (max-width: 767px) {
+        margin-top: 80px;
+    }
+}
     
 }
 .page-footer__logo {
@@ -41,6 +44,7 @@
 letter-spacing: 0.01em;
 width: 120px;
 margin-bottom: 25px;
+ 
 @media screen and (min-width: 768px) {
  display: block;
   width: 130px;
@@ -84,6 +88,7 @@ transition: opacity 300ms linear;
     display: none;
 @media screen and (min-width: 330px) {
     display: block;
+
 }
     &__item{
 @include text ($fs:12px,$lx:1.17,$color:$footer-text-color,$opa:0.8)
@@ -95,17 +100,18 @@ transition: opacity 300ms linear;
 .page-footer__box {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-
 @media screen and (min-width: 768px) {
     display        : flex;
     flex-direction : row;
+}
+@media screen and (max-width: 329px) {
+    width: 100%;
 }
 }
 .page-footer__box1 {
   display        : flex;
 flex-direction : column-reverse;
-justify-content: space-between;
+justify-content: flex-end;
 
 @media screen and (min-width: 768px) {
     display       : flex;

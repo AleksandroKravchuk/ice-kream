@@ -107,17 +107,30 @@ $bz:16px 13px);
     flex-wrap: wrap;
 }
 .pay-food__buttons-item:nth-child(1){
-    margin-right: 20px;
+    margin-right: 8px;
+       @media screen and (min-width: 768px) {
+       margin-right: 20px;
+   }
+   
 }
 .pay-food__buttons-form1 {
     display: flex;
     background-color: $main-text-color;
     border-radius: 6px;
-    padding: 6px 2px;
+    padding: 4px 2px;
     transition: background-color 300ms linear;
-    @include text ($fs: 17px,$lx:1.1,$color: $footer-text-color,$opa: 1)
+    @include text ($fs: 15px,$lx:1.1,$color: $footer-text-color,$opa: 1)
  &::before {
      @include button-pay ()
+     margin-left: 2px;
+     height: 20px;
+     width: 20px;
+ }
+  @media screen and (min-width: 768px) {
+     &::before {
+     @include button-pay ()
+     
+ }
  }
  &:hover,
  &:focus {
@@ -133,13 +146,21 @@ $bz:16px 13px);
     align-items: center;
     background-color: $main-text-color;
     border-radius   : 6px;
-    padding         : 0px 13px 2px 0px;
+    padding         : 0px 8px 5px 0px;
     transition: background-color 300ms linear;
-    @include text ($fs: 17px, $lx: 1.5, $color: $footer-text-color,$opa: 1) 
+    @include text ($fs: 15px, $lx: 1.5, $color: $footer-text-color,$opa: 1) 
         &::before {
         @include button-pay ($bs: url(../images/maclogo.png))
-    margin-bottom: 10px;   
+    margin-bottom: 6px;   
+    width: 27px;
+    height: 23px;
     }
+    @media screen and (min-width: 768px) {
+       &::before {
+        @include button-pay ($bs: url(../images/maclogo.png));
+        margin-bottom: 10px;
+    }
+}
     &:hover,
     &:focus {
         background-color: $accent-color;
@@ -150,7 +171,8 @@ $bz:16px 13px);
 }
 }
 .pay-food__google {
-    width: 93px;
+    margin-left: 2px;
+    width: 83px;
    @media screen and (min-width: 768px) {
     width: 130px;
 }
@@ -158,8 +180,11 @@ $bz:16px 13px);
 
 }
 .pay-food__google-name {
-    @include text ($fw: 400,$fs: 12px,$lx: 1.1,$color: $footer-text-color,
+     @include text ($fw: 400,$fs: 8px,$lx: 1.1,$color: $footer-text-color,
 $opa: 1)
-
+    @media screen and (min-width: 768px) {
+     @include text ($fw: 400, $fs: 12px, $lx: 1.1, $color: $footer-text-color,
+     $opa: 1)
+}
 }
 

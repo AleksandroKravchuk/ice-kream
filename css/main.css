@@ -2376,7 +2376,13 @@ textarea.form-produc__input {
 }
 
 .pay-food__buttons-item:nth-child(1) {
-  margin-right: 20px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .pay-food__buttons-item:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 
 .pay-food__buttons-form1 {
@@ -2385,13 +2391,13 @@ textarea.form-produc__input {
   display: flex;
   background-color: #000000;
   border-radius: 6px;
-  padding: 6px 2px;
+  padding: 4px 2px;
   -webkit-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.1;
   color: #FFFFFF;
   opacity: 1;
@@ -2410,6 +2416,25 @@ textarea.form-produc__input {
   cursor: pointer;
   margin-right: 3px;
   margin-top: 7px;
+  margin-left: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .pay-food__buttons-form1::before {
+    display: inline-block;
+    content: "";
+    height: 36px;
+    width: 50px;
+    background-image: url(../images/googleplay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-top: 7px;
+  }
 }
 
 .pay-food__buttons-form1:hover, .pay-food__buttons-form1:focus {
@@ -2439,13 +2464,13 @@ textarea.form-produc__input {
           align-items: center;
   background-color: #000000;
   border-radius: 6px;
-  padding: 0px 13px 2px 0px;
+  padding: 0px 8px 5px 0px;
   -webkit-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
   color: #FFFFFF;
   opacity: 1;
@@ -2464,7 +2489,26 @@ textarea.form-produc__input {
   cursor: pointer;
   margin-right: 3px;
   margin-top: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  width: 27px;
+  height: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  .pay-food__buttons-form2::before {
+    display: inline-block;
+    content: "";
+    height: 36px;
+    width: 50px;
+    background-image: url(../images/maclogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
 }
 
 .pay-food__buttons-form2:hover, .pay-food__buttons-form2:focus {
@@ -2486,7 +2530,8 @@ textarea.form-produc__input {
 }
 
 .pay-food__google {
-  width: 93px;
+  margin-left: 2px;
+  width: 83px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2499,11 +2544,24 @@ textarea.form-produc__input {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.1;
   color: #FFFFFF;
   opacity: 1;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pay-food__google-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 .questions {
@@ -2542,7 +2600,7 @@ textarea.form-produc__input {
 .questions__fill {
   position: relative;
   height: 40px;
-  width: 320px;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -2864,6 +2922,12 @@ textarea.form-produc__input {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .page-footer__section .about-us {
+    margin-top: 80px;
+  }
+}
+
 @media screen and (max-width: 1119px) {
   .page-footer__logo {
     display: none;
@@ -2991,9 +3055,6 @@ textarea.form-produc__input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -3008,6 +3069,12 @@ textarea.form-produc__input {
   }
 }
 
+@media screen and (max-width: 329px) {
+  .page-footer__box {
+    width: 100%;
+  }
+}
+
 .page-footer__box1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3016,9 +3083,9 @@ textarea.form-produc__input {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -3042,6 +3109,12 @@ textarea.form-produc__input {
 @media screen and (min-width: 1200px) {
   .form {
     margin-left: 160px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    margin-top: 60px;
   }
 }
 
