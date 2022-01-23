@@ -129,6 +129,7 @@ $bz:16px 13px);
   @media screen and (min-width: 768px) {
      &::before {
      @include button-pay ()
+     
  }
  }
  &:hover,
@@ -150,8 +151,16 @@ $bz:16px 13px);
     @include text ($fs: 15px, $lx: 1.5, $color: $footer-text-color,$opa: 1) 
         &::before {
         @include button-pay ($bs: url(../images/maclogo.png))
+    margin-bottom: 7px;   
+    width: 27px;
+    height: 22px;
     }
-  
+    @media screen and (min-width: 768px) {
+       &::before {
+        @include button-pay ($bs: url(../images/maclogo.png));
+        margin-bottom: 10px;
+    }
+}
     &:hover,
     &:focus {
         background-color: $accent-color;
