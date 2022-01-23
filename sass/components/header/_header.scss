@@ -54,7 +54,6 @@ margin-left: 100px;
   }
 
 } 
-
 .page-header__link {
     @media screen and (max-width: 767px) {
     @include text ($fw: 500,$fs:16px, $lx:1.14, $color:$header-color, $opa:0.8);
@@ -63,16 +62,8 @@ margin-left: 100px;
     align-items: center;
     border-bottom: 1px solid #DCDCDC;
     &::before {
-    display: inline-block;
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/ice-kream/icons2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 10px;
-}
+      @include mobile ($bi:url(../images/ice-kream/icons1.png)) 
+    }
 }
     
     @media screen and (min-width: 768px) {
@@ -88,8 +79,22 @@ font-size  : 15px;
 line-height: 1.2;
 fill: $footer-text-color;
 }
-
 }
+.page-header__link[href="#2"] {
+    @media screen and (max-width: 767px) {
+        &::before {
+            @include mobile ($bi:url(../images/ice-kream/icons2.png))
+        }
+    }
+}
+.page-header__link[href="#3"]{
+@media screen and (max-width: 767px) {
+    &::before {
+        @include mobile ($bi:url(../images/ice-kream/icons3.png))
+    }
+}
+}
+
 .page-header__icon {
 margin-left: auto;
     @media screen and (min-width: 768px) {

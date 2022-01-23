@@ -1323,7 +1323,7 @@ textarea.form-produc__input {
     content: "";
     width: 30px;
     height: 30px;
-    background-image: url(../images/ice-kream/icons2.png);
+    background-image: url(../images/ice-kream/icons1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1350,6 +1350,34 @@ textarea.form-produc__input {
   font-size: 15px;
   line-height: 1.2;
   fill: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__link[href="#2"]::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/ice-kream/icons2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__link[href="#3"]::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/ice-kream/icons3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
 }
 
 .page-header__icon {
@@ -3038,7 +3066,7 @@ textarea.form-produc__input {
 
 @media screen and (max-width: 767px) {
   .page-footer__section .about-us {
-    margin-top: 87px;
+    margin-top: 88px;
   }
 }
 

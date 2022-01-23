@@ -56,3 +56,14 @@
   background-color     : $bg-color;
   background-position  : $bg-position;
 }
+@mixin mobile ($bi:url(../images/ice-kream/icons2.png)) {
+     display            : inline-block;
+     content            : "";
+     width              : 30px;
+     height             : 30px;
+     background-image   : $bi;
+     background-position: center;
+     background-repeat  : no-repeat;
+     background-size    : cover;
+     margin-right       : 10px;
+}
