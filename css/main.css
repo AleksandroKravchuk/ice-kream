@@ -1318,6 +1318,17 @@ textarea.form-produc__input {
             align-items: center;
     border-bottom: 1px solid #DCDCDC;
   }
+  .page-header__link::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/ice-kream/icons2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2592,26 +2603,6 @@ textarea.form-produc__input {
   cursor: pointer;
   margin-right: 3px;
   margin-top: 7px;
-  margin-bottom: 7px;
-  width: 27px;
-  height: 23px;
-}
-
-@media screen and (min-width: 768px) {
-  .pay-food__buttons-form2::before {
-    display: inline-block;
-    content: "";
-    height: 36px;
-    width: 50px;
-    background-image: url(../images/maclogo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    margin-right: 3px;
-    margin-top: 7px;
-    margin-bottom: 10px;
-  }
 }
 
 .pay-food__buttons-form2:hover, .pay-food__buttons-form2:focus {
