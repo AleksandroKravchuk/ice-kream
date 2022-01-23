@@ -146,12 +146,12 @@ $bz:16px 13px);
     align-items: center;
     background-color: $main-text-color;
     border-radius   : 6px;
-    padding         : 0px 8px 5px 0px;
+    padding         : 2px 12px 3px 0px;
     transition: background-color 300ms linear;
     @include text ($fs: 15px, $lx: 1.5, $color: $footer-text-color,$opa: 1) 
         &::before {
         @include button-pay ($bs: url(../images/maclogo.png))
-    margin-bottom: 6px;   
+    margin-bottom: 7px;   
     width: 27px;
     height: 23px;
     }

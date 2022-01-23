@@ -11,32 +11,62 @@
 }
 .page-header__nav {
         @media screen and (max-width: 767px) {
-    display: none;
+display : block;
+ position: absolute;
+ top     : 70px;
+ left    : 0;
+ height  : 100vh;
+ width   : 80%;
+background-image: linear-gradient(to right, #FFFFFF, #D64374);
+transform: translateX(-100%);
+opacity: 0;
+transition: transform 300ms linear, opacity 300ms linear;
+
 }
 }
 .page-header__nav.is-open{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 200px;
-    width: 200px;
-    background-color: $accent-color;
- 
+    @media screen and (max-width: 767px) {
+    z-index: 3;
+    transform: translateX(0);
+    opacity: 1;
 }
-.page-header__list {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
+}
+.page-header__list {  
 
+    @media screen and (max-width: 767px) { 
+padding: 80px 50px;
+height: 100%;   
+}
+
+    @media screen and (min-width: 768px) {   
+display : flex;       
+flex-direction: row;
+align-items: center;
+margin-left: 100px;
+}
     @media screen and (min-width: 1120px) {
     margin-left: 266px}
 
 }
 .page-header__item:not(:last-child){
+      @media screen and (min-width: 768px) {
     margin-right: 40px;
-}
+  }
+
+} 
+
 .page-header__link {
+    @media screen and (max-width: 767px) {
+    @include text ($fw: 500,$fs:16px, $lx:1.14, $color:$header-color, $opa:0.8);
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+}
+    
+    @media screen and (min-width: 768px) {
+    @include text ($fs:14px, $lx:1.14, $color:$header-color, $opa:0.6);
+}
 @include text ($fs:14px,$lx:1.14,$color:$header-color,$opa:0.6);
 transition:all 300ms linear;
 &:hover,
@@ -45,7 +75,14 @@ color: $accent-color;
 font-weight: bold;
 font-size  : 15px;
 line-height: 1.2;
+fill: $footer-text-color;
 }
+}
+.page-header__icon {
+margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 .page-header__button {
 @extend .button;
