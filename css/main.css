@@ -1841,7 +1841,6 @@ textarea.form-produc__input {
   line-height: 1.11;
   color: #150101;
   opacity: 1;
-  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1853,7 +1852,6 @@ textarea.form-produc__input {
     line-height: 1.11;
     color: #150101;
     opacity: 1;
-    margin-bottom: 24px;
   }
 }
 
@@ -1866,7 +1864,6 @@ textarea.form-produc__input {
     line-height: 1.38;
     color: #150101;
     opacity: 1;
-    margin-bottom: 64px;
   }
 }
 
@@ -1882,11 +1879,27 @@ textarea.form-produc__input {
   }
 }
 
+.our-products__box {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .our-products__box {
     position: relative;
     max-width: 205px;
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-products__box {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .our-products__box {
+    margin-bottom: 64px;
   }
 }
 

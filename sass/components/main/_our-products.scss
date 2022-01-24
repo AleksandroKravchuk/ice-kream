@@ -14,20 +14,17 @@
 }
 
 .our-products__name {
-    cursor: pointer;
-    border: none;
-    display: inline-flex;
-    align-items: center;
+cursor: pointer;
+border: none;
+display: inline-flex;
+align-items: center;
 background-color: transparent;
 @include secondary-text ($lx:1.11, $fs: 30.2px, $color:$header-color) 
-margin-bottom: 10px;
 @media screen and (min-width: 768px) {
 @include secondary-text ($lx:1.11, $fs: 34.2px, $color:$header-color) 
-margin-bottom               : 24px;
 }  
 @media screen and (min-width: 1120px) {
 @include secondary-text ($lx:1.38,$color:$header-color)
-margin-bottom: 64px; 
 }   
 @media screen and (max-width: 767px) {
     &::before {
@@ -42,10 +39,17 @@ margin-bottom: 64px;
 }
 }
 .our-products__box {
+    margin-bottom: 10px;
     @media screen and (max-width: 767px) {
     position: relative;
     max-width: 205px;
    display: inline-block;
+}
+@media screen and (min-width: 768px) { 
+    margin-bottom: 24px;
+}
+@media screen and (min-width: 1120px) {
+   margin-bottom: 64px;
 }
 }
     
