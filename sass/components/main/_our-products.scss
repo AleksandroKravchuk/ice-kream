@@ -22,9 +22,11 @@ background-color: transparent;
 @include secondary-text ($lx:1.11, $fs: 30.2px, $color:$header-color) 
 @media screen and (min-width: 768px) {
 @include secondary-text ($lx:1.11, $fs: 34.2px, $color:$header-color) 
+margin-bottom               : 24px;
 }  
 @media screen and (min-width: 1120px) {
 @include secondary-text ($lx:1.38,$color:$header-color)
+margin-bottom: 64px; 
 }   
 @media screen and (max-width: 767px) {
     &::before {
@@ -44,12 +46,6 @@ background-color: transparent;
     position: relative;
     width: 205px;
    display: inline-block;
-}
-@media screen and (min-width: 768px) { 
-    margin-bottom: 24px;
-}
-@media screen and (min-width: 1120px) {
-   margin-bottom: 64px;
 }
 }
     
