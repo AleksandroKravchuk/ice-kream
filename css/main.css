@@ -1824,7 +1824,11 @@ textarea.form-produc__input {
 }
 
 .our-products__name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-align: center;
+  text-decoration: none;
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 600;
@@ -1858,6 +1862,17 @@ textarea.form-produc__input {
     color: #150101;
     opacity: 1;
     margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-products__name::before {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-position: center;
   }
 }
 

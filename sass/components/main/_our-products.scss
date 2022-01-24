@@ -13,7 +13,9 @@
 }
 
 .our-products__name {
+    display: inline-flex;
 text-align: center;
+text-decoration: none;
 @include secondary-text ($lx:1.11, $fs: 30.2px, $color:$header-color) 
 margin-bottom: 10px;
 @media screen and (min-width: 768px) {
@@ -24,7 +26,16 @@ margin-bottom               : 24px;
 @include secondary-text ($lx:1.38,$color:$header-color)
 margin-bottom: 64px; 
 }   
-
+@media screen and (max-width: 767px) {
+    &::before {
+       content: "";
+       display: inline-block;
+       background-size: cover;
+       width: 30px;
+       height: 30px;
+       background-position: center;
+    }
+}
 }
 .our-products__list {
     @media screen and (max-width: 767px) {
