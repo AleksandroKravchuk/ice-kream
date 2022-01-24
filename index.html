@@ -143,8 +143,9 @@
         </section>
         <section class="our-products">
             <div class="container">
-                <a  class="our-products__name"href="#"><h3 >Our Product</h3></a>
-                <ul class="our-products__list">
+                <div class="our-products__box">
+                <button class="our-products__name"  type="button" data-open-products>Our Product</button>
+                <ul class="our-products__list" data-modal-products>
                     <li class="our-products__item"><a class="our-products__link" href="">ICE CREAM</a></li>
                     <li class="our-products__item"><a class="our-products__link" href="">CAYENNE CHOCOLATE</a></li>
                     <li class="our-products__item"><a class="our-products__link" href="">CAKE BATTER</a></li>
@@ -152,6 +153,7 @@
                     <li class="our-products__item"><a class="our-products__link" href="">PLATTERS</a> </li>
                     <li class="our-products__item"><a class="our-products__link" href="">DESSERT</a></li>
                 </ul>
+                </div>
                 <ul class="card">
                     <li class="card__item">
                         <picture>
@@ -489,6 +491,7 @@
         
     });
 </script>
+<script src="./js/products.js"></script>
 <script>
     $(document).ready(function () {
         $(".js-example-placeholder-single").select2({

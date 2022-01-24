@@ -2,6 +2,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $footer-text-color;
+    text-align: center;
     @media screen and (min-width: 768px) {
     padding-top   : 60px;
     padding-bottom: 60px;
@@ -13,9 +14,11 @@
 }
 
 .our-products__name {
+    cursor: pointer;
+    border: none;
     display: inline-flex;
-text-align: center;
-text-decoration: none;
+    align-items: center;
+background-color: transparent;
 @include secondary-text ($lx:1.11, $fs: 30.2px, $color:$header-color) 
 margin-bottom: 10px;
 @media screen and (min-width: 768px) {
@@ -34,25 +37,57 @@ margin-bottom: 64px;
        width: 30px;
        height: 30px;
        background-position: center;
+       background-image: url(../images/menupoint.png);
     }
 }
 }
-.our-products__list {
+.our-products__box {
     @media screen and (max-width: 767px) {
-    display: none;}
-    margin-bottom: 20px;
-    .our-products__item:not(:last-child) {
-    margin-right: 10px;}
-    display: flex;
-    justify-content: center;
-    @media screen and (min-width: 1120px) {
-    margin-bottom: 109px;
-    .our-products__item:not(:last-child) {
-    margin-right: 40px;
-    }}}
+    position: relative;
+    max-width: 205px;
+   display: inline-block;
+}
+}
     
 
+.our-products__list {
+    @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: $accent-color;
+    text-align: start;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 300ms linear;
+}
+    @media screen and (min-width: 768px) {
+   margin-bottom: 20px;
+   display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1120px) {
+    margin-bottom: 109px;}
+}
+.our-products__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+}
+    @media screen and (min-width: 768px) {
+  margin-right: 10px;}
+   @media screen and (min-width: 1120px) {
+    margin-right: 40px; }
+}
+}
+.our-products__list.is-open {
+    transform: scale(1);
+}    
+
 .our-products__link {
+@media screen and (max-width: 767px) {
+    @include text ($fw:500, $fs:14px,$color: $footer-text-color, $lx:1.17, $opa:1)
+}
 @include text ($fw:500,$fs:14px,$lx:1.17,$opa:0.6)
 cursor: pointer;
 transition: opacity 300ms linear;
@@ -134,7 +169,9 @@ flex-direction: row-reverse;}
 .card__content {
 width: 100%; 
 text-align: start;
-
+&-odd {
+text-align: start;
+}
 @media screen and (min-width: 768px) {
 width     : 350px;
 &-odd {

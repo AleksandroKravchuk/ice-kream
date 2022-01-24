@@ -1807,6 +1807,7 @@ textarea.form-produc__input {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #FFFFFF;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1824,11 +1825,15 @@ textarea.form-produc__input {
 }
 
 .our-products__name {
+  cursor: pointer;
+  border: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  text-align: center;
-  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 600;
@@ -1873,36 +1878,78 @@ textarea.form-produc__input {
     width: 30px;
     height: 30px;
     background-position: center;
+    background-image: url(../images/menupoint.png);
   }
 }
 
-.our-products__list {
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 767px) {
+  .our-products__box {
+    position: relative;
+    max-width: 205px;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .our-products__list {
-    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #D23166;
+    text-align: start;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear;
   }
 }
 
-.our-products__list .our-products__item:not(:last-child) {
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .our-products__list {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
   .our-products__list {
     margin-bottom: 109px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .our-products__list .our-products__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-products__list .our-products__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .our-products__list .our-products__item:not(:last-child) {
     margin-right: 40px;
   }
+}
+
+.our-products__list.is-open {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .our-products__link {
@@ -1917,6 +1964,19 @@ textarea.form-produc__input {
   cursor: pointer;
   -webkit-transition: opacity 300ms linear;
   transition: opacity 300ms linear;
+}
+
+@media screen and (max-width: 767px) {
+  .our-products__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 .our-products__link:hover, .our-products__link:focus {
@@ -2080,6 +2140,10 @@ textarea.form-produc__input {
 
 .card__content {
   width: 100%;
+  text-align: start;
+}
+
+.card__content-odd {
   text-align: start;
 }
 
