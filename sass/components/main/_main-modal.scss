@@ -113,7 +113,7 @@ width: 900px;
 }
 }
 .form-product__text {
-  @include text($fw: 300,$fs: 10px, $color: $footer-text-color, $opa: 1) text-shadow: 2px 8px 6px
+  @include text($fw: 400,$fs: 10px, $color: $footer-text-color, $opa: 1) text-shadow: 2px 8px 6px
       rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   margin-bottom: 10px;
