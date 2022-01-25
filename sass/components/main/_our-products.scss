@@ -31,10 +31,11 @@ margin-bottom: 64px;
 @media screen and (max-width: 767px) {
     &::before {
        content: "";
-       display: inline-block;
+       display: inline-flex;
+       align-items: center;
        background-size: cover;
-       width: 30px;
-       height: 30px;
+       width: 10px;
+       height: 20px;
        background-position: center;
        background-image: url(../images/menupoint.png);
     }
