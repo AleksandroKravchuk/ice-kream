@@ -204,7 +204,7 @@ padding : 12px 12px 12px 12px;
 .button--form {
     @include text ($fs: 12px,$color:$footer-text-color,$opa:1)
     margin-top      : 15px;
-    padding         : 6px 5px;
+    padding         : 8px 5px;
     @media screen and (min-width: 1120px) {
 @include text ($color:$footer-text-color, $opa:1)
 margin-top : 30px;
