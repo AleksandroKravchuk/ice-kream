@@ -19,14 +19,18 @@
 }
 
 .modal {
+position  :absolute;    
+top : 10%;
+left : 50%;
+width     :95%;
+        @media screen and (min-width: 768px) {
    display: flex;
    align-items: center;
-   justify-content: space-around;
-   position  :absolute;
-   top      : 10%;
-   left     : 50%;
+   justify-content: space-around;  
+   width :70%;
+     } 
    transform: scale(1) translateX(-50%);
-   width     :70%;
+   
    background:#fff;
    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
    0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -39,21 +43,6 @@
        position: absolute;
        z-index : -2;
    }
-    // @media screen and (min-width: 480px) {
-    //     position : absolute;
-    //     transform: scale(1) translate(-50%, -50%);
-    //     width    : 450px;
-    //     top      : 50%;
-    //     left     : 50%;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     top: 50%;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: 528px;
-    // }
 
     .modal__button-close {
         position       : absolute;
@@ -83,16 +72,27 @@
 }
 
 .modal-form {
-    padding   : 40px;
     text-align: start;
-
+    padding : 10px;
+     @media screen and (min-width: 768px) {
+    padding : 20px 5px 20px 20px;
+ }
+     @media screen and (min-width: 1120px) {
+    padding : 40px;
+     }
+    
     .modal-form__title {
-        // @media screen and (min-width: 1200px) {
-        //     line-height: 1.15;
-        // }
+  @include text ($fw: 400, $fs:18px, $opa:1) 
+  margin-bottom : 10px;
+        @media screen and (min-width: 768px) {
+@include text ($fw: 400, $fs:20px, $opa:1)
+        }
+        @media screen and (min-width: 1120px) {
+           @include text ($fw: 500,$fs:24px,$opa:1)
+        margin-bottom : 12px; 
+        }
 
-        @include text ($fw: 500,$fs:24px,$opa:1)
-        margin-bottom : 12px;
+        
         &::before {
             content: "";
             display: inline-block;
@@ -113,13 +113,26 @@
 .modal-form__clients {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
 }
+    @media screen and (min-width: 1120px) {
+     margin-bottom: 20px;       
+        } 
+}
+
 .modal-form__clients-item:nth-child(1) {
+    margin-right: 10px;
+    @media screen and (min-width: 1120px) {
     margin-right: 20px;
 }
+}
 .modal-form__clients-link {
-    @include text ($color:$main-text-color);
+    @include text ($fw: normal,$fs: 11px,$lx: 1.5,$color: $main-text-color,$opa: 0.7);
+    @media screen and (min-width: 1120px) {
+    @include text ($fw: normal,$fs: 16px,$lx: 1.5,$color: $main-text-color,$opa: 0.7);
+}
     text-transform: uppercase;
       &::after {
       display         : block;
@@ -155,23 +168,21 @@
          align-items: center;
      }
     .modal-form__name {
-     @include text ($fw: 500,$fs: 14px,$opa: 1);
+     @include text ($fw: 400,$fs: 14px,$opa: 1);
+         @media screen and (min-width: 1120px) {
+       @include text ($fw: 500, $fs: 14px, $opa: 1);
+    }
     }
 
-
-
-    // .modal-form__box {
-    //     position: relative;
-    //     &:focus-within>.modal-form__icon,
-    //     &:hover .modal-form__icon {
-    //         fill: $accent-color;
-    //     }
-    // }
-
     .modal-form__text {
-        width        : 70%;
-        height       : 30px;
-        padding      : 12px 12px 12px 12px;
+width        : 76%;
+height       : 25px;
+padding      : 10px ;
+             @media screen and (min-width: 1120px) {
+width : 70%;
+height : 30px;
+padding : 12px 12px 12px 12px;
+     }
         border-bottom       : 1px solid $accent-color;
         border-top: 0px;
         border-left: 0px;
@@ -186,11 +197,18 @@
         }
     }
 }
-
+.button__box {
+    text-align: center;
+}
 .button--form {
-    @include text ($color:$footer-text-color,$opa:1)
-    margin-top      : 30px;
-    padding         : 6px 10px;
+    @include text ($fs: 12px,$color:$footer-text-color,$opa:1)
+    margin-top      : 15px;
+    padding         : 3px 5px;
+    @media screen and (min-width: 1120px) {
+@include text ($color:$footer-text-color, $opa:1)
+margin-top : 30px;
+padding    : 6px 10px;
+    }
     text-align      : center;
     letter-spacing  : 0.06em;
     border-radius: 5px;
@@ -206,6 +224,9 @@
     }
 }
 .selected {
+    @media screen and (max-width: 767px) {
+   width : 95%;
+}
     position  : relative;
     width     : 40%;
     padding   : 1em;
@@ -229,17 +250,29 @@
 }
 
 &__text {
-    @include text ($fs: 20px,$opa:1)
+    @include text ($fs: 18px,$opa:1)
+    @media screen and (min-width: 1120px) {
+    @include text ($fs: 20px, $opa:1)
+}
+    
 }
 &__product {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     border-bottom: 1px solid #DCDCDC;
+        @media screen and (min-width: 1120px) {
+       padding: 10px;
+    }
+    
 }
 &__name {
- @include text ($fw: normal,$fs: 16px,$lx: 1.2,$color:  $accent-color,$opa: 0.7);
+   @include text ($fw: normal,$fs: 14px,$lx: 1.2,$color:  $accent-color,$opa: 0.7); 
+   margin-left: 5px;
+        @media screen and (min-width: 1120px) {
+@include text ($fs: 18px, $lx: 1.2, $color: $accent-color, $opa: 0.7);
+    }
+ 
 transition: opacity 250ms linear;
 &:hover {
     opacity: 1;
@@ -247,13 +280,26 @@ transition: opacity 250ms linear;
 &__price-block {
     display: block;
     width: 60px;
+    @media screen and (min-width: 1120px) {
+   width: 60px;
+}
+    
 }
 &__price {
+    @include secondary-text ($fw:300, $color: red, $fs:16px);
+       @media screen and (min-width: 1120px) {
     @include secondary-text ($fw:400,$color: red,$fs:18px);   
+   }
+       
 }
 &__price-not {
-    @include secondary-text ($fw:400, $fs:16px, $opa:0.7);
-     text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    @include secondary-text ($fw:300, $fs:16px, $opa:0.7);
+       @media screen and (min-width: 1120px) {
+    @include secondary-text ($fw:400, $fs:16px, $opa:0.7);   
+   }
+    
+     
 }
 }
 .selected__end-price {

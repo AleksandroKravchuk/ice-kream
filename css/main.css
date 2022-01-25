@@ -369,25 +369,31 @@ summary {
 }
 
 .modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   position: absolute;
   top: 10%;
   left: 50%;
+  width: 95%;
   -webkit-transform: scale(1) translateX(-50%);
           transform: scale(1) translateX(-50%);
-  width: 70%;
   background: #fff;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 70%;
+  }
 }
 
 .modal:before, .modal:after {
@@ -430,20 +436,59 @@ summary {
 }
 
 .modal-form {
-  padding: 40px;
   text-align: start;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form {
+    padding: 20px 5px 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form {
+    padding: 40px;
+  }
 }
 
 .modal-form .modal-form__title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
   color: #000000;
   opacity: 1;
   text-decoration: none;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form .modal-form__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+    margin-bottom: 12px;
+  }
 }
 
 .modal-form .modal-form__title::before {
@@ -478,23 +523,54 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form .modal-form__clients {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__clients {
+    margin-bottom: 20px;
+  }
 }
 
 .modal-form .modal-form__clients-item:nth-child(1) {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__clients-item:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 
 .modal-form .modal-form__clients-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 11px;
   line-height: 1.5;
   color: #000000;
   opacity: 0.7;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__clients-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 0.7;
+    text-decoration: none;
+  }
 }
 
 .modal-form .modal-form__clients-link::after {
@@ -545,7 +621,7 @@ summary {
 .modal-form .modal-form__name {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: #000000;
@@ -553,15 +629,36 @@ summary {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
 .modal-form .modal-form__text {
-  width: 70%;
-  height: 30px;
-  padding: 12px 12px 12px 12px;
+  width: 76%;
+  height: 25px;
+  padding: 10px;
   border-bottom: 1px solid #D23166;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1120px) {
+  .modal-form .modal-form__text {
+    width: 70%;
+    height: 30px;
+    padding: 12px 12px 12px 12px;
+  }
 }
 
 .modal-form .modal-form__text:hover, .modal-form .modal-form__text:focus {
@@ -612,17 +709,21 @@ summary {
   text-decoration: none;
 }
 
+.button__box {
+  text-align: center;
+}
+
 .button--form {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: #FFFFFF;
   opacity: 1;
   text-decoration: none;
-  margin-top: 30px;
-  padding: 6px 10px;
+  margin-top: 15px;
+  padding: 3px 5px;
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 5px;
@@ -631,6 +732,21 @@ summary {
   background-color: #D23166;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1120px) {
+  .button--form {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 6px 10px;
+  }
 }
 
 .button--form:hover, .button--form:focus {
@@ -646,6 +762,12 @@ summary {
   background: #fff;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media screen and (max-width: 767px) {
+  .selected {
+    width: 95%;
+  }
 }
 
 .selected:before, .selected:after {
@@ -668,11 +790,24 @@ summary {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: #000000;
   opacity: 1;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .selected__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 .selected__product {
@@ -685,21 +820,40 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
   border-bottom: 1px solid #DCDCDC;
+}
+
+@media screen and (min-width: 1120px) {
+  .selected__product {
+    padding: 10px;
+  }
 }
 
 .selected__name {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   color: #D23166;
   opacity: 0.7;
   text-decoration: none;
+  margin-left: 5px;
   -webkit-transition: opacity 250ms linear;
   transition: opacity 250ms linear;
+}
+
+@media screen and (min-width: 1120px) {
+  .selected__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #D23166;
+    opacity: 0.7;
+    text-decoration: none;
+  }
 }
 
 .selected__name:hover {
@@ -711,26 +865,56 @@ summary {
   width: 60px;
 }
 
+@media screen and (min-width: 1120px) {
+  .selected__price-block {
+    width: 60px;
+  }
+}
+
 .selected__price {
   font-family: Hind Madurai;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 1.4;
   color: red;
   opacity: 1;
 }
 
+@media screen and (min-width: 1120px) {
+  .selected__price {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: red;
+    opacity: 1;
+  }
+}
+
 .selected__price-not {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
   font-family: Hind Madurai;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.4;
   color: #000000;
   opacity: 0.7;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+}
+
+@media screen and (min-width: 1120px) {
+  .selected__price-not {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+    opacity: 0.7;
+  }
 }
 
 .selected__end-price {
@@ -1428,6 +1612,12 @@ textarea.form-produc__input {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button-1 {
+    display: none;
+  }
+}
+
 .hero {
   padding-top: 15px;
   padding-bottom: 40px;
@@ -1889,7 +2079,7 @@ textarea.form-produc__input {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 20px 15px;
     background-color: #D23166;
     text-align: start;
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
