@@ -1417,14 +1417,6 @@ textarea.form-produc__input {
   }
 }
 
-.menu-button__icon--cross {
-  display: none;
-}
-
-.menu-button.is-open .menu-button__icon--cross {
-  display: block;
-}
-
 .menu-button.is-open .menu-button__icon--menu {
   display: none;
 }
@@ -1434,12 +1426,6 @@ textarea.form-produc__input {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button-1 {
-    display: none;
-  }
 }
 
 .hero {
