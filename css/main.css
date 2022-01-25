@@ -1879,7 +1879,7 @@ textarea.form-produc__input {
 @media screen and (max-width: 767px) {
   .our-products__box {
     position: relative;
-    width: 100%;
+    width: 215px;
     display: inline-block;
   }
 }
