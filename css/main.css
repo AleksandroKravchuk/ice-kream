@@ -989,6 +989,7 @@ summary {
 .modal-main {
   position: absolute;
   left: 40%;
+  top: 0;
   width: 95vw;
   height: 95vh;
   border-radius: 6px;
@@ -1016,7 +1017,7 @@ summary {
 .modal-main {
   position: relative;
   padding: 1em;
-  margin: 2em 10px 4em;
+  margin: 0.2em 10px;
   background: #fff;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;

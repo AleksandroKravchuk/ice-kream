@@ -21,6 +21,7 @@
 .modal-main {
   position: absolute;
   left: 40%;
+  top: 0;
   width: 95vw;
   height: 95vh;
    @media screen and (min-width: 768px) {
@@ -39,7 +40,7 @@ width: 900px;
   & {
     position: relative;
     padding: 1em;
-    margin: 2em 10px 4em;
+    margin: 0.2em 10px;
     background: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
