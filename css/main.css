@@ -990,7 +990,7 @@ summary {
   position: absolute;
   left: 40%;
   top: 0;
-  width: 95vw;
+  width: 98vw;
   height: 95vh;
   border-radius: 6px;
   -webkit-transform: scale(1) translateX(-50%);
@@ -1131,8 +1131,8 @@ summary {
 .form-product__text {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
+  font-weight: 300l;
+  font-size: 10px;
   line-height: 1.5;
   color: #FFFFFF;
   opacity: 1;
