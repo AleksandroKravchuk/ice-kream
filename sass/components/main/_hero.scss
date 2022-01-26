@@ -10,27 +10,8 @@
     padding-top: 196px;
     padding-bottom: 213px;
  }
- @media screen and (min-width: 1120px) {
-    background-image: 
-    url(../images/hero/hero.png), 
-    url(../images/hero/hero-main.png), 
-    url(../images/hero/kolo.png),
-    url(../images/hero/ellipse.png);
-    background-position-x:100%,88%,80%,80%;
-    background-position-y: 85%,30%,80%,120%;
-    background-size: 58%,40%,23%,50%;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/hero/hero2x.png),
-url(../images/hero/hero-main2x.png),
-url(../images/hero/kolo2x.png),
-url(../images/hero/ellipse2x.png);
-    }
-}
-.hero__tablet {
+
+&__tablet {
     @media screen and (min-width: 768px) and (max-width: 1119px) {
     display: flex;
     align-items: center;
@@ -40,7 +21,7 @@ url(../images/hero/ellipse2x.png);
 
 }
 
-.hero__box {
+&__box {
     display:inline-flex;
     flex-direction: column;
     align-items: center;
@@ -48,11 +29,71 @@ url(../images/hero/ellipse2x.png);
    width: 300px;
 }
 }
-.hero__mob {
-    @media screen and (min-width: 1120px) {
-    display: none;
+& .container {
+    position: relative;
 }
-}   
+&__kolo {
+    display: none;
+    @media screen and (min-width: 1120px) {
+        display: block;
+        position: absolute;
+        top     : 160px;
+        right   : -10px;
+animation-name    : kolo;
+animation-duration: 2s;
+animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+    }
+      @keyframes kolo {
+      0% {
+          opacity  : 0;}
+      100% {
+          opacity  : 1;}
+  }
+}
+&__mob {
+    width: 400px;
+    @media screen and (min-width: 1120px) {
+    display: block;
+    position: absolute;
+    width: 680px;
+    top:-180px;
+    right: -150px;
+animation-name    : mob;
+animation-duration: 2s;
+animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+    @keyframes mob {
+    0% {
+    transform: translateX(-100%);
+    opacity: 0;}
+    100% {
+    opacity: 1;
+transform: translateX(0)}
+    }
+}
+} 
+&__milk {
+    display: none;
+    @media screen and (min-width: 1120px) {
+  display: block;
+  position: absolute;
+  top     : -40px;
+  right   : -270px;
+  transform: rotate(4.79deg);
+  animation-name    : milk;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+   } 
+   @keyframes milk {
+     0% {
+         transform: rotate(0deg);
+         transform: translateX(30%);
+         opacity  : 0;}
+     100% {
+         opacity  : 1;
+         transform: translateX(0);
+         transform: rotate(4.79deg)}
+ } 
+}  
 }
 .hero__name {
 @include text ($fw:500,$fs:14px,$lx:1.14,$color:$hero-color,$opa:1)

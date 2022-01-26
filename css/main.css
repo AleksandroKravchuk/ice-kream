@@ -1743,25 +1743,8 @@ textarea.form-produc__input {
   }
 }
 
-@media screen and (min-width: 1120px) {
-  .hero {
-    background-image: url(../images/hero/hero.png), url(../images/hero/hero-main.png), url(../images/hero/kolo.png), url(../images/hero/ellipse.png);
-    background-position-x: 100%,88%,80%,80%;
-    background-position-y: 85%,30%,80%,120%;
-    background-size: 58%,40%,23%,50%;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-  }
-}
-
-@media screen and (min-width: 1120px) and (min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (min-resolution: 192dpi), screen and (min-width: 1120px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/hero/hero2x.png), url(../images/hero/hero-main2x.png), url(../images/hero/kolo2x.png), url(../images/hero/ellipse2x.png);
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1119px) {
-  .hero .hero__tablet {
+  .hero__tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1774,7 +1757,7 @@ textarea.form-produc__input {
   }
 }
 
-.hero .hero__box {
+.hero__box {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1788,14 +1771,148 @@ textarea.form-produc__input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
-  .hero .hero__box {
+  .hero__box {
     width: 300px;
   }
 }
 
+.hero .container {
+  position: relative;
+}
+
+.hero__kolo {
+  display: none;
+}
+
 @media screen and (min-width: 1120px) {
-  .hero .hero__mob {
-    display: none;
+  .hero__kolo {
+    display: block;
+    position: absolute;
+    top: 160px;
+    right: -10px;
+    -webkit-animation-name: kolo;
+            animation-name: kolo;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+}
+
+@-webkit-keyframes kolo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kolo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero__mob {
+  width: 400px;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__mob {
+    display: block;
+    position: absolute;
+    width: 680px;
+    top: -180px;
+    right: -150px;
+    -webkit-animation-name: mob;
+            animation-name: mob;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  @-webkit-keyframes mob {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes mob {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+}
+
+.hero__milk {
+  display: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__milk {
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: -270px;
+    -webkit-transform: rotate(4.79deg);
+            transform: rotate(4.79deg);
+    -webkit-animation-name: milk;
+            animation-name: milk;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+}
+
+@-webkit-keyframes milk {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: rotate(4.79deg);
+            transform: rotate(4.79deg);
+  }
+}
+
+@keyframes milk {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: rotate(4.79deg);
+            transform: rotate(4.79deg);
   }
 }
 

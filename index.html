@@ -30,7 +30,7 @@
                     </button>
                     <ul class="page-header__list">
                         <li class="page-header__item">
-                            <a class="page-header__link" href="#">Home
+                            <a class="page-header__link" href="#home">Home
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
@@ -66,7 +66,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home"> 
             <div class="container">
                 <div class="hero__tablet">
                 <div class="hero__content">
@@ -74,9 +74,14 @@
                     <h2 class="hero__subname">Feel inside cold with <br> our delicious <span class="hero__roze">ice-cream.</span></h2>
                     <p class="hero__text">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've
                 been left eating my thoughts, my words.</p></div>
-                <div class="hero__box">
+                <div class="hero__box"> 
+                    <img class="hero__kolo" srcset="
+                    ./images/hero/kolo.png" src="./images/hero/kolo2x.png" alt="ice-cream" width="400">
                     <img class="hero__mob" srcset="
-                    ./images/hero/hero-main.png 1x" src="./images/main/main.jpg" alt="ice-cream" width="400">
+                    ./images/hero/hero-main.png 1x" src="./images/main/main.jpg" alt="ice-cream" width="680">
+                    <img class="hero__milk" srcset="
+                    ./images/hero/hero.png" src="./images/hero/hero2x.png" alt="ice-cream" width="1000">
+                   
                      <button class="button" type="button" data-modal-open>Buy Now</button>
                 </div></div>
             </div>
@@ -139,7 +144,7 @@
             </div>
             </div>
         </section>
-        <section class="our-products" id="product">
+        <section class="our-products" id="product"> 
             <div class="container">
                 <div class="our-products__box">
                 <button class="our-products__name"  type="button" data-open-products>Our Product</button>
