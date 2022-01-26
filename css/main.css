@@ -1632,7 +1632,7 @@ textarea.form-produc__input {
 }
 
 @media screen and (max-width: 767px) {
-  .page-header__link[href="#2"]::before {
+  .page-header__link[href="#product"]::before {
     display: inline-block;
     content: "";
     width: 30px;
@@ -1646,12 +1646,26 @@ textarea.form-produc__input {
 }
 
 @media screen and (max-width: 767px) {
-  .page-header__link[href="#3"]::before {
+  .page-header__link[href="#pricing"]::before {
     display: inline-block;
     content: "";
     width: 30px;
     height: 30px;
     background-image: url(../images/ice-kream/icons3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__link[href="#contakt"]::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/ice-kream/icons2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

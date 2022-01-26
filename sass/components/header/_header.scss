@@ -80,21 +80,27 @@ line-height: 1.2;
 fill: $footer-text-color;
 }
 }
-.page-header__link[href="#2"] {
+.page-header__link[href="#product"] {
     @media screen and (max-width: 767px) {
         &::before {
             @include mobile ($bi:url(../images/ice-kream/icons2.png))
         }
     }
 }
-.page-header__link[href="#3"]{
+.page-header__link[href="#pricing"]{
 @media screen and (max-width: 767px) {
     &::before {
         @include mobile ($bi:url(../images/ice-kream/icons3.png))
     }
 }
 }
-
+.page-header__link[href="#contakt"] {
+    @media screen and (max-width: 767px) {
+        &::before {
+            @include mobile ($bi:url(../images/ice-kream/icons2.png))
+        }
+    }
+}
 .page-header__icon {
 margin-left: auto;
     @media screen and (min-width: 768px) {
