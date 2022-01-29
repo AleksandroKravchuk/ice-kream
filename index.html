@@ -28,29 +28,29 @@
                             <use class="menu-button__icon--cross" href="./images/symbol-defs.svg#icon-arrow-left" width="20"></use>
                         </svg>
                     </button>
-                    <ul class="page-header__list">
+                    <ul class="page-header__list" >
                         <li class="page-header__item">
-                            <a class="page-header__link " href="#home">Home 
+                            <a class="page-header__link " href="#ahome">Home 
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
                         </a></li>
-                        <li class="page-header__item"><a class="page-header__link .easy-scroll"  href="#product">Product
+                        <li class="page-header__item"><a class="page-header__link .easy-scroll"  href="#aproduct">Product
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
                         </a></li>
-                        <li class="page-header__item"><a class="page-header__link .ice2" href="#pricing">Pricing
+                        <li class="page-header__item"><a class="page-header__link .ice2" href="#apricing">Pricing
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
                         </a></li>
-                        <li class="page-header__item"><a class="page-header__link" href="#testimonials">Testimonials
+                        <li class="page-header__item"><a class="page-header__link " href="#atestimonials">Testimonials
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
                         </a></li>
-                        <li class="page-header__item"><a class="page-header__link" href="#contakt">Contact Us
+                        <li class="page-header__item"><a class="page-header__link" href="#acontakt">Contact Us
                             <svg class="page-header__icon" width="27" height="27">
                                 <use href="./images/symbol-defs.svg#icon-point-right"></use>
                             </svg>
@@ -66,7 +66,7 @@
         </div>
     </header>
     <main>
-        <section class="hero" id="home"> 
+        <section class="hero" id="ahome"> 
             <div class="container">
                 <div class="hero__tablet">
                 <div class="hero__content">
@@ -120,7 +120,7 @@
                 </ul>
             </div>
         </section>
-        <section class="main-product" id="pricing">
+        <section class="main-product" id="apricing">
             <div class="container">
                 <div class="main-product__content"> 
                 <h3 class="main-product__name">Brown Sugar Oatmea</h3>
@@ -144,7 +144,7 @@
             </div>
             </div>
         </section>
-        <section class="our-products" id="product"> 
+        <section class="our-products" id="aproduct"> 
             <div class="container">
                 <div class="our-products__box">
                 <button class="our-products__name"  type="button" data-open-products>Our Product</button>
@@ -247,7 +247,7 @@
                 </ul>
             </div>
         </section>
-        <section class="pay-food" id="testimonials">
+        <section class="pay-food" id="atestimonials">
             <div class="container">
                 <picture class="pay-food__card">
                     <source srcset="
@@ -292,7 +292,7 @@
             </div>
         </section>
     </main>
-    <footer class="page-footer" id="contakt">
+    <footer class="page-footer" id="acontakt">
         <div class="container">
         <img class="page-footer__logo" src="./images//logo2.svg" alt="logo" width="79" height="79">
         <div class="page-footer__section"> 
@@ -493,34 +493,9 @@
 <script src="./js/main-modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-<script>
-   $(document).bind('mousewheel', function (e) {
-        var nt = $(document.body).scrollTop() - (e.deltaY * e.deltaFactor * 100);
-        e.preventDefault();
-        e.stopPropagation();
-        $(document.body).stop().animate({
-            scrollTop: nt
-        }, 500, 'easeInOutCubic');
-    })
-</script>
-<!-- <script>
-    $(document).ready(function () {
-            $("#menu").on("click", "a", function (event) {
-                event.preventDefault();
-                var id = $(this).attr('href'),
-                    top = $(id).offset().top;
-                $('body,html').animate({ scrollTop: top }, 1500);
-            });
-        });
-</script>
-<script>
-    $('.menu li').on('click', 'a', function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-        var top = $(id).offset().top;
-        $('body, html').animate({ scrollTop: top }, 800);
-    }); -->
-<!-- </script> -->
+<script src="./js/scroll.js"></script>
+ 
+
 <!-- <script>
     $(function () {
         $('select').select2();
