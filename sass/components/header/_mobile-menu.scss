@@ -1,25 +1,25 @@
-.menu-button,  .menu-button-1{
-    fill            : $main-text-color;
-    margin-left     : auto;
-    padding         : 0;
-    border          : none;
-    z-index         : 4;
-    background-color: transparent;
-    transition      : fill 250ms linear;
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+.menu-button,
+.menu-button-1 {
+  fill: $main-text-color;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  z-index: 4;
+  background-color: transparent;
+  transition: fill 250ms linear;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button.is-open .menu-button__icon--menu {
-    display: none;
+  display: none;
 }
 
-
 .menu-button-1 {
-    display: flex;
-    margin-left: auto;
-     @media screen and (min-width: 768px) {
-     display: none;
- }
+  display: flex;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

@@ -1689,7 +1689,8 @@ textarea.form-produc__input {
   }
 }
 
-.menu-button, .menu-button-1 {
+.menu-button,
+.menu-button-1 {
   fill: #000000;
   margin-left: auto;
   padding: 0;
@@ -1701,7 +1702,8 @@ textarea.form-produc__input {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button, .menu-button-1 {
+  .menu-button,
+  .menu-button-1 {
     display: none;
   }
 }
