@@ -8,13 +8,17 @@
     background-color: rgba(0, 0, 0, 0.4);
     opacity         : 1;
     overflow-y      : scroll;
-    transition      : opacity 200ms linear;
+   
+    // transition      : opacity 200ms linear;
 
     &.is-hidden {
         visibility    : hidden;
         opacity       : 0;
         pointer-events: none;
-        transition : opacity 200ms linear,  visibility 200ms linear;
+        .modal{
+            transform: perspective(600) translate(-50%,-100%) rotateX(60deg);
+            transition: all 300ms linear;
+        }
     }
 }
 
@@ -23,6 +27,7 @@ position  :absolute;
 top : 5%;
 left : 50%;
 width     :95%;
+
         @media screen and (min-width: 768px) {
    top : 10%;
    display: flex;
@@ -30,7 +35,8 @@ width     :95%;
    justify-content: space-around;  
    width :70%;
      } 
-   transform: scale(1) translateX(-50%);
+   transform: perspective(600) translate(-50%, 0%) rotateX(0deg);
+   transition: all 300ms linear;
    
    background:#fff;
    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
@@ -160,7 +166,9 @@ width     :95%;
      color: $accent-color;
  }}
 }
-    
+    .modal-form__list {
+        // display: none;
+    }
     .modal-form__item:not(:last-child) {
         margin-bottom: 10px;
     }
