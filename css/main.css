@@ -440,6 +440,7 @@ summary {
 .modal-form {
   text-align: start;
   padding: 10px;
+  background-color: blue;
 }
 
 @media screen and (min-width: 768px) {
@@ -452,6 +453,10 @@ summary {
   .modal-form {
     padding: 40px;
   }
+}
+
+.modal-form .changewindow {
+  visibility: hidden;
 }
 
 .modal-form .modal-form__title {

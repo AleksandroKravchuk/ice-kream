@@ -81,12 +81,18 @@ width     :95%;
 .modal-form {
     text-align: start;
     padding : 10px;
+     background-color: blue;
      @media screen and (min-width: 768px) {
     padding : 20px 5px 20px 20px;
  }
      @media screen and (min-width: 1120px) {
     padding : 40px;
      }
+   .changewindow  {
+       
+    visibility: hidden;
+      
+   }
     
     .modal-form__title {
   @include text ($fw: 400, $fs:18px, $opa:1) 
