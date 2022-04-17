@@ -399,7 +399,7 @@ summary {
 }
 
 .modal:before, .modal:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -2;
 }
@@ -424,10 +424,10 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: opacity 250ms linear, fill 250ms linear,-webkit-box-shadow 250ms linear;
-  transition: opacity 250ms linear, fill 250ms linear,-webkit-box-shadow 250ms linear;
-  transition: box-shadow 250ms linear,opacity 250ms linear, fill 250ms linear;
-  transition: box-shadow 250ms linear,opacity 250ms linear, fill 250ms linear,-webkit-box-shadow 250ms linear;
+  -webkit-transition: opacity 250ms linear, fill 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: opacity 250ms linear, fill 250ms linear, -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, opacity 250ms linear, fill 250ms linear;
+  transition: box-shadow 250ms linear, opacity 250ms linear, fill 250ms linear, -webkit-box-shadow 250ms linear;
 }
 
 .modal .modal__button-close:hover, .modal .modal__button-close:focus {
@@ -440,7 +440,6 @@ summary {
 .modal-form {
   text-align: start;
   padding: 10px;
-  background-color: blue;
 }
 
 @media screen and (min-width: 768px) {
@@ -455,8 +454,12 @@ summary {
   }
 }
 
-.modal-form .changewindow {
-  visibility: hidden;
+.modal-form .change-hidden {
+  display: none;
+}
+
+.modal-form .js-changewindow {
+  padding-bottom: 79px;
 }
 
 .modal-form .modal-form__title {
@@ -499,7 +502,7 @@ summary {
 }
 
 .modal-form .modal-form__title::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -564,6 +567,7 @@ summary {
   color: #000000;
   opacity: 0.7;
   text-decoration: none;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -582,7 +586,7 @@ summary {
 
 .modal-form .modal-form__clients-link::after {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   background-color: #D23166;
@@ -593,13 +597,14 @@ summary {
           transform-origin: left;
   -webkit-transition: color 250ms linear, opacity 250ms linear;
   transition: color 250ms linear, opacity 250ms linear;
-  -webkit-transition: opacity 250ms linear,-webkit-transform 250ms linear;
-  transition: opacity 250ms linear,-webkit-transform 250ms linear;
-  transition: transform 250ms linear,opacity 250ms linear;
-  transition: transform 250ms linear,opacity 250ms linear,-webkit-transform 250ms linear;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
+  transition: opacity 250ms linear, -webkit-transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
 }
 
 .modal-form .modal-form__clients-link:hover, .modal-form .modal-form__clients-link:focus, .modal-form .modal-form__clients-link:active, .modal-form .modal-form__clients-link:visited {
+  color: #D23166;
   opacity: 1;
 }
 
@@ -608,8 +613,11 @@ summary {
           transform: scale(1);
 }
 
-.modal-form .modal-form__clients-link:hover:hover, .modal-form .modal-form__clients-link:hover:focus, .modal-form .modal-form__clients-link:focus:hover, .modal-form .modal-form__clients-link:focus:focus, .modal-form .modal-form__clients-link:active:hover, .modal-form .modal-form__clients-link:active:focus, .modal-form .modal-form__clients-link:visited:hover, .modal-form .modal-form__clients-link:visited:focus {
+.modal-form .act {
   color: #D23166;
+  opacity: 1;
+  border-bottom: 2px solid #D23166;
+  padding-bottom: 12px;
 }
 
 .modal-form .modal-form__item:not(:last-child) {
@@ -779,7 +787,7 @@ summary {
 }
 
 .selected:before, .selected:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -2;
 }
@@ -828,7 +836,7 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #DCDCDC;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 @media screen and (min-width: 1120px) {
@@ -929,7 +937,7 @@ summary {
   margin-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #DCDCDC;
+  border-bottom: 1px solid #dcdcdc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,7 +967,7 @@ summary {
 
 .selected__delivery::before {
   display: inline-block;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   background-size: cover;

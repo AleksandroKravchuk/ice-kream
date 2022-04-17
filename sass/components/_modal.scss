@@ -1,342 +1,328 @@
 .backdrop {
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    min-width       : 100%;
-    min-height      : 100%;
-    padding         : 10px 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity         : 1;
-    overflow-y      : scroll;
-   
-    // transition      : opacity 200ms linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  overflow-y: scroll;
 
-    &.is-hidden {
-        visibility    : hidden;
-        opacity       : 0;
-        pointer-events: none;
-        .modal{
-            transform: perspective(600) translate(-50%,-100%) rotateX(60deg);
-            transition: all 300ms linear;
-        }
+  // transition      : opacity 200ms linear;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    .modal {
+      transform: perspective(600) translate(-50%, -100%) rotateX(60deg);
+      transition: all 300ms linear;
     }
+  }
 }
 
 .modal {
-position  :absolute;    
-top : 5%;
-left : 50%;
-width     :95%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 95%;
 
-        @media screen and (min-width: 768px) {
-   top : 10%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;  
-   width :70%;
-     } 
-   transform: perspective(600) translate(-50%, 0%) rotateX(0deg);
-   transition: all 300ms linear;
-   
-   background:#fff;
-   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
-   0 0 40px rgba(0, 0, 0, 0.1) inset;
-   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
-   0 1px 4px rgba(0, 0, 0, 0.3),
-   0 0 40px rgba(0, 0, 0, 0.1) inset;
-   &:before,
-   &:after {
-       content : "";
-       position: absolute;
-       z-index : -2;
-   }
+  @media screen and (min-width: 768px) {
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+  transform: perspective(600) translate(-50%, 0%) rotateX(0deg);
+  transition: all 300ms linear;
 
-    .modal__button-close {
-        position       : absolute;
-        z-index        : 10;
-        top            : 8px;
-        right          : 8px;
-        width          : 30px;
-        height         : 30px;
-        border-radius  : 50%;
-        cursor         : pointer;
-        background     : $accent-color;
-        opacity: 0.5;
-        border         : 1px solid rgba(0, 0, 0, 0.1);
-        box-sizing     : border-box;
-        display: flex;
-        align-items: center;
-        transition : box-shadow 250ms linear,opacity 250ms linear, fill 250ms linear;
-        &:hover,
-        &:focus {
-             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16);
-        opacity: 1;
-        fill: $footer-text-color;
-        }
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+  }
+
+  .modal__button-close {
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $accent-color;
+    opacity: 0.5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 250ms linear, opacity 250ms linear, fill 250ms linear;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+      opacity: 1;
+      fill: $footer-text-color;
     }
+  }
 }
 
 .modal-form {
-    text-align: start;
-    padding : 10px;
-     background-color: blue;
-     @media screen and (min-width: 768px) {
-    padding : 20px 5px 20px 20px;
- }
-     @media screen and (min-width: 1120px) {
-    padding : 40px;
-     }
-   .changewindow  {
-       
-    visibility: hidden;
-      
-   }
-    
-    .modal-form__title {
-  @include text ($fw: 400, $fs:18px, $opa:1) 
-  margin-bottom : 10px;
-        @media screen and (min-width: 768px) {
-@include text ($fw: 400, $fs:20px, $opa:1)
-        }
-        @media screen and (min-width: 1120px) {
-           @include text ($fw: 500,$fs:24px,$opa:1)
-        margin-bottom : 12px; 
-        }
+  text-align: start;
+  padding: 10px;
+  
+  @media screen and (min-width: 768px) {
+    padding: 20px 5px 20px 20px;
+  }
+  @media screen and (min-width: 1120px) {
+    padding: 40px;
+  }
+  .change-hidden{
+   display: none;
 
-        
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-            margin-bottom: -15px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(../images/ice-kream/buy.png);
-        }
-    }
-.modal-form__information {
-    @include text ($opa:1)
-    margin-bottom : 12px;
+  }
+.js-changewindow{
+    padding-bottom: 79px;
 }
-.modal-form__clients {
+  .modal-form__title {
+    @include text($fw: 400, $fs: 18px, $opa: 1) margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      @include text($fw: 400, $fs: 20px, $opa: 1);
+    }
+    @media screen and (min-width: 1120px) {
+      @include text($fw: 500, $fs: 24px, $opa: 1) margin-bottom: 12px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      margin-bottom: -15px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../images/ice-kream/buy.png);
+    }
+  }
+  .modal-form__information {
+    @include text($opa: 1) margin-bottom: 12px;
+  }
+  .modal-form__clients {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
     @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-}
+      margin-bottom: 10px;
+    }
     @media screen and (min-width: 1120px) {
-     margin-bottom: 20px;       
-        } 
-}
+      margin-bottom: 20px;
+    }
+  }
 
-.modal-form__clients-item:nth-child(1) {
+  .modal-form__clients-item:nth-child(1) {
     margin-right: 10px;
     @media screen and (min-width: 1120px) {
-    margin-right: 20px;
-}
-}
-.modal-form__clients-link {
-    @include text ($fw: normal,$fs: 11px,$lx: 1.5,$color: $main-text-color,$opa: 0.7);
-    @media screen and (min-width: 1120px) {
-    @include text ($fw: normal,$fs: 16px,$lx: 1.5,$color: $main-text-color,$opa: 0.7);
-}
-    text-transform: uppercase;
-      &::after {
-      display         : block;
-      content         : "";
-      width           : 100%;
-      height          : 2px;
-      background-color: $accent-color;
-    margin-top:  10px;
-     transform: scale(0);
-     transform-origin: left;
-    transition: color 250ms linear, opacity 250ms linear;    
-    transition: transform 250ms linear,opacity 250ms linear;
+      margin-right: 20px;
+    }
   }
+  .modal-form__clients-link {
+    @include text($fw: normal, $fs: 11px, $lx: 1.5, $color: $main-text-color, $opa: 0.7);
+    cursor: pointer;
+    @media screen and (min-width: 1120px) {
+      @include text($fw: normal, $fs: 16px, $lx: 1.5, $color: $main-text-color, $opa: 0.7);
+    }
+    text-transform: uppercase;
+    &::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $accent-color;
+      margin-top: 10px;
+      transform: scale(0);
+      transform-origin: left;
+      transition: color 250ms linear, opacity 250ms linear;
+      transition: transform 250ms linear, opacity 250ms linear;
+    }
+  
     &:hover,
     &:focus,
     &:active,
     &:visited {
-        opacity: 1;
+        color: $accent-color;
+      opacity: 1;
       &::after {
-     transform: scale(1);
-    }   
-     &:hover,
-     &:focus {
-     color: $accent-color;
- }}
-}
-    .modal-form__list {
-        // display: none;
-    }
-    .modal-form__item:not(:last-child) {
-        margin-bottom: 10px;
-    }
-     .modal-form__item {
-         display: flex;
-         align-items: center;
-     }
-    .modal-form__name {
-     @include text ($fw: 400,$fs: 14px,$opa: 1);
-         @media screen and (min-width: 1120px) {
-       @include text ($fw: 500, $fs: 14px, $opa: 1);
-    }
-    }
+        transform: scale(1);
+ 
+.act{
+    color: $accent-color;
+   opacity: 1;
+border-bottom: 2px solid $accent-color;
+padding-bottom: 12px;
 
-    .modal-form__text {
-width        : 76%;
-height       : 25px;
-padding      : 10px ;
-             @media screen and (min-width: 1120px) {
-width : 70%;
-height : 30px;
-padding : 12px 12px 12px 12px;
-     }
-        border-bottom       : 1px solid $accent-color;
-        border-radius: 90;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        margin-left: auto;
-        &:hover,
-        &:focus {
-           outline: none;
-        }
-        &::placeholder {
-            @include text($fs: 12px,$lx: 1.1)
-        }
-    }
 }
-.button__box {
-    text-align: center;
-}
-.button--form {
-    @include text ($fs: 12px,$color:$footer-text-color,$opa:1)
-    margin-top      : 15px;
-    padding         : 8px 5px;
+  .modal-form__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .modal-form__item {
+    display: flex;
+    align-items: center;
+  }
+  .modal-form__name {
+    @include text($fw: 400, $fs: 14px, $opa: 1);
     @media screen and (min-width: 1120px) {
-@include text ($color:$footer-text-color, $opa:1)
-margin-top : 30px;
-padding    : 6px 10px;
+      @include text($fw: 500, $fs: 14px, $opa: 1);
     }
-    text-align      : center;
-    letter-spacing  : 0.06em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: $accent-color;
-    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-form__text {
+    width: 76%;
+    height: 25px;
+    padding: 10px;
+    @media screen and (min-width: 1120px) {
+      width: 70%;
+      height: 30px;
+      padding: 12px 12px 12px 12px;
+    }
+    border-bottom: 1px solid $accent-color;
+    border-radius: 90;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: auto;
     &:hover,
     &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16);
+      outline: none;
     }
+    &::placeholder {
+      @include text($fs: 12px, $lx: 1.1);
+    }
+  }
+}
+.button__box {
+  text-align: center;
+}
+.button--form {
+  @include text($fs: 12px, $color: $footer-text-color, $opa: 1) margin-top: 15px;
+  padding: 8px 5px;
+  @media screen and (min-width: 1120px) {
+    @include text($color: $footer-text-color, $opa: 1) margin-top: 30px;
+    padding: 6px 10px;
+  }
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .selected {
-    @media screen and (max-width: 767px) {
-   width : 95%;
-}
-    position  : relative;
-    width     : 40%;
-    padding   : 1em;
-    margin    : 2em 10px 4em;
-    background: #fff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-&:before,
-&:after {
-    content : "";
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
+  position: relative;
+  width: 40%;
+  padding: 1em;
+  margin: 2em 10px 4em;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  &:before,
+  &:after {
+    content: '';
     position: absolute;
-    z-index : -2;
-}
-&:before {
-    top          : 10px;
-    bottom       : 10px;
-    left         : 0;
-    right        : 0;
-    box-shadow   : 0 0 15px rgba(0, 0, 0, 0.6);
+    z-index: -2;
+  }
+  &:before {
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     border-radius: 10px / 100px;
-}
+  }
 
-&__text {
-    @include text ($fs: 18px,$opa:1)
-    @media screen and (min-width: 1120px) {
-    @include text ($fs: 20px, $opa:1)
-}
-    
-}
-&__product {
+  &__text {
+    @include text($fs: 18px, $opa: 1) @media screen and (min-width: 1120px) {
+      @include text($fs: 20px, $opa: 1);
+    }
+  }
+  &__product {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #DCDCDC;
-        @media screen and (min-width: 1120px) {
-       padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    @media screen and (min-width: 1120px) {
+      padding: 10px;
     }
-    
-}
-&__name {
-   @include text ($fw: normal,$fs: 14px,$lx: 1.2,$color:  $accent-color,$opa: 0.7); 
-   margin-left: 5px;
-        @media screen and (min-width: 1120px) {
-@include text ($fs: 18px, $lx: 1.2, $color: $accent-color, $opa: 0.7);
+  }
+  &__name {
+    @include text($fw: normal, $fs: 14px, $lx: 1.2, $color: $accent-color, $opa: 0.7);
+    margin-left: 5px;
+    @media screen and (min-width: 1120px) {
+      @include text($fs: 18px, $lx: 1.2, $color: $accent-color, $opa: 0.7);
     }
- 
-transition: opacity 250ms linear;
-&:hover {
-    opacity: 1;
-}}
-&__price-block {
+
+    transition: opacity 250ms linear;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__price-block {
     display: block;
     width: 60px;
     @media screen and (min-width: 1120px) {
-   width: 60px;
-}
-    
-}
-&__price {
-    @include secondary-text ($fw:300, $color: red, $fs:16px);
-       @media screen and (min-width: 1120px) {
-    @include secondary-text ($fw:400,$color: red,$fs:18px);   
-   }
-       
-}
-&__price-not {
+      width: 60px;
+    }
+  }
+  &__price {
+    @include secondary-text($fw: 300, $color: red, $fs: 16px);
+    @media screen and (min-width: 1120px) {
+      @include secondary-text($fw: 400, $color: red, $fs: 18px);
+    }
+  }
+  &__price-not {
     text-decoration-line: line-through;
-    @include secondary-text ($fw:300, $fs:16px, $opa:0.7);
-       @media screen and (min-width: 1120px) {
-    @include secondary-text ($fw:400, $fs:16px, $opa:0.7);   
-   }
-    
-     
-}
+    @include secondary-text($fw: 300, $fs: 16px, $opa: 0.7);
+    @media screen and (min-width: 1120px) {
+      @include secondary-text($fw: 400, $fs: 16px, $opa: 0.7);
+    }
+  }
 }
 .selected__end-price {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-     border-bottom: 1px solid #DCDCDC;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .selected__delivery {
-@include text ($fw: normal,$fs:12px,$lx:1.5,$color:$accent-color,$opa: 0.7);
-cursor: pointer;
-&:hover,
-&:focus {
+  @include text($fw: normal, $fs: 12px, $lx: 1.5, $color: $accent-color, $opa: 0.7);
+  cursor: pointer;
+  &:hover,
+  &:focus {
     opacity: 1;
-}
-&::before {
+  }
+  &::before {
     display: inline-block;
-    content: "";
+    content: '';
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -345,5 +331,5 @@ cursor: pointer;
     background-image: url(../images/avto2.png);
     margin-right: 10px;
     margin-bottom: -8px;
-}
+  }
 }

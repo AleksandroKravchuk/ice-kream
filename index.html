@@ -371,11 +371,11 @@
                 <h5 class="modal-form__title">Оформление заказа</h5>
                 <p class="modal-form__information">Контактная информация</p>
                 <ul class="modal-form__clients">
-                    <li class="modal-form__clients-item"><a class="modal-form__clients-link" href="#new-client">Новый покупатель</a> </li>
-                    <li class="modal-form__clients-item"><a class="modal-form__clients-link" href="#olld-client"> Постоянный клиент</a></li>
+                    <li class="modal-form__clients-item"><a class="modal-form__clients-link act"  id="new-client">Новый покупатель</a> </li>
+                    <li class="modal-form__clients-item"><a class="modal-form__clients-link" id="old-client"> Постоянный клиент</a></li>
                 </ul>
-                <div class="changewindow">
-                <ul class="modal-form__list " id="new-client">
+                <div class="js-window">
+                <ul class="modal-form__list " >
                     <li class="modal-form__item">
                         <label class="modal-form__name" for="name">Имя</label><input class="modal-form__text" type="text" id="name" name="name" placeholder="Ваше имя">         
                     </li>
@@ -391,35 +391,24 @@
                         <label class="modal-form__name" for="city">Город</label>
                         <input type="text" class="modal-form__text" name="comments" id="city" placeholder="Введите город">
                     </li>
-                </ul>
-                <div class="button__box">
+                </ul></div>
+               
+                <div class="js-changewindow change-hidden">
+                    <ul class="modal-form__list" >
+                        <li class="modal-form__item">
+                            <label class="modal-form__name" for="name">Логин</label><input class="modal-form__text" type="text" id="name"
+                                name="name" placeholder="Ваш логин">
+                        </li>
+                        <li class="modal-form__item">
+                            <label class="modal-form__name" for="parol">Пароль</label><input class="modal-form__text" type="text" id="name"
+                                name="parol" placeholder="Введите пароль">
+                        </li>
+                       
+                    </ul></div>
+                 
+                 <div class="button__box">
                     <button type="submit" class="button--form">Выбрать доставку и оплату</button>
                </div>
-               </div>
-
-                <!-- <div >
-                    <ul class="modal-form__list" id="new-client">
-                        <li class="modal-form__item">
-                            <label class="modal-form__name" for="name">Имя</label><input class="modal-form__text" type="text" id="name"
-                                name="name" placeholder="Ваше имя">
-                        </li>
-                        <li class="modal-form__item">
-                            <label class="modal-form__name" for="tel">Телефон</label>
-                            <input class="modal-form__text" type="tel" id="tel" name="tel" placeholder="Введите контактный номер">
-                        </li>
-                        <li class="modal-form__item">
-                            <label class="modal-form__name" for="e-mail">Почта</label>
-                            <input class="modal-form__text" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
-                        </li>
-                        <li class="modal-form__item">
-                            <label class="modal-form__name" for="city">Город</label>
-                            <input type="text" class="modal-form__text" name="comments" id="city" placeholder="Введите город">
-                        </li>
-                    </ul>
-                    <div class="button__box">
-                        <button type="submit" class="button--form">Выбрать доставку и оплату</button>
-                    </div>
-                </div> -->
                 </form>
     <div class="selected">
         <p class="selected__text">Корзина</p>
