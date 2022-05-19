@@ -3,7 +3,7 @@ const URL = "https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions";
 const refs = {
     formQeschions: document.querySelector('.questions__form'),
     listQeschions: document.querySelector('.qeschions-list'),
-    btnPut: document.querySelector('.button-put'),
+    btnPut: document.querySelector('#qeschions'),
     qeschionsBlock: document.querySelector('.qeschions')
 }
 
@@ -19,7 +19,7 @@ function setQeschion(evt) {
     message
     };
     createTodo(newItem);
-
+    refs.formQeschions.reset();
 }
 const createTodo = (newItem) =>
   axios.post(URL, newItem).then(({ data }) => items.push(data));
@@ -31,17 +31,20 @@ const fetchMessage = () =>
 
  
 
-function renderList() {
-    
+function renderList(evt) {
+    evt.preventDefault();
     refs.listQeschions.innerHTML = '';
-    fetchMessage().then((data) => data.map(({ message }) => { 
+    fetchMessage().then((data) => data.map(({id, message }) => { 
     const render =       
  `
 <li >
- <p class="qest">"${message}"</p>
+ <p><span>${id}</span>.  ${message}</p>
 </li>`;
         refs.listQeschions.insertAdjacentHTML('beforeend', render);   
       
     }));
     
 }
+
+// const deleteMessage = ()=>axios.delete("https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/19");
+// deleteMessage()

@@ -76,9 +76,9 @@ margin-right: 10px;
         margin-bottom: 10px;
     }
 }
-   .qest{
-   @include text ( $fs:12px, $lx: 1.2,$color:$footer-text-color)
-}
+//    .qest{
+//    @include text ( $fs:12px, $lx: 1.2,$color:$footer-text-color)
+// }
 .home__link {
 @include text ( $fs:12px, $lx: 1.2,$color:$footer-text-color)
 cursor: pointer;
