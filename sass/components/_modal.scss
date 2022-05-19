@@ -9,7 +9,7 @@
   opacity: 1;
   overflow-y: scroll;
 
-  // transition      : opacity 200ms linear;
+
 
   &.is-hidden {
     visibility: hidden;
@@ -160,10 +160,10 @@
     &:active,
     &:visited {
         color: $accent-color;
-      opacity: 1;
+      opacity: 1;}
       &::after {
         transform: scale(1);
- 
+      }}
 .act{
     color: $accent-color;
    opacity: 1;
@@ -332,4 +332,4 @@ padding-bottom: 12px;
     margin-right: 10px;
     margin-bottom: -8px;
   }
-}
+};

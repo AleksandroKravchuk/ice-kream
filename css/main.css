@@ -608,7 +608,7 @@ summary {
   opacity: 1;
 }
 
-.modal-form .modal-form__clients-link:hover::after, .modal-form .modal-form__clients-link:focus::after, .modal-form .modal-form__clients-link:active::after, .modal-form .modal-form__clients-link:visited::after {
+.modal-form .modal-form__clients-link::after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -3657,6 +3657,17 @@ textarea.form-produc__input {
 
 .home__item:nth-child(-n+5) {
   margin-bottom: 10px;
+}
+
+.qest {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 .home__link {

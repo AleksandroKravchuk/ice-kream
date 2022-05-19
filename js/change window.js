@@ -3,11 +3,6 @@ const formSecondary = document.querySelector('.js-changewindow');
 const newClient = document.querySelector('#new-client');
 const oldClient = document.querySelector('#old-client');
 
-
-console.log(formMain);
-console.log(newClient);
-console.log(oldClient);
-
 newClient.addEventListener('click', changeWindow);
 
 function changeWindow(event) {
