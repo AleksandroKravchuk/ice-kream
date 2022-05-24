@@ -2462,7 +2462,7 @@ textarea.form-produc__input {
   }
 }
 
-.card__name {
+.cards__name {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 600;
@@ -2474,7 +2474,7 @@ textarea.form-produc__input {
 }
 
 @media screen and (min-width: 768px) {
-  .card__name {
+  .cards__name {
     font-family: Hind Madurai;
     font-style: normal;
     font-weight: 600;
@@ -2486,7 +2486,7 @@ textarea.form-produc__input {
 }
 
 @media screen and (min-width: 1120px) {
-  .card__name {
+  .cards__name {
     font-family: Hind Madurai;
     font-style: normal;
     font-weight: 600;
@@ -2526,13 +2526,13 @@ textarea.form-produc__input {
 }
 
 @media screen and (max-width: 767px) {
-  .card__item:not(last-child) {
+  .cards_item:not(last-child) {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .card__item {
+  .cards__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2543,13 +2543,13 @@ textarea.form-produc__input {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .card__item:nth-child(-n+2) {
+  .cards__item:nth-child(-n+2) {
     margin-bottom: 10px;
   }
-  .card__item:nth-child(3) {
+  .cards__item:nth-child(3) {
     margin-bottom: 20px;
   }
-  .card__item:nth-child(even) {
+  .cards__item:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -2558,49 +2558,49 @@ textarea.form-produc__input {
 }
 
 @media screen and (min-width: 1200px) {
-  .card__item:nth-child(-n+2) {
+  .cards__item:nth-child(-n+2) {
     margin-bottom: 30px;
   }
-  .card__item:nth-child(3) {
+  .cards__item:nth-child(3) {
     margin-bottom: 112px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .card__item:last-child {
+  .cards__item:last-child {
     display: none;
   }
 }
 
-.card__content {
+.cards__content {
   width: 100%;
   text-align: start;
 }
 
-.card__content-odd {
+.cards__content-odd {
   text-align: start;
 }
 
 @media screen and (min-width: 768px) {
-  .card__content {
+  .cards__content {
     width: 350px;
   }
-  .card__content-odd {
+  .cards__content-odd {
     width: 360px;
     text-align: right;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .card__content {
+  .cards__content {
     width: 454px;
   }
-  .card__content-odd {
+  .cards__content-odd {
     width: 454px;
   }
 }
 
-.card__text {
+.cards__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2649,7 +2649,7 @@ textarea.form-produc__input {
   margin-bottom: 3px;
 }
 
-.card__price {
+.cards__price {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 500;
@@ -2660,7 +2660,7 @@ textarea.form-produc__input {
   margin-bottom: 10px;
 }
 
-.card__price-not {
+.cards__price-not {
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 500;

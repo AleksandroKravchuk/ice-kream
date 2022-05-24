@@ -14,7 +14,10 @@ let items = [];
 
 function setQeschion(evt) {
     evt.preventDefault();
-    const message= evt.target.elements.questions.value;
+    const message = evt.target.elements.questions.value;
+    if (!message) {
+        return;
+    }
     const newItem = {
     message
     };
@@ -46,5 +49,5 @@ function renderList(evt) {
     
 }
 
-// const deleteMessage = ()=>axios.delete("https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/19");
+// const deleteMessage = ()=>axios.delete("https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/7");
 // deleteMessage()
