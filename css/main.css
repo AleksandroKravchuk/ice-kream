@@ -367,7 +367,7 @@ summary {
   transition: all 300ms linear;
 }
 
-.modal {
+.modal-buy {
   position: absolute;
   top: 5%;
   left: 50%;
@@ -384,7 +384,7 @@ summary {
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-buy {
     top: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -398,13 +398,13 @@ summary {
   }
 }
 
-.modal:before, .modal:after {
+.modal-buy:before, .modal-buy:after {
   content: '';
   position: absolute;
   z-index: -2;
 }
 
-.modal .modal__button-close {
+.modal-buy .modal__button-close {
   position: absolute;
   z-index: 10;
   top: 8px;
@@ -430,7 +430,7 @@ summary {
   transition: box-shadow 250ms linear, opacity 250ms linear, fill 250ms linear, -webkit-box-shadow 250ms linear;
 }
 
-.modal .modal__button-close:hover, .modal .modal__button-close:focus {
+.modal-buy .modal__button-close:hover, .modal-buy .modal__button-close:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   opacity: 1;
