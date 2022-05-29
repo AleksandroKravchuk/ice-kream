@@ -60,19 +60,30 @@ function renderList(evt) {
 </li>`;
         refs.listQeschions.insertAdjacentHTML('beforeend', render);   
     }));
-    refs.form.addEventListener('submit', addAnswer);
+  
+}
+
+
+  refs.form.addEventListener('submit', addAnswer);
     function addAnswer(evt) {
         evt.preventDefault();
-    //    const { value } = evt.target.query;
-        console.log(evt.target.closest('input'))
+        console.log(evt.currentTarget.elements[1])
+        // console.log(evt.target.nodeName === "INPUT")
+//           if (evt.target.nodeName !== "INPUT") {
+//     return;
+//   }
+//             const id = evt.currentTarget;
+//             // const { value } = evt.target.query;
+//         console.log(id) 
+        
+        // const { id } = evt.currentTarget.closest('input');
+       
         // const inpElement = evt.target.closest('input');
         //  if (!inpElement) return;
         //  const idc = inpElement.dataset.id;
         //     console.log(idc);
         //     console.log(inpElement );
         };
-}
-
 
   
 function onDelete(evt) {
