@@ -37,7 +37,8 @@ background-color: yellowgreen;
    max-width: 100%;
 }
 .answer-text:hover,
-.answer-text:focus{
+.answer-text:focus,
+.answer-text:active{
     border: none;
     outline:none;
 }

@@ -1,3 +1,5 @@
+// const { forEach } = require("lodash");
+
 const URL = "https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions";
 
 const refs = {
@@ -52,7 +54,7 @@ function renderList(evt) {
 <li class="qeschion-item >
 <div class="qeschion-section">
  <div class="qeschion"><p><span>${id}</span>.  ${message}</p> </div>
- <div class="answer"> <input class="answer-text" data-id="${id}"type="text-area"><p>${answer}</p></div>
+ <div class="answer"> <input class="answer-text"  data-id="${id}"  type="text" name="text"><p>${answer}</p></div>
  <button data-id="${id}" class="qeschion-close" type="button">X</bottom>
  
 </div>
@@ -67,7 +69,24 @@ function renderList(evt) {
   refs.form.addEventListener('submit', addAnswer);
     function addAnswer(evt) {
         evt.preventDefault();
-        console.log(evt.currentTarget.elements[1])
+        // console.log(evt.currentTarget.elements[1])
+        //  const inp = evt.currentTarget.elements.text;
+        //     console.log(inp);   
+    //     const items = evt.currentTarget.elements.text;
+    //     for (const item of items) {
+    //         if (item.checked===true) {
+    //         const inp = evt.currentTarget.elements.text;
+           
+    //         console.log(inp);   
+    //     } 
+    //    }
+           
+       
+       
+       
+        // inp.find((elem)=>console.log(elem.dataset) )
+        // const {id} = evt.currentTarget.elements.text[1].dataset;
+        // console.log(id)
         // console.log(evt.target.nodeName === "INPUT")
 //           if (evt.target.nodeName !== "INPUT") {
 //     return;
