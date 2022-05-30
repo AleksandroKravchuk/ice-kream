@@ -1,4 +1,5 @@
-// const { forEach } = require("lodash");
+
+
 
 const URL = "https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions";
 
@@ -7,16 +8,15 @@ const refs = {
     listQeschions: document.querySelector('.qeschions-list'),
     btnPut: document.querySelector('#qeschions'),
     qeschionsBlock: document.querySelector('.qeschions'),
-    // btnAnswer: document.querySelector(`[data-js="answer"]`),
     inputAnswer: document.querySelector(".modal-content"),
     form: document.querySelector(".form-qeschions")
 }
 
-// refs.inputAnswer.addEventListener('click',onSelect);
+
 refs.formQeschions.addEventListener('submit', setQeschion);
 refs.btnPut.addEventListener('click', renderList);
 refs.listQeschions.addEventListener('click', onDelete);
-// refs.listQeschions.addEventListener('click', onSelect);
+
 
 let items = [];
 let newItem = {
@@ -24,14 +24,15 @@ let newItem = {
      answer:''
 };
 let answer = '';
-function setQeschion(evt) {
+function setQeschion(evt,answer) {
     evt.preventDefault();
     const message = evt.target.elements.questions.value;
+    
     if (!message) {
         return;
     }
-     newItem.message=message,
-        
+    
+    newItem.message = message,
     createTodo(newItem);
     refs.formQeschions.reset();
 }
@@ -53,7 +54,7 @@ function renderList(evt) {
  `
 <li class="qeschion-item >
 <div class="qeschion-section">
- <div class="qeschion"><p><span>${id}</span>.  ${message}</p> </div>
+ <div class="qeschion"><p><span>${id}</span >.  ${message}</p> </div>
  <div class="answer"> <input class="answer-text"  data-id="${id}"  type="text" name="text"><p>${answer}</p></div>
  <button data-id="${id}" class="qeschion-close" type="button">X</bottom>
  
@@ -69,42 +70,23 @@ function renderList(evt) {
   refs.form.addEventListener('submit', addAnswer);
     function addAnswer(evt) {
         evt.preventDefault();
-        // console.log(evt.currentTarget.elements[1])
-        //  const inp = evt.currentTarget.elements.text;
-        //     console.log(inp);   
-    //     const items = evt.currentTarget.elements.text;
-    //     for (const item of items) {
-    //         if (item.checked===true) {
-    //         const inp = evt.currentTarget.elements.text;
-           
-    //         console.log(inp);   
-    //     } 
-    //    }
-           
-       
-       
-       
-        // inp.find((elem)=>console.log(elem.dataset) )
-        // const {id} = evt.currentTarget.elements.text[1].dataset;
-        // console.log(id)
-        // console.log(evt.target.nodeName === "INPUT")
-//           if (evt.target.nodeName !== "INPUT") {
-//     return;
-//   }
-//             const id = evt.currentTarget;
-//             // const { value } = evt.target.query;
-//         console.log(id) 
-        
-        // const { id } = evt.currentTarget.closest('input');
-       
-        // const inpElement = evt.target.closest('input');
-        //  if (!inpElement) return;
-        //  const idc = inpElement.dataset.id;
-        //     console.log(idc);
-        //     console.log(inpElement );
-        };
+        const inp = evt.currentTarget.elements.text;
+        inp.forEach((item) => {
+            if (item.value !== '') {
+                const id = item.dataset.id; 
+               newItem.answer = item.value;
+                console.log(id)
+                console.log(newItem)
+                refs.form.reset() 
+//                 const сhangeMessage = () => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, (reject, response) => {
+//                     response= stringify(newItem.answer)
+// );
+//     сhangeMessage();
+            }
+              return
+        })};
 
-  
+
 function onDelete(evt) {
    
     const BTN = evt.target.closest('button');
@@ -131,61 +113,4 @@ function clear(idn) {
 </li>`;
         refs.listQeschions.insertAdjacentHTML('beforeend', render);  }
  }));
-   
 } 
-
-// function onSelect(evt) {
-//     const inpElement = evt.target.closest('input');
-    
-//     if (!inpElement) return;
-//     const idc = inpElement.dataset.id;
-//     let answer = '';
-
-
-    // inpElement.addEventListener('input', ((evt) => {
-        
-    //     answer = evt.currentTarget.value;
-       
-      
-        
-    // }));
-// }   
-    
-
-//     refs.btnAnswer.addEventListener('click', ((idc, answer) => {
-       
-      
-       
-//         // console.log(answer)
-//         // console.log(idc)
-// // refs.listQeschions.innerHTML = '';
-// //     fetchMessage().then((data) => data.map(({id, message,answer }) => { 
-// //     const render =       
-// //  `
-// // <li class="qeschion-item >
-// // <div class="qeschion-section">
-// //  <div class="qeschion"><p><span>${id}</span>.  ${message}</p> </div>
-// //  <div class="answer"> <input class="answer-text" data-id="${id}"type="text-area"><p>${answer}</p></div>
-// //  <button data-id="${id}" class="qeschion-close" type="button">X</bottom>
- 
-// // </div>
- 
-// // </li>`;
-// //         refs.listQeschions.insertAdjacentHTML('beforeend', render);   
-// //     }));
-// }))
-// }
-// function addAnswer(idc, answer) {
-//     console.log(answer)
-//     console.log(idc)
-//     fetchMessage().then((data) => data.find((item) => {
-//         if (item.id === idc) {
-//             // const answerext = `<p>${answer}</p>`;
-//         return    newItem.answer = answer;
-//             // const answerSektion = document.querySelector('.qeschion-section');
-//             // console.log(newItem.answer);
-//         //   console.log(answerSektion)
-//             //  refs.listQeschions.insertAdjacentHTML('beforeend',answerext); 
-//    } 
-//     }));console.log(newItem)
-// }
