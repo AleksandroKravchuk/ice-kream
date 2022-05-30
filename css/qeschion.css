@@ -36,7 +36,8 @@
 }
 
 .answer-text:hover,
-.answer-text:focus {
+.answer-text:focus,
+.answer-text:active {
   border: none;
   outline: none;
 }
@@ -69,5 +70,14 @@
 .qeschion-close:focus {
   background-color: yellow;
   color: black;
+}
+
+.none {
+  display: none;
+}
+
+.answer {
+  margin-left: 15px;
+  padding: 5px;
 }
 /*# sourceMappingURL=qeschion.css.map */

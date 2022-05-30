@@ -4046,7 +4046,8 @@ textarea.form-produc__input {
 }
 
 .answer-text:hover,
-.answer-text:focus {
+.answer-text:focus,
+.answer-text:active {
   border: none;
   outline: none;
 }
@@ -4079,5 +4080,9 @@ textarea.form-produc__input {
 .qeschion-close:focus {
   background-color: yellow;
   color: black;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
