@@ -86,8 +86,9 @@ function renderList(evt) {
                 };
                 newItem.answer = item.value;
                 refs.form.reset()
-                const сhangeMessage = (newItem) => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem).then(({ data }) => items.push(data))
-                    // .then(setTimeout(()=>{fetchMessage()},200) );
+                
+                const сhangeMessage = (newItem) => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem).then(fetchMessage());
+                    // .then(fetchMessage());
                 сhangeMessage(newItem);
                 // setTimeout(() => {  }, 400); 
                 // fetchMessage();
