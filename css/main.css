@@ -4085,4 +4085,9 @@ textarea.form-produc__input {
 .none {
   display: none;
 }
+
+.answer-span {
+  margin-left: 5px;
+  padding: 5px;
+}
 /*# sourceMappingURL=main.css.map */

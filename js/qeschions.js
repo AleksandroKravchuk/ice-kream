@@ -75,24 +75,27 @@ function renderList(evt) {
 
 
   refs.form.addEventListener('submit', addAnswer);
-    function addAnswer(evt) {
+  function  addAnswer (evt) {
         evt.preventDefault();
         const inp = evt.currentTarget.elements.text;
         inp.forEach((item) => {
             if (item.value !== '') {
-                const id = item.dataset.id; 
+                const id = item.dataset.id;
                 newItem = {
-                answer:''
-               };
-               newItem.answer = item.value;
-                refs.form.reset() 
-                const сhangeMessage = (newItem) => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem ).then(({ data }) => items.push(data));
+                    answer: ''
+                };
+                newItem.answer = item.value;
+                refs.form.reset()
+                const сhangeMessage = (newItem) => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem).then(({ data }) => items.push(data))
+                    // .then(setTimeout(()=>{fetchMessage()},200) );
                 сhangeMessage(newItem);
-               
-                
-            }
-              return
-        })};
+                // setTimeout(() => {  }, 400); 
+                // fetchMessage();
+
+            }return
+              
+        })
+};
 
 
 function onDelete(evt) {
