@@ -588,7 +588,7 @@ summary {
   display: block;
   content: '';
   width: 100%;
-  height: 2px;
+  height: 1.8px;
   background-color: inherit;
   margin-top: 10px;
   -webkit-transform: scale(0);
