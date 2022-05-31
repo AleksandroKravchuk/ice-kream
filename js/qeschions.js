@@ -37,17 +37,16 @@ function setQeschion(evt,answer) {
 const createTodo = (newItem) =>
   axios.post(URL, newItem).then(({ data }) => items.push(data));
 
-const fetchMessage = () =>
+const fetchMessage = () => 
     axios.get(URL).then((resp) => {
         return resp.data
-    });
+    }); 
+
+
 
  
-
-function renderList(evt) {
-    evt.preventDefault();
-    refs.listQeschions.innerHTML = '';
-    fetchMessage().then((data) => data.map(({ id, message, answer }) => { 
+  function createList() {
+     fetchMessage().then((data) => data.map(({ id, message, answer }) => { 
         
     const render =       
  `
@@ -70,12 +69,18 @@ function renderList(evt) {
             }
         })
     }));
+}   
+ 
+function renderList(evt) {
+    evt.preventDefault();
+    refs.listQeschions.innerHTML = '';
+    createList();
     
 }
 
 
   refs.form.addEventListener('submit', addAnswer);
-  function  addAnswer (evt) {
+ function  addAnswer (evt) {
         evt.preventDefault();
         const inp = evt.currentTarget.elements.text;
         inp.forEach((item) => {
@@ -86,10 +91,21 @@ function renderList(evt) {
                 };
                 newItem.answer = item.value;
                 refs.form.reset()
-                
-                const сhangeMessage = (newItem) => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem).then(fetchMessage());
-                    // .then(fetchMessage());
+               
+                const сhangeMessage = () => axios.put(`https://6283bdb838279cef71dbbcec.mockapi.io/api/v1/qeschions/${id}`, newItem).then(({ data }) => items.splice(0, 1, data))
+                    .then(function fetchMessage() {     axios.get(URL).then((resp) => {
+        return resp.data
+                    });
+                refs.listQeschions.innerHTML = '';       
+              createList()      }
+);
+             
                 сhangeMessage(newItem);
+                newItem.answer = '';
+               
+               
+               
+               
                 // setTimeout(() => {  }, 400); 
                 // fetchMessage();
 
