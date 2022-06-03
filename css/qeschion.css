@@ -16,6 +16,7 @@
 }
 
 .answer-text {
+  padding: 3px;
   max-width: 96%;
   height: 100%;
   border: none;
@@ -38,6 +39,7 @@
 }
 
 .qeschion-close {
+  text-align: center;
   width: 25px;
   height: 25px;
   padding-top: 4px;
@@ -77,5 +79,6 @@
   max-width: 96%;
   padding: 5px;
   height: auto;
+  padding: 3px;
 }
 /*# sourceMappingURL=qeschion.css.map */

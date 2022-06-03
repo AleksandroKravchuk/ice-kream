@@ -4029,6 +4029,7 @@ textarea.form-produc__input {
 }
 
 .answer-text {
+  padding: 3px;
   max-width: 96%;
   height: 100%;
   border: none;
@@ -4051,6 +4052,7 @@ textarea.form-produc__input {
 }
 
 .qeschion-close {
+  text-align: center;
   width: 25px;
   height: 25px;
   padding-top: 4px;
@@ -4090,5 +4092,6 @@ textarea.form-produc__input {
   max-width: 96%;
   padding: 5px;
   height: auto;
+  padding: 3px;
 }
 /*# sourceMappingURL=main.css.map */
