@@ -94,6 +94,7 @@ cursor: pointer;
 transition: opacity 300ms linear;
 &:hover,
 &:focus {
+    color: inherit;
     opacity: 1;
     &::after {
         transform: scaleX(1);

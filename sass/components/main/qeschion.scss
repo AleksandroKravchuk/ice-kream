@@ -48,7 +48,9 @@ padding: 3px;
     height: 30px;
     top: 50%;
   }
-  text-align: center;
+  display:flex;
+  justify-content:center;
+ align-items: center;
   width: 25px;
   height: 25px;
   padding-top: 4px;

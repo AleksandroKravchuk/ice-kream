@@ -60,6 +60,10 @@ img {
   max-width: 100%;
 }
 
+a:hover {
+  color: inherit;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -2417,6 +2421,7 @@ textarea.form-produc__input {
 }
 
 .our-products__link:hover, .our-products__link:focus {
+  color: inherit;
   opacity: 1;
 }
 
@@ -3096,6 +3101,7 @@ textarea.form-produc__input {
 }
 
 .pay-food__buttons-form1:hover, .pay-food__buttons-form1:focus {
+  color: #F2CEDA;
   background-color: #D23166;
 }
 
@@ -3170,6 +3176,7 @@ textarea.form-produc__input {
 }
 
 .pay-food__buttons-form2:hover, .pay-food__buttons-form2:focus {
+  color: #F2CEDA;
   background-color: #D23166;
 }
 
@@ -4052,7 +4059,15 @@ textarea.form-produc__input {
 }
 
 .qeschion-close {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25px;
   height: 25px;
   padding-top: 4px;

@@ -78,6 +78,7 @@ $bz:11px 17px);
 }
 .pay-food__link-2 {
     @include text ($fs: 22px, $lx: 1.2, $opa: 1);
+  
     cursor: pointer;
     &::before {
     @include pay ($img: url(../images/buy2.svg));
@@ -134,6 +135,7 @@ $bz:16px 13px);
  }
  &:hover,
  &:focus {
+     color: $header-bckg-color;
      background-color: $accent-color;
  }
     @media screen and (min-width: 768px) {
@@ -163,6 +165,7 @@ $bz:16px 13px);
 }
     &:hover,
     &:focus {
+        color: $header-bckg-color;
         background-color: $accent-color;
     }
     @media screen and (min-width: 768px) {
