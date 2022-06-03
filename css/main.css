@@ -4012,7 +4012,7 @@ textarea.form-produc__input {
 }
 
 .qeschion {
-  max-width: 90%;
+  max-width: 95%;
   border-radius: 5px;
   background-color: cadetblue;
   margin-bottom: 5px;
@@ -4029,7 +4029,7 @@ textarea.form-produc__input {
 }
 
 .answer-text {
-  max-width: 90px;
+  max-width: 96%;
   height: 100%;
   border: none;
   border-radius: 5px;
@@ -4085,7 +4085,7 @@ textarea.form-produc__input {
 }
 
 .answer-span {
-  max-width: 90%;
+  max-width: 96%;
   padding: 5px;
   height: auto;
 }
