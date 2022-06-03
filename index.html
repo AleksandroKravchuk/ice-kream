@@ -20,7 +20,7 @@
     <title> Alexandro/Ice-cream</title>
     <link rel="icon" href="images/IMG_I.JPG" type="image/x-icon">
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
 </head>
 <body>
     <header class="page-header">
@@ -154,12 +154,12 @@
                 <div class="our-products__box">
                 <button class="our-products__name"  type="button" data-open-products>Our Product</button>
                 <ul class="our-products__list" data-modal-products>
-                    <li class="our-products__item"><a class="our-products__link"  href="./images/main/main2x.jpg" > ICE CREAM</a></li>
-                    <li class="our-products__item"><a class="our-products__link" href="./images/card/card1x2.jpg"> CAYENNE CHOCOLATE</a></li>
-                    <li class="our-products__item"><a class="our-products__link"  href="./images/card/card2x2.jpg">CAKE BATTER</a></li>
-                    <li class="our-products__item"><a class="our-products__link"  href="./images/card/card3x2.jpg">CANDY CANE</a></li>
-                    <li class="our-products__item"><a class="our-products__link"  href="./images/card/card4x2.jpg">PLATTERS</a> </li>
-                    <li class="our-products__item"><a class="our-products__link" href="./images/card/card1x2.jpg">DESSERT</a></li>
+                    <li class="our-products__item"><a class="our-products__link"  data-source="./images/main/main2x.jpg" > ICE CREAM</a></li>
+                    <li class="our-products__item"><a class="our-products__link" data-source="./images/card/card1x2.jpg"> CAYENNE CHOCOLATE</a></li>
+                    <li class="our-products__item"><a class="our-products__link"  data-source="./images/card/card2x2.jpg">CAKE BATTER</a></li>
+                    <li class="our-products__item"><a class="our-products__link"  data-source="./images/card/card3x2.jpg">CANDY CANE</a></li>
+                    <li class="our-products__item"><a class="our-products__link"  data-source="./images/card/card4x2.jpg">PLATTERS</a> </li>
+                    <li class="our-products__item"><a class="our-products__link" data-source="./images/card/card1x2.jpg">DESSERT</a></li>
                 </ul>
                 </div>
                 <ul class="cards">
@@ -545,6 +545,8 @@
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 <script src="./js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"
+    integrity="sha256-nMn34BfOxpKD0GwV5nZMwdS4e8SI8Ekz+G7dLeGE4XY=" crossorigin="anonymous"></script>
 <script  src="./js/script.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/main-modal.js"></script>
