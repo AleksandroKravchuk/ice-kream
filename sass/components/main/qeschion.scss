@@ -46,16 +46,16 @@
   @media screen and (min-width: 400px) {
     width: 30px;
     height: 30px;
-    padding-top: 6px;
+    top: 50%;
   }
   width: 25px;
   height: 25px;
   padding-top: 4px;
-
+transform: translateY(-50%);
   position: absolute;
   right: -10px;
-  top: 30%;
-  border-radius: 10px;
+  top: 50%;
+  border-radius: 50px;
   background-color: blue;
   color: white;
   border: none;

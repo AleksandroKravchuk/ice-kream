@@ -136,7 +136,7 @@ function clear(idn) {
 <div class="qeschion-section">
  <div class="qeschion"><p><span>${id}</span >.  ${message}</p> </div>
  <div class="answer"> <input class="answer-text"  data-id="${id}"  type="text" name="text"><p class="answer-span">${answer}</p></div>
- <button data-id="${id}" class="qeschion-close" type="button">X</bottom>
+ <button data-id="${id}" class="qeschion-close" type="button">💀</bottom>
  
 </div>
 </li>`;
